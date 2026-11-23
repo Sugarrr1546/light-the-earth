@@ -1,0 +1,959 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "repairCount": 15,
+    "verifiedCount": 15,
+    "unresolvedCount": 0,
+    "sourceGeometryYearPreserved": "2017",
+    "municipalityNameSnapshot": "2025-01-01",
+    "spatialVerificationSnapshot": "2024",
+    "method": "14 municipality polygon/name/code joins plus one official district neighborhood verification",
+    "attribution": "Központi Statisztikai Hivatal (KSH); European Commission Eurostat GISCO; Budapest Főváros XIII. Kerület; Magyar Rendőrség",
+    "geometryReuse": "Audit only. GISCO polygons are not redistributed in this public repair table and do not replace source geometries.",
+    "sourceSHA256": {
+      "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx": "d059a14883a27963daa234d9f3954eb68b4cbf967e796710a4bcdb4f03437991",
+      "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson": "ae07901e0a11cb7891d1a6d6a31cfd833e25672ca318908856b0e34a1acca594"
+    },
+    "limitation": "Current official name evidence does not change the source geometry date. Polygon comparisons span different scales and vintages; overlap fractions below 1 do not justify a boundary correction."
+  },
+  "repairs": {
+    "GB-24034025B94894753308439": {
+      "name": "Tahitótfalu",
+      "aliases": [
+        "Tahitótfalu"
+      ],
+      "parentName": "Pest / Szentendrei",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=31963",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "31963",
+      "expectedOriginalName": "Tahit?tfalu",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          19.104269573646153,
+          47.7715865
+        ],
+        "sourceBBox": [
+          19.009687,
+          47.729323,
+          19.132706,
+          47.814226
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Tahitótfalu",
+            "giscoID": "HU_31963",
+            "sourceAreaOverlapFraction": 0.98229827
+          },
+          {
+            "name": "Dunabogdány",
+            "giscoID": "HU_25362",
+            "sourceAreaOverlapFraction": 0.00893888
+          },
+          {
+            "name": "Vác",
+            "giscoID": "HU_24934",
+            "sourceAreaOverlapFraction": 0.00772681
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "31963",
+        "kshSheet": 1,
+        "kshSheetRow": 2708,
+        "kshAreaHectares2025": 3917.0,
+        "sourcePolygonAreaHectares": 3850.8885,
+        "officialLAUOverlapFraction": 0.98229827,
+        "officialName": "Tahitótfalu"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B58580999885645": {
+      "name": "Makád",
+      "aliases": [
+        "Makád"
+      ],
+      "parentName": "Pest / Ráckevei",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=04394",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "04394",
+      "expectedOriginalName": "Mak?d",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          18.93165205023065,
+          47.070184499999996
+        ],
+        "sourceBBox": [
+          18.890814,
+          47.030041,
+          18.980746,
+          47.112062
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Makád",
+            "giscoID": "HU_04394",
+            "sourceAreaOverlapFraction": 0.97780249
+          },
+          {
+            "name": "Tass",
+            "giscoID": "HU_20525",
+            "sourceAreaOverlapFraction": 0.0075467
+          },
+          {
+            "name": "Szigetbecse",
+            "giscoID": "HU_26259",
+            "sourceAreaOverlapFraction": 0.0058626
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "04394",
+        "kshSheet": 1,
+        "kshSheetRow": 1640,
+        "kshAreaHectares2025": 3177.0,
+        "sourcePolygonAreaHectares": 3173.6573,
+        "officialLAUOverlapFraction": 0.97780249,
+        "officialName": "Makád"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B60022860867729": {
+      "name": "Annavölgy",
+      "aliases": [
+        "Annavölgy"
+      ],
+      "parentName": "Komárom-Esztergom / Esztergomi",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=34227",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "34227",
+      "expectedOriginalName": "Annav?lgy",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          18.661821899648693,
+          47.693283
+        ],
+        "sourceBBox": [
+          18.637489,
+          47.681462,
+          18.682467,
+          47.704626
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Annavölgy",
+            "giscoID": "HU_34227",
+            "sourceAreaOverlapFraction": 0.95049055
+          },
+          {
+            "name": "Csolnok",
+            "giscoID": "HU_18926",
+            "sourceAreaOverlapFraction": 0.01510194
+          },
+          {
+            "name": "Sárisáp",
+            "giscoID": "HU_26903",
+            "sourceAreaOverlapFraction": 0.01504019
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "34227",
+        "kshSheet": 1,
+        "kshSheetRow": 81,
+        "kshAreaHectares2025": 483.0,
+        "sourcePolygonAreaHectares": 481.8146,
+        "officialLAUOverlapFraction": 0.95049055,
+        "officialName": "Annavölgy"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B86316938663730": {
+      "name": "Veszprémgalsa",
+      "aliases": [
+        "Veszprémgalsa"
+      ],
+      "parentName": "Veszprém / Sümegi",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=19336",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "19336",
+      "expectedOriginalName": "Veszpr?mgalsa",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          17.266016895909736,
+          47.0805635
+        ],
+        "sourceBBox": [
+          17.24838,
+          47.053769,
+          17.294608,
+          47.107158
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Veszprémgalsa",
+            "giscoID": "HU_19336",
+            "sourceAreaOverlapFraction": 0.96399816
+          },
+          {
+            "name": "Apácatorna",
+            "giscoID": "HU_28370",
+            "sourceAreaOverlapFraction": 0.01288748
+          },
+          {
+            "name": "Szentimrefalva",
+            "giscoID": "HU_10065",
+            "sourceAreaOverlapFraction": 0.0122902
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "19336",
+        "kshSheet": 1,
+        "kshSheetRow": 3064,
+        "kshAreaHectares2025": 871.0000000000001,
+        "sourcePolygonAreaHectares": 874.6116,
+        "officialLAUOverlapFraction": 0.96399816,
+        "officialName": "Veszprémgalsa"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B94594817307465": {
+      "name": "Karakószörcsök",
+      "aliases": [
+        "Karakószörcsök"
+      ],
+      "parentName": "Veszprém / Devecseri",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=08749",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "08749",
+      "expectedOriginalName": "Karak?sz?rcsdk",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          17.284653279658713,
+          47.124086000000005
+        ],
+        "sourceBBox": [
+          17.265782,
+          47.10115,
+          17.301805,
+          47.147039
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Karakószörcsök",
+            "giscoID": "HU_08749",
+            "sourceAreaOverlapFraction": 0.9578569
+          },
+          {
+            "name": "Apácatorna",
+            "giscoID": "HU_28370",
+            "sourceAreaOverlapFraction": 0.02838403
+          },
+          {
+            "name": "Tüskevár",
+            "giscoID": "HU_04631",
+            "sourceAreaOverlapFraction": 0.0048756
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "08749",
+        "kshSheet": 1,
+        "kshSheetRow": 1236,
+        "kshAreaHectares2025": 711.0,
+        "sourcePolygonAreaHectares": 704.5183,
+        "officialLAUOverlapFraction": 0.9578569,
+        "officialName": "Karakószörcsök"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B18151323177961": {
+      "name": "Nemesnádudvar",
+      "aliases": [
+        "Nemesnádudvar"
+      ],
+      "parentName": "Bács-Kiskun / Bajai",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=32540",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "32540",
+      "expectedOriginalName": "Nemesn?dudvar",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          19.046447108342544,
+          46.339283
+        ],
+        "sourceBBox": [
+          18.981504,
+          46.279693,
+          19.107358,
+          46.398885
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Nemesnádudvar",
+            "giscoID": "HU_32540",
+            "sourceAreaOverlapFraction": 0.97572875
+          },
+          {
+            "name": "Érsekhalma",
+            "giscoID": "HU_33589",
+            "sourceAreaOverlapFraction": 0.01255689
+          },
+          {
+            "name": "Sükösd",
+            "giscoID": "HU_21245",
+            "sourceAreaOverlapFraction": 0.00600452
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "32540",
+        "kshSheet": 1,
+        "kshSheetRow": 1940,
+        "kshAreaHectares2025": 5878.0,
+        "sourcePolygonAreaHectares": 5887.5914,
+        "officialLAUOverlapFraction": 0.97572875,
+        "officialName": "Nemesnádudvar"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B3229677002162": {
+      "name": "Kazár",
+      "aliases": [
+        "Kazár"
+      ],
+      "parentName": "Nógrád / Salgótarjáni",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=28389",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "28389",
+      "expectedOriginalName": "Kaz?r",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          19.845902076281284,
+          48.067313
+        ],
+        "sourceBBox": [
+          19.817061,
+          48.029175,
+          19.919232,
+          48.103896
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Kazár",
+            "giscoID": "HU_28389",
+            "sourceAreaOverlapFraction": 0.97723276
+          },
+          {
+            "name": "Salgótarján",
+            "giscoID": "HU_25788",
+            "sourceAreaOverlapFraction": 0.0051904
+          },
+          {
+            "name": "Bárna",
+            "giscoID": "HU_20048",
+            "sourceAreaOverlapFraction": 0.00512045
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "28389",
+        "kshSheet": 1,
+        "kshSheetRow": 1262,
+        "kshAreaHectares2025": 3039.0,
+        "sourcePolygonAreaHectares": 3037.672,
+        "officialLAUOverlapFraction": 0.97723276,
+        "officialName": "Kazár"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B61003699442572": {
+      "name": "Fehérgyarmat",
+      "aliases": [
+        "Fehérgyarmat"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Fehérgyarmati",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=18971",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "18971",
+      "expectedOriginalName": "Feh?rgyarmat",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.508651834407075,
+          47.997098
+        ],
+        "sourceBBox": [
+          22.46332,
+          47.951628,
+          22.567822,
+          48.041484
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Fehérgyarmat",
+            "giscoID": "HU_18971",
+            "sourceAreaOverlapFraction": 0.98268983
+          },
+          {
+            "name": "Nagyar",
+            "giscoID": "HU_04710",
+            "sourceAreaOverlapFraction": 0.0057121
+          },
+          {
+            "name": "Nábrád",
+            "giscoID": "HU_19211",
+            "sourceAreaOverlapFraction": 0.0048752
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "18971",
+        "kshSheet": 1,
+        "kshSheetRow": 765,
+        "kshAreaHectares2025": 5245.0,
+        "sourcePolygonAreaHectares": 5233.8055,
+        "officialLAUOverlapFraction": 0.98268983,
+        "officialName": "Fehérgyarmat"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B29432385403936": {
+      "name": "Csegöld",
+      "aliases": [
+        "Csegöld"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Fehérgyarmati",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=26107",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "26107",
+      "expectedOriginalName": "Cseg?ld",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.677273078772814,
+          47.8962315
+        ],
+        "sourceBBox": [
+          22.620972,
+          47.876392,
+          22.735158,
+          47.916155
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Csegöld",
+            "giscoID": "HU_26107",
+            "sourceAreaOverlapFraction": 0.96323395
+          },
+          {
+            "name": "Szamossályi",
+            "giscoID": "HU_10436",
+            "sourceAreaOverlapFraction": 0.01533847
+          },
+          {
+            "name": "Hermánszeg",
+            "giscoID": "HU_12061",
+            "sourceAreaOverlapFraction": 0.00572908
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "26107",
+        "kshSheet": 1,
+        "kshSheetRow": 487,
+        "kshAreaHectares2025": 1935.0000000000002,
+        "sourcePolygonAreaHectares": 1933.4328,
+        "officialLAUOverlapFraction": 0.96323395,
+        "officialName": "Csegöld"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B8041672443705": {
+      "name": "Ököritófülpös",
+      "aliases": [
+        "Ököritófülpös"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Mátészalkai",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=31769",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "31769",
+      "expectedOriginalName": "k?ritpf",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.493130024477992,
+          47.915256
+        ],
+        "sourceBBox": [
+          22.432368,
+          47.878596,
+          22.542657,
+          47.950007
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Ököritófülpös",
+            "giscoID": "HU_31769",
+            "sourceAreaOverlapFraction": 0.98963712
+          },
+          {
+            "name": "Győrtelek",
+            "giscoID": "HU_10126",
+            "sourceAreaOverlapFraction": 0.00358755
+          },
+          {
+            "name": "Cégénydányád",
+            "giscoID": "HU_09681",
+            "sourceAreaOverlapFraction": 0.00281639
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "31769",
+        "kshSheet": 1,
+        "kshSheetRow": 2073,
+        "kshAreaHectares2025": 3342.0,
+        "sourcePolygonAreaHectares": 3304.648,
+        "officialLAUOverlapFraction": 0.98963712,
+        "officialName": "Ököritófülpös"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B44354232351621": {
+      "name": "Olcsvaapáti",
+      "aliases": [
+        "Olcsvaapáti"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Fehérgyarmati",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=10834",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "10834",
+      "expectedOriginalName": "Olcsvaap?ti",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.369161701084682,
+          48.085564000000005
+        ],
+        "sourceBBox": [
+          22.342777,
+          48.062576,
+          22.399449,
+          48.108231
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Olcsvaapáti",
+            "giscoID": "HU_10834",
+            "sourceAreaOverlapFraction": 0.8939469
+          },
+          {
+            "name": "Panyola",
+            "giscoID": "HU_29559",
+            "sourceAreaOverlapFraction": 0.0391611
+          },
+          {
+            "name": "Olcsva",
+            "giscoID": "HU_11129",
+            "sourceAreaOverlapFraction": 0.03448788
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "10834",
+        "kshSheet": 1,
+        "kshSheetRow": 2037,
+        "kshAreaHectares2025": 1102.0,
+        "sourcePolygonAreaHectares": 1064.0626,
+        "officialLAUOverlapFraction": 0.8939469,
+        "officialName": "Olcsvaapáti"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B13882695618857": {
+      "name": "Kisvarsány",
+      "aliases": [
+        "Kisvarsány"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Vásárosnaményi",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=12672",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "12672",
+      "expectedOriginalName": "Kisvars?ny",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.284290430469717,
+          48.140495
+        ],
+        "sourceBBox": [
+          22.244944,
+          48.116578,
+          22.335606,
+          48.165231
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Kisvarsány",
+            "giscoID": "HU_12672",
+            "sourceAreaOverlapFraction": 0.94316857
+          },
+          {
+            "name": "Nagyvarsány",
+            "giscoID": "HU_33783",
+            "sourceAreaOverlapFraction": 0.02345079
+          },
+          {
+            "name": "Vásárosnamény",
+            "giscoID": "HU_18324",
+            "sourceAreaOverlapFraction": 0.01606066
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "12672",
+        "kshSheet": 1,
+        "kshSheetRow": 1421,
+        "kshAreaHectares2025": 1283.0,
+        "sourcePolygonAreaHectares": 1290.0383,
+        "officialLAUOverlapFraction": 0.94316857,
+        "officialName": "Kisvarsány"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B55143483350185": {
+      "name": "Nagyvarsány",
+      "aliases": [
+        "Nagyvarsány"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Vásárosnaményi",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=33783",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "33783",
+      "expectedOriginalName": "Nagyvars?ny",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.278009568547816,
+          48.157642
+        ],
+        "sourceBBox": [
+          22.23121,
+          48.134352,
+          22.329983,
+          48.180305
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Nagyvarsány",
+            "giscoID": "HU_33783",
+            "sourceAreaOverlapFraction": 0.96797881
+          },
+          {
+            "name": "Tiszaszalka",
+            "giscoID": "HU_13541",
+            "sourceAreaOverlapFraction": 0.01648802
+          },
+          {
+            "name": "Gyüre",
+            "giscoID": "HU_33774",
+            "sourceAreaOverlapFraction": 0.00814133
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "33783",
+        "kshSheet": 1,
+        "kshSheetRow": 1907,
+        "kshAreaHectares2025": 1255.0,
+        "sourcePolygonAreaHectares": 1254.965,
+        "officialLAUOverlapFraction": 0.96797881,
+        "officialName": "Nagyvarsány"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B93835321929876": {
+      "name": "Beregdaróc",
+      "aliases": [
+        "Beregdaróc"
+      ],
+      "parentName": "Szabolcs-Szatmár-Bereg / Vásárosnaményi",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2025.xlsx",
+        "https://www.ksh.hu/apps/hntr.telepules?p_lang=HU&p_id=28246",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html",
+        "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2024_4326.geojson"
+      ],
+      "nameSource": "KSH Helységnévtár; European Commission GISCO",
+      "officialCode": "28246",
+      "expectedOriginalName": "Beregdar?c",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2025-01-01",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          22.512533323457404,
+          48.206578
+        ],
+        "sourceBBox": [
+          22.477514,
+          48.173031,
+          22.571844,
+          48.239414
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Beregdaróc",
+            "giscoID": "HU_28246",
+            "sourceAreaOverlapFraction": 0.96347025
+          },
+          {
+            "name": "Csaroda",
+            "giscoID": "HU_29416",
+            "sourceAreaOverlapFraction": 0.00681261
+          },
+          {
+            "name": "Gelénes",
+            "giscoID": "HU_04613",
+            "sourceAreaOverlapFraction": 0.00476386
+          }
+        ],
+        "method": "Unique dominant official LAU polygon overlap; identical KSH identifier and exact gazetteer spelling",
+        "officialCode": "28246",
+        "kshSheet": 1,
+        "kshSheetRow": 274,
+        "kshAreaHectares2025": 2383.0,
+        "sourcePolygonAreaHectares": 2415.1277,
+        "officialLAUOverlapFraction": 0.96347025,
+        "officialName": "Beregdaróc"
+      },
+      "nameNote": "名称经匈牙利中央统计局地名录核验；欧洲委员会官方 LAU 多边形匹配与 KSH 代码一致。保留原2017年边界。"
+    },
+    "GB-24034025B74528207384069": {
+      "name": "Újlipótváros",
+      "aliases": [
+        "Újlipótváros"
+      ],
+      "parentName": "Budapest / XIII. kerület",
+      "status": "verified",
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "nameSourceURLs": [
+        "https://www.budapest13.hu/wp-content/uploads/2010/03/ujlipotvaros_2009.pdf",
+        "https://www.police.hu/hu/ugyintezes/szerv/orszagos-rendor-fokapitanysag/budapesti-rendor-fokapitanysag/xiii-keruleti-0",
+        "https://www.google.com/maps/d/kml?mid=1xFiRAQxZppHD3SD2h6Rpd3ywh3yMTsGT&forcekml=1",
+        "https://gisco-services.ec.europa.eu/distribution/v1/lau-2024.html"
+      ],
+      "nameSource": "Budapest XIII district municipality; Hungarian Police",
+      "officialCode": null,
+      "expectedOriginalName": "í© jlipãtvâ¹ros",
+      "nameEvidence": {
+        "sourceGeometryYear": "2017",
+        "sourceGeometryPreserved": true,
+        "currentNameSourceDate": "2009 district publication; official police page accessed 2026-10-27",
+        "spatialVerificationSnapshot": "GISCO LAU 2024",
+        "sourceCenter": [
+          19.05520002786341,
+          47.520156
+        ],
+        "sourceBBox": [
+          19.045256,
+          47.510509,
+          19.063288,
+          47.526781
+        ],
+        "sourceCenterInsideSourcePolygon": true,
+        "sourceCenterInsideOfficialLAU": true,
+        "officialLAUMatches": [
+          {
+            "name": "Budapest",
+            "giscoID": "HU_13578",
+            "sourceAreaOverlapFraction": 1.0
+          }
+        ],
+        "method": "Budapest XIII district official neighborhood boundary description, corroborated by official police embedded map point inside source polygon",
+        "districtPublicationYear": 2009,
+        "districtPublicationPDFPage": 2,
+        "districtPublicationBoundaryDescription": "Dráva utca a Duna folyamtól – Váci út – Nyugati tér – Szt. István körút – Duna folyam a Dráva utcáig.",
+        "policeMapPoint": [
+          19.0510359,
+          47.5139987
+        ],
+        "policeMapPointInsideSourcePolygon": true,
+        "kind": "neighborhood",
+        "limitation": "GISCO identifies Budapest at LAU level; official district boundary description and police marker corroborate the neighborhood name, without a claimed official neighborhood polygon overlay."
+      },
+      "nameNote": "布达佩斯第十三区官方出版物与官方警察机关地图核验：Újlipótváros 是街区名称。该源面不是独立市镇，保持原ID与边界。"
+    }
+  }
+}

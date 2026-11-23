@@ -1,0 +1,1621 @@
+{
+  "validatedAt": "2026-10-26",
+  "checks": [
+    "globally unique current IDs",
+    "valid nonempty polygons",
+    "coverage counts and administrative levels match",
+    "finite centers/bounds"
+  ],
+  "files": [
+    {
+      "code": "AFG",
+      "file": "/data/global/afg-adm2.geojson",
+      "count": 398,
+      "bytes": 677818,
+      "sha256": "1f7058d4f0d77163a104754a21d073b78c67a2ad069dcf46c07dbaf5c055f5cf"
+    },
+    {
+      "code": "AGO",
+      "file": "/data/global/ago-adm3.geojson",
+      "count": 558,
+      "bytes": 743632,
+      "sha256": "07eed784227238f6f0c4dfa8d5969afa34b0358394508885ae7c33aaae263488"
+    },
+    {
+      "code": "AIA",
+      "file": "/data/supplements/aia.geojson",
+      "count": 15,
+      "bytes": 10754,
+      "sha256": "62efc9482f679731488230ee63a3ef19edb4e214bc7528909240ba4a56be529b"
+    },
+    {
+      "code": "ALA",
+      "file": "/data/supplements/ala.geojson",
+      "count": 16,
+      "bytes": 117770,
+      "sha256": "df829cfbd4aff2ed1610bc9903a207be82e28a56e355e9f11f849357dd84fbce"
+    },
+    {
+      "code": "ALB",
+      "file": "/data/global/alb-adm3.geojson",
+      "count": 373,
+      "bytes": 318153,
+      "sha256": "82a2eaa908095da9dad19361b0768927d74e21fa2ca57cfb5dc509103d24f94e"
+    },
+    {
+      "code": "AND",
+      "file": "/data/global/and-adm1.geojson",
+      "count": 7,
+      "bytes": 5383,
+      "sha256": "bcf436276caf7c7d8787c7bf6929dbe708fd45b7335f95256777e5b2fee0a4f6"
+    },
+    {
+      "code": "ARE",
+      "file": "/data/supplements/are.geojson",
+      "count": 375,
+      "bytes": 615463,
+      "sha256": "bd326d40b50d61f071aaa17f025b71569f021e2c915ce80c34760d262f7c9fce"
+    },
+    {
+      "code": "ARG",
+      "file": "/data/global/arg-adm2.geojson",
+      "count": 525,
+      "bytes": 1205810,
+      "sha256": "5196adce697ac3c8714f3d70b2fd893f39ff0751ba82c44cd267abea7f12718d"
+    },
+    {
+      "code": "ARM",
+      "file": "/data/global/arm-adm2.geojson",
+      "count": 39,
+      "bytes": 55727,
+      "sha256": "c12ccf825ff82bc5ff2e83c28e57f9007c34aa7ea4ab2e722f1602a2dbc349c2"
+    },
+    {
+      "code": "ASM",
+      "file": "/data/global/asm-adm3.geojson",
+      "count": 16,
+      "bytes": 12886,
+      "sha256": "e64ee941b598f04fcf7c470757bf93fd4d3545dce5491dc76f892b2de3357bcb"
+    },
+    {
+      "code": "ATF",
+      "file": "/data/supplements/atf.geojson",
+      "count": 4,
+      "bytes": 14040,
+      "sha256": "98a30007dae3f7f41c92250e4b19a3498dc9232f3272db44fa1a7eae5b66cf43"
+    },
+    {
+      "code": "ATG",
+      "file": "/data/global/atg-adm1.geojson",
+      "count": 8,
+      "bytes": 8342,
+      "sha256": "b4ba4e8ad776e4c7dcd2afa696fa504f226ebeb56a727da498bd56e39424ff55"
+    },
+    {
+      "code": "AUS",
+      "file": "/data/global/aus-adm2.geojson",
+      "count": 547,
+      "bytes": 1832975,
+      "sha256": "549f27f77bdd47029612053617ea13e470827de023fe5c1a22723090da375a93"
+    },
+    {
+      "code": "AUT",
+      "file": "/data/global/aut-adm3.geojson",
+      "count": 2097,
+      "bytes": 2119533,
+      "sha256": "9d5ab7bca9a7aa057a2000011a6e1ff83eb2c6b5be5575c44e406c27b7dd4784"
+    },
+    {
+      "code": "AZE",
+      "file": "/data/global/aze-adm2.geojson",
+      "count": 79,
+      "bytes": 91983,
+      "sha256": "85ad51c3f37fd09bde17e581809835ae5f98777b303d105bc442be8adeb46b31"
+    },
+    {
+      "code": "BDI",
+      "file": "/data/global/bdi-adm2.geojson",
+      "count": 119,
+      "bytes": 157871,
+      "sha256": "c7675603a94228178b874a244263bb1717f18d273526d3ebeafc075f4aa2c19d"
+    },
+    {
+      "code": "BEL",
+      "file": "/data/global/bel-adm4.geojson",
+      "count": 589,
+      "bytes": 447787,
+      "sha256": "b6116ee069342865e415984ff1c1362a6f82ce17c13a159914b7c27661a0d450"
+    },
+    {
+      "code": "BEN",
+      "file": "/data/global/ben-adm2.geojson",
+      "count": 77,
+      "bytes": 76113,
+      "sha256": "88399e6c35fa1803e120a096e6d73996b307098c7cc2936389f975393b415a22"
+    },
+    {
+      "code": "BFA",
+      "file": "/data/global/bfa-adm3.geojson",
+      "count": 351,
+      "bytes": 437831,
+      "sha256": "543f9b9319b13c2537e05704f40900ba3744879526d1500770397a04ffab2e7a"
+    },
+    {
+      "code": "BGD",
+      "file": "/data/global/bgd-adm3.geojson",
+      "count": 544,
+      "bytes": 919292,
+      "sha256": "e1d3e26af47e8aa927e5d364dc280ecd141ced69daaaf80199fb5228399f8a62"
+    },
+    {
+      "code": "BGR",
+      "file": "/data/global/bgr-adm2.geojson",
+      "count": 265,
+      "bytes": 249653,
+      "sha256": "137a9ef3aa6f72320bc09bf487fdf531d558eb8020234bd3f101f367f7eb1b62"
+    },
+    {
+      "code": "BHR",
+      "file": "/data/global/bhr-adm1.geojson",
+      "count": 4,
+      "bytes": 12648,
+      "sha256": "f4339efc4339a3e449cfc2adc6f687798ce4f22118ab54cb5c5c2f601ccae4cb"
+    },
+    {
+      "code": "BHS",
+      "file": "/data/global/bhs-adm2.geojson",
+      "count": 33,
+      "bytes": 224713,
+      "sha256": "cf93d915efdb38fe5ace4a8948f66ef37e32a6119417d3fa7d77730b3ef7693e"
+    },
+    {
+      "code": "BIH",
+      "file": "/data/global/bih-adm3.geojson",
+      "count": 142,
+      "bytes": 160941,
+      "sha256": "b36d6e2b7a009677ea0049c22df4fcda6f4d531751018eb0d8f890c7bc1d7b9b"
+    },
+    {
+      "code": "BLR",
+      "file": "/data/global/blr-adm2.geojson",
+      "count": 118,
+      "bytes": 232516,
+      "sha256": "2d725f02b8adbd7acd66a755740884efb581094d5feedd4bdee584e8a2faae45"
+    },
+    {
+      "code": "BLZ",
+      "file": "/data/global/blz-adm2.geojson",
+      "count": 31,
+      "bytes": 60752,
+      "sha256": "1517dab46564134f81da5d320de5b62640ca4490d8c759b48038b99aeb88cfc5"
+    },
+    {
+      "code": "BMU",
+      "file": "/data/supplements/bmu.geojson",
+      "count": 11,
+      "bytes": 8548,
+      "sha256": "f3acceef5b798a777eac9e177a531b66a9039f10495c1b0e88c31038a116825d"
+    },
+    {
+      "code": "BOL",
+      "file": "/data/global/bol-adm3.geojson",
+      "count": 339,
+      "bytes": 893989,
+      "sha256": "61cfc8c30ab2c07dc3a61fe174e20584dbbf4b07a8b1e10da03e701e68392b11"
+    },
+    {
+      "code": "BRA",
+      "file": "/data/global/bra-adm2.geojson",
+      "count": 5570,
+      "bytes": 4846317,
+      "sha256": "312f943b5caa671a855b5c5dbc725eb3596105953faa1b8b4d4755fb3e7ae752"
+    },
+    {
+      "code": "BRB",
+      "file": "/data/global/brb-adm1.geojson",
+      "count": 11,
+      "bytes": 7221,
+      "sha256": "6e56d6580abe2de6a81348bc4926a5c0e8d53b00d720c6541cfb97693272bb60"
+    },
+    {
+      "code": "BRN",
+      "file": "/data/global/brn-adm2.geojson",
+      "count": 38,
+      "bytes": 28294,
+      "sha256": "421b61e77895d505d41451ad9ab827d49afbfa8327e452d3919017ea3022b78c"
+    },
+    {
+      "code": "BTN",
+      "file": "/data/global/btn-adm2.geojson",
+      "count": 205,
+      "bytes": 204799,
+      "sha256": "4852684b9acaff4fb3e7c87daaaa0ee9583867483dda2a8ae37f9f40242fbc34"
+    },
+    {
+      "code": "BWA",
+      "file": "/data/global/bwa-adm2.geojson",
+      "count": 25,
+      "bytes": 43395,
+      "sha256": "68bccf6becebb7cb61dddf935187762ceaeb99f9a93748071ceeffb90cef0690"
+    },
+    {
+      "code": "CAF",
+      "file": "/data/global/caf-adm3.geojson",
+      "count": 175,
+      "bytes": 304340,
+      "sha256": "23cf163ba0cc5ad75b64b8d7f5f11b4aaa367b584eef153024fe672e3298150a"
+    },
+    {
+      "code": "CAN",
+      "file": "/data/global/can-adm3.geojson",
+      "count": 5162,
+      "bytes": 4617859,
+      "sha256": "89131ff08c1037b8f2e4ff434a6a73ca3dfd85d20f8ed124b36e86c00a4406ca"
+    },
+    {
+      "code": "CHE",
+      "file": "/data/global/che-adm3.geojson",
+      "count": 2286,
+      "bytes": 1696874,
+      "sha256": "7e0475c39830e31821f9ab5d2f242321877ab42d45de9841722b56b976531df8"
+    },
+    {
+      "code": "CHL",
+      "file": "/data/global/chl-adm3.geojson",
+      "count": 345,
+      "bytes": 1711684,
+      "sha256": "0ab2055b56c6b46a1357c293583249fa7c1365adb72ffc43f98d182f398d69fc"
+    },
+    {
+      "code": "CHN",
+      "file": "/data/chn.geojson",
+      "count": 2864,
+      "bytes": 3335493,
+      "sha256": "e12e7c5946366dfec6e63af5bcd39e5d358de8e44e1e9274c4cac39b71b370fb"
+    },
+    {
+      "code": "CIV",
+      "file": "/data/global/civ-adm3.geojson",
+      "count": 510,
+      "bytes": 626064,
+      "sha256": "5df2fb2bf47d0275e92e8ba1a81bfe9f601b45f0aa6ca2c1802534161bc6d2f6"
+    },
+    {
+      "code": "CMR",
+      "file": "/data/global/cmr-adm3.geojson",
+      "count": 360,
+      "bytes": 534939,
+      "sha256": "bff851d01c773360cf21d3d390db1eea04f144bb837d01675a0e958472aa3010"
+    },
+    {
+      "code": "COD",
+      "file": "/data/global/cod-adm2.geojson",
+      "count": 189,
+      "bytes": 608539,
+      "sha256": "4174ae2defe1fcfbd69d11d57f1c68e68e3ada35d6aacf94c9e4bb98d97cd674"
+    },
+    {
+      "code": "COG",
+      "file": "/data/global/cog-adm2.geojson",
+      "count": 46,
+      "bytes": 80659,
+      "sha256": "34c1e51ce3061abc6847acf19fa9bad3d8db61dde6ea47533a05b47ab9eb35b2"
+    },
+    {
+      "code": "COK",
+      "file": "/data/supplements/cok.geojson",
+      "count": 15,
+      "bytes": 48977,
+      "sha256": "3d0a899f76d7a014f775087e3b9d39022d72e81c28f0a2876420dd4b78f31423"
+    },
+    {
+      "code": "COL",
+      "file": "/data/global/col-adm2.geojson",
+      "count": 1122,
+      "bytes": 2019493,
+      "sha256": "d5ec16c14a221814db5d0c8a1c7355949eb0b046a63d651a7c544fea88b271d8"
+    },
+    {
+      "code": "COM",
+      "file": "/data/global/com-adm3.geojson",
+      "count": 55,
+      "bytes": 46056,
+      "sha256": "4c392de5babd9a2e4b2f79b41d1c27f62e959df40eb2acf33d28e68f82d0ee57"
+    },
+    {
+      "code": "CPV",
+      "file": "/data/global/cpv-adm2.geojson",
+      "count": 32,
+      "bytes": 42516,
+      "sha256": "bdf11a9a1f74278ad2d144b0c090a69dbdd3994054552b640b20ec393da6d14e"
+    },
+    {
+      "code": "CRI",
+      "file": "/data/global/cri-adm2.geojson",
+      "count": 83,
+      "bytes": 523918,
+      "sha256": "f52513ffa82676950e7c358d296b4930c7cd5865d90ebcc5a20baf8fa3537d56"
+    },
+    {
+      "code": "CUB",
+      "file": "/data/global/cub-adm2.geojson",
+      "count": 168,
+      "bytes": 339879,
+      "sha256": "4fd3466b570eefa474fff04ae2b7cd58f87353a9b7299ce683ecaac9248182ed"
+    },
+    {
+      "code": "CYM",
+      "file": "/data/supplements/cym.geojson",
+      "count": 6,
+      "bytes": 76677,
+      "sha256": "23501f8db5d6f3e9fb04e446075da3ee013bb6887c16f6bdd2e38a54d84ddd7b"
+    },
+    {
+      "code": "CYN",
+      "file": "/data/supplements/cyn.geojson",
+      "count": 203,
+      "bytes": 341611,
+      "sha256": "7fe2248fd1b9974bd8c14fa88e4094c1bfe3927d3b0a5c7ccfc3901fb3a86ed6"
+    },
+    {
+      "code": "CYP",
+      "file": "/data/global/cyp-adm2.geojson",
+      "count": 610,
+      "bytes": 507264,
+      "sha256": "0d8c287b6d11c7db52a6c4fcb4d3b0e0a3f98819fce49407cc396a8d1d36852c"
+    },
+    {
+      "code": "CZE",
+      "file": "/data/global/cze-adm3.geojson",
+      "count": 6257,
+      "bytes": 4917584,
+      "sha256": "57d3b45ffc0930469a2baf369422606096a683423f388f37065a96d59eed0df4"
+    },
+    {
+      "code": "DEU",
+      "file": "/data/global/deu-adm3.geojson",
+      "count": 428,
+      "bytes": 1147583,
+      "sha256": "fb0de833fe1eb05176fa407291df849b0e4f3577634701aaec45228adb1714ca"
+    },
+    {
+      "code": "DJI",
+      "file": "/data/global/dji-adm2.geojson",
+      "count": 11,
+      "bytes": 10383,
+      "sha256": "1a2379ff6cc049036f2e58c9ed505fff8cc7f08afcee61a36a874e958e39a0a7"
+    },
+    {
+      "code": "DMA",
+      "file": "/data/global/dma-adm1.geojson",
+      "count": 10,
+      "bytes": 8929,
+      "sha256": "47117a12eced6ea6bc9704039cf62d266b850328011ec909c7d75ee38b844892"
+    },
+    {
+      "code": "DNK",
+      "file": "/data/global/dnk-adm2.geojson",
+      "count": 98,
+      "bytes": 107699,
+      "sha256": "384c8aaa83dd466b0d07ba51146e270a8113f71150f68cdcc2cf278f557b9cd4"
+    },
+    {
+      "code": "DOM",
+      "file": "/data/global/dom-adm2.geojson",
+      "count": 155,
+      "bytes": 196887,
+      "sha256": "6145de497b03f9c1ac8a72feaf06bcadec4ed32813778f6d2a54a93fcf95e784"
+    },
+    {
+      "code": "DZA",
+      "file": "/data/global/dza-adm3.geojson",
+      "count": 1540,
+      "bytes": 1589009,
+      "sha256": "8ed6c75a52480f616fe971b000ea4a26afff0983689f07be929cd39c93b6c82a"
+    },
+    {
+      "code": "ECU",
+      "file": "/data/global/ecu-adm2.geojson",
+      "count": 224,
+      "bytes": 640494,
+      "sha256": "78ca0d9f3be626bd9725e729a31df770ff172abf25b30d00800d446426017417"
+    },
+    {
+      "code": "EGY",
+      "file": "/data/global/egy-adm2.geojson",
+      "count": 365,
+      "bytes": 428822,
+      "sha256": "44db50d730615cd330150b5daecc5f9633b7d2be3b57d6fb3e60098b6f187595"
+    },
+    {
+      "code": "ERI",
+      "file": "/data/global/eri-adm2.geojson",
+      "count": 58,
+      "bytes": 131492,
+      "sha256": "3c1332cd62bea531a80d71d1039d5c0fbad330e4d6eaab871b11df84fab24cbb"
+    },
+    {
+      "code": "ESP",
+      "file": "/data/global/esp-adm3.geojson",
+      "count": 8205,
+      "bytes": 5188529,
+      "sha256": "eb16b30f2ac00a3c6a2bf3937013e46e6649bae97c2ac4ca8d5b4ced9c50a7c3"
+    },
+    {
+      "code": "EST",
+      "file": "/data/global/est-adm2.geojson",
+      "count": 214,
+      "bytes": 344511,
+      "sha256": "4df94c90ec5251be729ea95df7d93c48c4b6bf36cb90048e3983d933397d4615"
+    },
+    {
+      "code": "ETH",
+      "file": "/data/global/eth-adm3.geojson",
+      "count": 690,
+      "bytes": 746606,
+      "sha256": "17f026772ccf4c2620d73ac3e29cb69d246e73d3c5468069eaf010baeb96e270"
+    },
+    {
+      "code": "FIN",
+      "file": "/data/global/fin-adm3.geojson",
+      "count": 312,
+      "bytes": 679166,
+      "sha256": "84e4e9af8a099619f69308eca6f946008661c8907a40dc07077e606f0e8001e8"
+    },
+    {
+      "code": "FJI",
+      "file": "/data/global/fji-adm2.geojson",
+      "count": 15,
+      "bytes": 61195,
+      "sha256": "8ee0b75889e98bb51f16d42b1160e974b5b0681246fa689c70cefea810e2f02a"
+    },
+    {
+      "code": "FRA",
+      "file": "/data/global/fra-adm3.geojson",
+      "count": 320,
+      "bytes": 1239942,
+      "sha256": "d64ccd0c705fa6bfafe648e7d82970b018e86b7153e1c4851eb3d99fb59ba73e"
+    },
+    {
+      "code": "FRO",
+      "file": "/data/supplements/fro.geojson",
+      "count": 29,
+      "bytes": 386299,
+      "sha256": "f2ee0f1c361e01919f14ba41cccbbde85fff7ad08f484bb4ce10b8c5df76bdb6"
+    },
+    {
+      "code": "FSM",
+      "file": "/data/global/fsm-adm2.geojson",
+      "count": 75,
+      "bytes": 66596,
+      "sha256": "64ca7ec37f1f77a13c918bf87f764329ae3ff6f47166ef3da1549f1ab9962484"
+    },
+    {
+      "code": "GAB",
+      "file": "/data/global/gab-adm2.geojson",
+      "count": 49,
+      "bytes": 70877,
+      "sha256": "7305628949e01269f7fd43179652e4efab82829d67c40f7fc1fed7738a0157d8"
+    },
+    {
+      "code": "GBR",
+      "file": "/data/global/gbr-adm3.geojson",
+      "count": 216,
+      "bytes": 252716,
+      "sha256": "0bf5443b76b13126cff2311d8d688826c11fd39d2aaaa66ee3595d4249e3e20c"
+    },
+    {
+      "code": "GEO",
+      "file": "/data/global/geo-adm2.geojson",
+      "count": 68,
+      "bytes": 230495,
+      "sha256": "5efde63e4d8a5e8c242ef5cdeca2479387be7552d2074b2867c79f47d28b08b6"
+    },
+    {
+      "code": "GGY",
+      "file": "/data/supplements/ggy.geojson",
+      "count": 12,
+      "bytes": 155783,
+      "sha256": "f7fc96cff18603c67a4159ddc2f7b044621662c1cab896be10ef4494b404a284"
+    },
+    {
+      "code": "GHA",
+      "file": "/data/global/gha-adm2.geojson",
+      "count": 260,
+      "bytes": 609831,
+      "sha256": "e63c2384e90ae9bbbb5351d09156fd9750137f6839d0167abf57263a8a5370f8"
+    },
+    {
+      "code": "GIN",
+      "file": "/data/global/gin-adm2.geojson",
+      "count": 34,
+      "bytes": 87430,
+      "sha256": "376e7d014b5ce9869c5ebe4c74bc899a8594a5eedbeb2a878dd2134b4cbddd48"
+    },
+    {
+      "code": "GLP",
+      "file": "/data/global/glp-adm4.geojson",
+      "count": 32,
+      "bytes": 35960,
+      "sha256": "a70285e4cbf554692d77b8cc2474e266f3372c8151427d403554fa37f379669c"
+    },
+    {
+      "code": "GMB",
+      "file": "/data/global/gmb-adm2.geojson",
+      "count": 48,
+      "bytes": 52628,
+      "sha256": "c974d640ee0b37ea43df0436181f5f7fc03719b39c917927e000be1a49069227"
+    },
+    {
+      "code": "GNB",
+      "file": "/data/global/gnb-adm2.geojson",
+      "count": 39,
+      "bytes": 89256,
+      "sha256": "8b54ab299267b32e5731cd28731c2621e3c32c43265507da6d725e1f109cb76f"
+    },
+    {
+      "code": "GNQ",
+      "file": "/data/global/gnq-adm2.geojson",
+      "count": 28,
+      "bytes": 34111,
+      "sha256": "ac31c7610c2d31cfc86f99e6cbc499075c3ebd09476bd84f94dcdf56120b2b61"
+    },
+    {
+      "code": "GRC",
+      "file": "/data/global/grc-adm3.geojson",
+      "count": 326,
+      "bytes": 354016,
+      "sha256": "2b82ffdd793d32f3e11cf6e3ba6f639f3f0bfbc7ecb781d4d3d4a90751c95451"
+    },
+    {
+      "code": "GRD",
+      "file": "/data/global/grd-adm1.geojson",
+      "count": 7,
+      "bytes": 7350,
+      "sha256": "8bac294fe637fccbee19a7a00cbf95e4ae20a4a9f85f40c8451b7e81edf1563e"
+    },
+    {
+      "code": "GRL",
+      "file": "/data/global/grl-adm1.geojson",
+      "count": 6,
+      "bytes": 263256,
+      "sha256": "e5e3bf7a037748885882d1f2b7c57da6fce3ad532f869928eeb8ff4d1b49b08c"
+    },
+    {
+      "code": "GTM",
+      "file": "/data/global/gtm-adm2.geojson",
+      "count": 342,
+      "bytes": 377718,
+      "sha256": "49368742c31c13aa0643117985fc0f1386ae1f4cd609b8aa36ba1f67908821cc"
+    },
+    {
+      "code": "GUF",
+      "file": "/data/global/guf-adm3.geojson",
+      "count": 2,
+      "bytes": 26984,
+      "sha256": "09d7cb055e58e040389cfeaa7a54ea7b57e68a234ca2df91112db38ebdff66a0"
+    },
+    {
+      "code": "GUM",
+      "file": "/data/global/gum-adm2.geojson",
+      "count": 19,
+      "bytes": 14547,
+      "sha256": "decf05933b098a84ccf5bf9fedcaf3249f3d7325c6558ca9f44f0ce6cc16b928"
+    },
+    {
+      "code": "GUY",
+      "file": "/data/global/guy-adm2.geojson",
+      "count": 27,
+      "bytes": 48942,
+      "sha256": "a0fa28ec669537ddfc5d9137f8da5c780dcb8e54e7af05e34a0439ab2ed5d286"
+    },
+    {
+      "code": "HKG",
+      "file": "/data/supplements/hkg.geojson",
+      "count": 18,
+      "bytes": 21304,
+      "sha256": "e55550edffd03dda93728308049d792b164c12a68185d675ed652d67e62b978d"
+    },
+    {
+      "code": "HND",
+      "file": "/data/global/hnd-adm2.geojson",
+      "count": 298,
+      "bytes": 427673,
+      "sha256": "503044f60928197b4f7dfff7bc5806750f5def4e137e0f8b239d9e053e9c6f7e"
+    },
+    {
+      "code": "HRV",
+      "file": "/data/global/hrv-adm2.geojson",
+      "count": 560,
+      "bytes": 651799,
+      "sha256": "fc9cb353be2f84b69c304d42297aae5d2fe2508bf2cbe1f78ff93f7b4d838f04"
+    },
+    {
+      "code": "HTI",
+      "file": "/data/global/hti-adm3.geojson",
+      "count": 140,
+      "bytes": 181787,
+      "sha256": "cada5e140a8af07fd9ff7eb7640ab3694f591870924646be6819c5ce33c59d25"
+    },
+    {
+      "code": "HUN",
+      "file": "/data/global/hun-adm3.geojson",
+      "count": 3357,
+      "bytes": 2431549,
+      "sha256": "9ac666ae72f68a7bddb3459237c707887fa9d69c43589c7cd913733a65ec7fd5"
+    },
+    {
+      "code": "IDN",
+      "file": "/data/global/idn-adm2.geojson",
+      "count": 519,
+      "bytes": 1865509,
+      "sha256": "4283c2c5a9e870dbc5391ce319a2059c960bca059819c99481c405de2dcb1810"
+    },
+    {
+      "code": "IMN",
+      "file": "/data/supplements/imn.geojson",
+      "count": 24,
+      "bytes": 190865,
+      "sha256": "9f3f4671422e6075d5b7426083956dbe7a9693670a21d53c2df9b6d8f176d775"
+    },
+    {
+      "code": "IND",
+      "file": "/data/global/ind-adm3.geojson",
+      "count": 6822,
+      "bytes": 4610888,
+      "sha256": "221848c75e4aea91a7fe820a856fa6d235c30be768e77dc39664717bec33ddf4"
+    },
+    {
+      "code": "IRL",
+      "file": "/data/global/irl-adm2.geojson",
+      "count": 166,
+      "bytes": 399034,
+      "sha256": "f539ddbae810572b62ce539d260d524715e39323dd4c73c55c4b64a1d64f2998"
+    },
+    {
+      "code": "IRN",
+      "file": "/data/global/irn-adm2.geojson",
+      "count": 432,
+      "bytes": 722086,
+      "sha256": "ed092aabcb0ad2b2172fc5258ada8adbbf35b4eaa6cab8b89c065b5ebe249d9d"
+    },
+    {
+      "code": "IRQ",
+      "file": "/data/global/irq-adm2.geojson",
+      "count": 101,
+      "bytes": 125561,
+      "sha256": "ea4c4253f7d14d40d21f48df6f32743eb41362330aaa746fc7750dc53eb1d579"
+    },
+    {
+      "code": "ISL",
+      "file": "/data/global/isl-adm2.geojson",
+      "count": 74,
+      "bytes": 192053,
+      "sha256": "82e20869ad11e30402fce3b5c74a7e36183e2c184d292e0fa8acd5f4cd9d1817"
+    },
+    {
+      "code": "ISR",
+      "file": "/data/global/isr-adm2.geojson",
+      "count": 15,
+      "bytes": 25708,
+      "sha256": "4a0edbf5d38a327fee4b15e2c718994b574024cc036a28d9091a8cacfc34d964"
+    },
+    {
+      "code": "ITA",
+      "file": "/data/global/ita-adm4.geojson",
+      "count": 7901,
+      "bytes": 4904634,
+      "sha256": "3c14a677fe751e0a6a978db425d3534277e7165e4050db6e468c4700a062ca4a"
+    },
+    {
+      "code": "JAM",
+      "file": "/data/global/jam-adm2.geojson",
+      "count": 827,
+      "bytes": 703969,
+      "sha256": "2ef685a60f5bab523c9a5361a71058c6a353c4fbbc8ee501e3f53ca3c2addf01"
+    },
+    {
+      "code": "JEY",
+      "file": "/data/supplements/jey.geojson",
+      "count": 12,
+      "bytes": 120145,
+      "sha256": "add4fe0037754b31ce65eb181cc146d0bfc1ce0ede5b7150007f263a55f7fc9a"
+    },
+    {
+      "code": "JOR",
+      "file": "/data/global/jor-adm2.geojson",
+      "count": 52,
+      "bytes": 94342,
+      "sha256": "cb5999792517a90648f6d9f462a83ad04fe7046577172f739d9d231282a982c9"
+    },
+    {
+      "code": "JPN",
+      "file": "/data/jpn.geojson",
+      "count": 1742,
+      "bytes": 3002721,
+      "sha256": "ca576df84a5718629f2528e731df7c9ca0d374b78cd6973a09383389f834503d"
+    },
+    {
+      "code": "KAZ",
+      "file": "/data/global/kaz-adm2.geojson",
+      "count": 174,
+      "bytes": 261053,
+      "sha256": "3f913e6d6158d0b2287f0cd86c821b98ef4196dfe655f6ceacb795f90b40cd2e"
+    },
+    {
+      "code": "KEN",
+      "file": "/data/global/ken-adm2.geojson",
+      "count": 290,
+      "bytes": 456674,
+      "sha256": "cff2457cb797b5da3b2f17fbe7bb9c39bf5e9e0cc49bec789cb3e971f18e259b"
+    },
+    {
+      "code": "KGZ",
+      "file": "/data/global/kgz-adm2.geojson",
+      "count": 41,
+      "bytes": 91835,
+      "sha256": "1342e26bcacb14149395391b888da508bd113cf8642f9e0f64403bf89472da3b"
+    },
+    {
+      "code": "KHM",
+      "file": "/data/global/khm-adm2.geojson",
+      "count": 197,
+      "bytes": 337822,
+      "sha256": "4a053c109d8f024032b4b2ca1d358f8bbc404e239ec76d1cd8f6114b79443f37"
+    },
+    {
+      "code": "KIR",
+      "file": "/data/global/kir-adm2.geojson",
+      "count": 24,
+      "bytes": 24564,
+      "sha256": "7d086971af603b656eeeb058267e500be3d67063ffcf8062b741a7bee1815f05"
+    },
+    {
+      "code": "KNA",
+      "file": "/data/global/kna-adm1.geojson",
+      "count": 14,
+      "bytes": 10360,
+      "sha256": "5bda6910303e0515e7831378c885185b1af4f8915df8a97d5c65ea3d80235f9a"
+    },
+    {
+      "code": "KOR",
+      "file": "/data/global/kor-adm2.geojson",
+      "count": 228,
+      "bytes": 276890,
+      "sha256": "0fc3cee8ae1982dbe050f9649adcda8e9cffa298ee17f54e460736359dff2ee5"
+    },
+    {
+      "code": "KOS",
+      "file": "/data/global/kos-adm2.geojson",
+      "count": 38,
+      "bytes": 63812,
+      "sha256": "e464bf12431a85cb99af6dc7ab426fe7fbcb4a28d1ff1849a298641b59648657"
+    },
+    {
+      "code": "KWT",
+      "file": "/data/global/kwt-adm2.geojson",
+      "count": 137,
+      "bytes": 95622,
+      "sha256": "a907ba7b84f3d69e44ad2a355959a5d4ebf094996842fe34d56a553e0c32c7f8"
+    },
+    {
+      "code": "LAO",
+      "file": "/data/global/lao-adm2.geojson",
+      "count": 148,
+      "bytes": 293853,
+      "sha256": "e9073c6bd58ad19ea3e1aee0927c5f1d84fbcdc0c50a0329ab8ba17908aedb8d"
+    },
+    {
+      "code": "LBN",
+      "file": "/data/global/lbn-adm2.geojson",
+      "count": 26,
+      "bytes": 35330,
+      "sha256": "598b1a518d9dd36508adf8d9e49f8acf4b730ca7786c06990cd2e4467254e6f3"
+    },
+    {
+      "code": "LBR",
+      "file": "/data/global/lbr-adm2.geojson",
+      "count": 136,
+      "bytes": 170651,
+      "sha256": "61f0661a6a1bfce504c77c02f315e02f5884f04aeb88f0124e3c6970e53f86cb"
+    },
+    {
+      "code": "LBY",
+      "file": "/data/global/lby-adm1.geojson",
+      "count": 22,
+      "bytes": 23334,
+      "sha256": "f8a8ab2937c6d71b9db3b525ee03f8e29679c918c7a91cf30010b688c860f580"
+    },
+    {
+      "code": "LCA",
+      "file": "/data/global/lca-adm2.geojson",
+      "count": 547,
+      "bytes": 357640,
+      "sha256": "56501140212db4de4fe1c90f937136d4dab1cf0a0121bb7e63c666ba2ff71b20"
+    },
+    {
+      "code": "LIE",
+      "file": "/data/global/lie-adm1.geojson",
+      "count": 11,
+      "bytes": 10250,
+      "sha256": "ef873393b052a44d48eb6b1d05cce5e21ef713ba01e973b1cfef4b71bcd4b944"
+    },
+    {
+      "code": "LKA",
+      "file": "/data/global/lka-adm3.geojson",
+      "count": 330,
+      "bytes": 441455,
+      "sha256": "2f0f2017ce0c9bb7e23ca2246cba3cdb5331270644585a3d53d0daf41fa324e5"
+    },
+    {
+      "code": "LSO",
+      "file": "/data/global/lso-adm2.geojson",
+      "count": 78,
+      "bytes": 152262,
+      "sha256": "774b15748504ed457113cac9fcbc390192292fa34b24bd57600b75e430f14f75"
+    },
+    {
+      "code": "LTU",
+      "file": "/data/global/ltu-adm2.geojson",
+      "count": 60,
+      "bytes": 145652,
+      "sha256": "79dc5b82d7b0b0cc78ca80eae9bbad9eeca39c45200845be594ce2fbd915392c"
+    },
+    {
+      "code": "LUX",
+      "file": "/data/global/lux-adm3.geojson",
+      "count": 102,
+      "bytes": 94166,
+      "sha256": "84012d330ee71ef2f2e72fd34d71fb744160ea99c94a0f96d45ca39d52bfee14"
+    },
+    {
+      "code": "LVA",
+      "file": "/data/global/lva-adm2.geojson",
+      "count": 589,
+      "bytes": 671407,
+      "sha256": "5c1f89da66f61078b2e496c0e1e0a99f2a994474605f72db794c36501e817ab8"
+    },
+    {
+      "code": "MAC",
+      "file": "/data/supplements/mac.geojson",
+      "count": 8,
+      "bytes": 33461,
+      "sha256": "0e73ee05f05551f840de6f3a60bd6c6d7bb8608740e0c362579c1db9a47a6698"
+    },
+    {
+      "code": "MAR",
+      "file": "/data/global/mar-adm2.geojson",
+      "count": 75,
+      "bytes": 198781,
+      "sha256": "1ed9c8d6408d9b18aa3cd9990561482b754c0a314bd9be9bfbe2d5fb8f4c704c"
+    },
+    {
+      "code": "MCO",
+      "file": "/data/global/mco-adm2.geojson",
+      "count": 9,
+      "bytes": 4995,
+      "sha256": "5f08c7f51f96cf584d90019803b0dcc4e5fcaacfa01a9c99dd7a9b9a5cff24f4"
+    },
+    {
+      "code": "MDA",
+      "file": "/data/supplements/mda.geojson",
+      "count": 982,
+      "bytes": 3185868,
+      "sha256": "4b16a357199997af1a275695046fd267ff84c7a1883da0def22718c46f536d75"
+    },
+    {
+      "code": "MDG",
+      "file": "/data/global/mdg-adm2.geojson",
+      "count": 119,
+      "bytes": 481812,
+      "sha256": "64cf78c9d79fde98f25052e5a058588caddc6b96f3dc8b34c8041724dad34170"
+    },
+    {
+      "code": "MDV",
+      "file": "/data/global/mdv-adm2.geojson",
+      "count": 21,
+      "bytes": 20741,
+      "sha256": "47102cc12cfc8b085b06cf62b5d51115c361cb21cae9b145944752130fa8b654"
+    },
+    {
+      "code": "MEX",
+      "file": "/data/global/mex-adm2.geojson",
+      "count": 2457,
+      "bytes": 2743767,
+      "sha256": "1da9d92d7d96370213d09ef5d08561e264091f4e0f309bd2e362ca2bd4f9d3f7"
+    },
+    {
+      "code": "MHL",
+      "file": "/data/supplements/mhl.geojson",
+      "count": 152,
+      "bytes": 611355,
+      "sha256": "1b662bd519eb78af6cda72aa70972ef661f42c6056a60bc998e49f92381e20da"
+    },
+    {
+      "code": "MKD",
+      "file": "/data/global/mkd-adm2.geojson",
+      "count": 84,
+      "bytes": 101469,
+      "sha256": "cca24a8462da2e6d52065e69883e7d478ed81a89056756c53bf5cb782b69fdfe"
+    },
+    {
+      "code": "MLI",
+      "file": "/data/global/mli-adm3.geojson",
+      "count": 701,
+      "bytes": 711663,
+      "sha256": "183203815f2808b8b080ab9ecd65ad13c65e7c99ef9bdfe6a248acad8fa9f74b"
+    },
+    {
+      "code": "MLT",
+      "file": "/data/global/mlt-adm1.geojson",
+      "count": 68,
+      "bytes": 44277,
+      "sha256": "f0e3d6be7402edaa82dcd73f799cf6faccb492c6160aeb9b4f366737e003ee0d"
+    },
+    {
+      "code": "MMR",
+      "file": "/data/global/mmr-adm3.geojson",
+      "count": 330,
+      "bytes": 863246,
+      "sha256": "a80b786d671c863b21c957b5a16dde73ca1837ca18a8196f78b4d939840628d3"
+    },
+    {
+      "code": "MNE",
+      "file": "/data/supplements/mne.geojson",
+      "count": 25,
+      "bytes": 318587,
+      "sha256": "294f436aeb80061b1108c25cef8d611a707bf3e032d7f9c3ff87a64c30d9bb2d"
+    },
+    {
+      "code": "MNG",
+      "file": "/data/global/mng-adm2.geojson",
+      "count": 339,
+      "bytes": 483884,
+      "sha256": "f92465a6cfe635d22c3956a3b840ecf246af3e72f7bb2cb84433aa170f7b4659"
+    },
+    {
+      "code": "MNP",
+      "file": "/data/global/mnp-adm2.geojson",
+      "count": 4,
+      "bytes": 5440,
+      "sha256": "a015d1e714a71269d52fc0ef78440350728c8aef9570badb835c21c1d74a817d"
+    },
+    {
+      "code": "MOZ",
+      "file": "/data/global/moz-adm2.geojson",
+      "count": 159,
+      "bytes": 506465,
+      "sha256": "3d0aebadf14c05f797744aefe0648d0e02418de17f908044397014ed106613d0"
+    },
+    {
+      "code": "MRT",
+      "file": "/data/global/mrt-adm2.geojson",
+      "count": 57,
+      "bytes": 53810,
+      "sha256": "8c85321736dc5a35fcbcf251dd24925bd18944895b61a67aa08b1d4a3cf7956f"
+    },
+    {
+      "code": "MSR",
+      "file": "/data/supplements/msr.geojson",
+      "count": 3,
+      "bytes": 2366,
+      "sha256": "25c69010b5c506d7efe2ed8ca4807e90cd09a303fc556d1724f35a61e2bfd566"
+    },
+    {
+      "code": "MTQ",
+      "file": "/data/global/mtq-adm3.geojson",
+      "count": 4,
+      "bytes": 13285,
+      "sha256": "51592289d8b4c0036491970479d6b2e9edcb7e55489cf4b7eafff33ed56dca63"
+    },
+    {
+      "code": "MUS",
+      "file": "/data/supplements/mus.geojson",
+      "count": 164,
+      "bytes": 855667,
+      "sha256": "4e9f81f4f2cba855560277b48ac4ca6fe86b242bc353a055f0266373a05a2703"
+    },
+    {
+      "code": "MWI",
+      "file": "/data/global/mwi-adm2.geojson",
+      "count": 28,
+      "bytes": 131053,
+      "sha256": "59d62bbbdd92ba4ae56cb8505c6ee5e5ac653edf13887d07fc27d52aade86801"
+    },
+    {
+      "code": "MYS",
+      "file": "/data/global/mys-adm2.geojson",
+      "count": 159,
+      "bytes": 266598,
+      "sha256": "f8368fecbc3fd2e5085f7d4d6527ebae93958fbe76f2f82f5ee4a35b0f6f6b77"
+    },
+    {
+      "code": "MYT",
+      "file": "/data/global/myt-adm4.geojson",
+      "count": 17,
+      "bytes": 14823,
+      "sha256": "0cf4fccb0d62403e9e6f9d062ece7c4fb8c1f3f5ebc31cca3eead79cb05b5f85"
+    },
+    {
+      "code": "NAM",
+      "file": "/data/global/nam-adm2.geojson",
+      "count": 109,
+      "bytes": 147750,
+      "sha256": "017ce7f09cd5f5d340683ec9005935629ffff26c1367562614f59ad7589e1ec3"
+    },
+    {
+      "code": "NCL",
+      "file": "/data/supplements/ncl.geojson",
+      "count": 33,
+      "bytes": 1966097,
+      "sha256": "9286f1d50fa99c0c169ab245b0901e58fb69537f9058bee61c329c1fcb98ebe0"
+    },
+    {
+      "code": "NER",
+      "file": "/data/global/ner-adm3.geojson",
+      "count": 266,
+      "bytes": 230404,
+      "sha256": "26add718d97d48f00c47f9c3fd255a84f46c9ed3a11b23b2f200203113462f98"
+    },
+    {
+      "code": "NGA",
+      "file": "/data/global/nga-adm2.geojson",
+      "count": 774,
+      "bytes": 923311,
+      "sha256": "84de922775a170a2b560d728f749d47a2ffa3cb9a1ab587b89a7d6f0a80c4dcd"
+    },
+    {
+      "code": "NIC",
+      "file": "/data/global/nic-adm2.geojson",
+      "count": 153,
+      "bytes": 254593,
+      "sha256": "b093953498fd833ed97d6bddaea199b89db734b57f93e85b825f11a98ae074ca"
+    },
+    {
+      "code": "NIU",
+      "file": "/data/global/niu-adm1.geojson",
+      "count": 14,
+      "bytes": 9135,
+      "sha256": "4425bfac336052bcf98203053f499cf72f00e070c79e70731708168020b309d6"
+    },
+    {
+      "code": "NLD",
+      "file": "/data/global/nld-adm2.geojson",
+      "count": 344,
+      "bytes": 295696,
+      "sha256": "e8615e217a33136c4e417796724ed4e19fd2cdcd84119d5ea329c049cf4c849e"
+    },
+    {
+      "code": "NOR",
+      "file": "/data/global/nor-adm2.geojson",
+      "count": 431,
+      "bytes": 1169160,
+      "sha256": "e375d028919cea2b53c3663ec33a816c723c15691229b309597465912eaf8f26"
+    },
+    {
+      "code": "NPL",
+      "file": "/data/global/npl-adm3.geojson",
+      "count": 774,
+      "bytes": 999042,
+      "sha256": "e4f1dabcef518fd2569cf51546c3570d063b6fe63d5196c5bd09bec83d5f59bb"
+    },
+    {
+      "code": "NRU",
+      "file": "/data/global/nru-adm1.geojson",
+      "count": 14,
+      "bytes": 9627,
+      "sha256": "b216c22cf5c5956870ac21d3b81496cc0d738656d0b172f261b38f739c135627"
+    },
+    {
+      "code": "NZL",
+      "file": "/data/global/nzl-adm2.geojson",
+      "count": 88,
+      "bytes": 485674,
+      "sha256": "f6aabab1678a3547ad518ce5c2102f402be0be32d8bd9332077ec8633b6b6a1a"
+    },
+    {
+      "code": "OMN",
+      "file": "/data/global/omn-adm2.geojson",
+      "count": 61,
+      "bytes": 123244,
+      "sha256": "614c1957908578030201f0fe7e16640b078afc9da2dd9752ff15e9ff177e9a22"
+    },
+    {
+      "code": "PAK",
+      "file": "/data/global/pak-adm3.geojson",
+      "count": 554,
+      "bytes": 750589,
+      "sha256": "47cc0baf20867bee5f99f19c4fb10bfbdc3069357dd74d5bee7e4d41921817a5"
+    },
+    {
+      "code": "PAN",
+      "file": "/data/global/pan-adm2.geojson",
+      "count": 76,
+      "bytes": 440608,
+      "sha256": "d05cbc8a707ef5dab88f668302b53dfcc6d49d938059df0c245a86a89925543c"
+    },
+    {
+      "code": "PER",
+      "file": "/data/global/per-adm2.geojson",
+      "count": 196,
+      "bytes": 829843,
+      "sha256": "b5e6efe1810e7646c9729eb755f66fb85c008e43dced62cf7ff4cdb8d0aed6b2"
+    },
+    {
+      "code": "PHL",
+      "file": "/data/global/phl-adm3.geojson",
+      "count": 1647,
+      "bytes": 2186173,
+      "sha256": "cfe80f3e133c186757482896b690ae5a358592c61956c70edfa8afd1fae2224f"
+    },
+    {
+      "code": "PLW",
+      "file": "/data/global/plw-adm2.geojson",
+      "count": 77,
+      "bytes": 57649,
+      "sha256": "ee59f88cb96d214d8bc7599643d9512bdf13c88c8f643e8b80534e65e39ab214"
+    },
+    {
+      "code": "PNG",
+      "file": "/data/global/png-adm2.geojson",
+      "count": 87,
+      "bytes": 342693,
+      "sha256": "bda19f3ff1091d6fdbd8d460d632c086e990b46ea545a83e41dc5f2d8b94a4c6"
+    },
+    {
+      "code": "POL",
+      "file": "/data/global/pol-adm3.geojson",
+      "count": 2478,
+      "bytes": 2996910,
+      "sha256": "48777ae360520fac815914f9d1d2a4b107392bf61cc9e659a33efd58e0851331"
+    },
+    {
+      "code": "PRI",
+      "file": "/data/global/pri-adm2.geojson",
+      "count": 78,
+      "bytes": 88894,
+      "sha256": "a3e0e576350c93e3180f83fc7e79a5a05a365850abb4ce5e4c95793a9137c214"
+    },
+    {
+      "code": "PRK",
+      "file": "/data/global/prk-adm2.geojson",
+      "count": 179,
+      "bytes": 220163,
+      "sha256": "9200afab959a2b2d091dc7e06112ef2f315adb0a6727ff20264d71a846b03523"
+    },
+    {
+      "code": "PRT",
+      "file": "/data/global/prt-adm2.geojson",
+      "count": 311,
+      "bytes": 206582,
+      "sha256": "afe4879e2483c4afd481c76d08365bfdbce8b07072c57a9e8d87b05727ca306e"
+    },
+    {
+      "code": "PRY",
+      "file": "/data/global/pry-adm2.geojson",
+      "count": 247,
+      "bytes": 563023,
+      "sha256": "3d3bf6ff958751ea954359ab203b4b5a6f66709e6ce3fc9bbe9b0eff91991e1a"
+    },
+    {
+      "code": "PSE",
+      "file": "/data/global/pse-adm2.geojson",
+      "count": 16,
+      "bytes": 33038,
+      "sha256": "b867cab51305c54ee38eab2cbabcfbb5bdf0f28ccd8111723f766040695e9015"
+    },
+    {
+      "code": "PYF",
+      "file": "/data/supplements/pyf.geojson",
+      "count": 48,
+      "bytes": 1632037,
+      "sha256": "b0490c31813921d7b6a8efecff106ac41a1e9179d52c2423e030c79b090e0ef2"
+    },
+    {
+      "code": "QAT",
+      "file": "/data/global/qat-adm2.geojson",
+      "count": 79,
+      "bytes": 64472,
+      "sha256": "69319ee49241f2c17c835c6455baf72837a8e04498c750196f2f3d19e7c94975"
+    },
+    {
+      "code": "REU",
+      "file": "/data/global/reu-adm3.geojson",
+      "count": 4,
+      "bytes": 6888,
+      "sha256": "25aebfb33f5dea6bfffab075b288cb825d3bc4ec36c01789ebefddae2b41a615"
+    },
+    {
+      "code": "ROU",
+      "file": "/data/global/rou-adm2.geojson",
+      "count": 3235,
+      "bytes": 3085822,
+      "sha256": "70619bee2fffa6680f54db830e18c3181aeb1bb14115f7e15a6b0f092317fd63"
+    },
+    {
+      "code": "RUS",
+      "file": "/data/global/rus-adm2.geojson",
+      "count": 2327,
+      "bytes": 3588933,
+      "sha256": "66e627f7b34b7488711f96786ccda9b91f5b3bb5ca13a9d77fb146cfc9f4e743"
+    },
+    {
+      "code": "RWA",
+      "file": "/data/global/rwa-adm2.geojson",
+      "count": 30,
+      "bytes": 60583,
+      "sha256": "8422b2f2809c565e89c7366fdac92b07035b1ea806dff0c8ab0783cc22d6cdff"
+    },
+    {
+      "code": "SAU",
+      "file": "/data/global/sau-adm2.geojson",
+      "count": 147,
+      "bytes": 495803,
+      "sha256": "ab9f4f2e56eee2683eb7d6fba748b068d8b238b7698227a5fdccc786bc541ac0"
+    },
+    {
+      "code": "SDN",
+      "file": "/data/global/sdn-adm2.geojson",
+      "count": 189,
+      "bytes": 225559,
+      "sha256": "7f70ffaad44b4d551d524b59769f1b7c7d02dabdc69b81d6f1ddf1c8a60b9d4e"
+    },
+    {
+      "code": "SEN",
+      "file": "/data/global/sen-adm2.geojson",
+      "count": 45,
+      "bytes": 90759,
+      "sha256": "1e5fb157feef2efcfa66e711391724f2be261fe2c46f102b88e0938794d100c5"
+    },
+    {
+      "code": "SGP",
+      "file": "/data/global/sgp-adm2.geojson",
+      "count": 55,
+      "bytes": 42312,
+      "sha256": "075afb9091cca9e107a37e0efb4881db5541fce56e19df08425dd01c461f5339"
+    },
+    {
+      "code": "SHN",
+      "file": "/data/supplements/shn.geojson",
+      "count": 3,
+      "bytes": 3342,
+      "sha256": "611f5505325cf42d17a0e32802746cdc3872e83acfc4e104d54d4e9334c76e61"
+    },
+    {
+      "code": "SLB",
+      "file": "/data/global/slb-adm2.geojson",
+      "count": 50,
+      "bytes": 176059,
+      "sha256": "37890c94507969d61cddb83ce94d7c3f861099a746ca8e3418baac9cb231a4fb"
+    },
+    {
+      "code": "SLE",
+      "file": "/data/global/sle-adm2.geojson",
+      "count": 14,
+      "bytes": 59375,
+      "sha256": "88227893f47e802b8ac103324c169af4abe0c8d9e2a91b7e473fba6d3214d6d4"
+    },
+    {
+      "code": "SLV",
+      "file": "/data/global/slv-adm2.geojson",
+      "count": 272,
+      "bytes": 213823,
+      "sha256": "488a5202368b9b989d4f5384d6350f1861d6976038f3faae8dee9ffba61a115e"
+    },
+    {
+      "code": "SMR",
+      "file": "/data/global/smr-adm1.geojson",
+      "count": 9,
+      "bytes": 5980,
+      "sha256": "b810fed3c8c5c2d9ed0076b121d4cb81abff44791bb2e9fb3ae853be572956d7"
+    },
+    {
+      "code": "SOL",
+      "file": "/data/supplements/sol.geojson",
+      "count": 19,
+      "bytes": 43169,
+      "sha256": "4ed2495e5e7300207fd744c72b5f2ae8efd2d2a40212df895d038ced4921d1d8"
+    },
+    {
+      "code": "SOM",
+      "file": "/data/global/som-adm2.geojson",
+      "count": 118,
+      "bytes": 90403,
+      "sha256": "81498ccc01dada6f54fc4a5e877572b75714a98d96f0f04769ab92cd0f2dd212"
+    },
+    {
+      "code": "SPM",
+      "file": "/data/supplements/spm.geojson",
+      "count": 2,
+      "bytes": 2869,
+      "sha256": "6435a4c08e563f44bc05d66894af440bf36548ffd998aab49de6a340463d2310"
+    },
+    {
+      "code": "SRB",
+      "file": "/data/global/srb-adm2.geojson",
+      "count": 145,
+      "bytes": 232935,
+      "sha256": "072f17f2f8c4d2563f97f8fb5cc616fb930f8fa20478555d81a6330022ac1cc0"
+    },
+    {
+      "code": "SSD",
+      "file": "/data/global/ssd-adm2.geojson",
+      "count": 78,
+      "bytes": 104926,
+      "sha256": "92572122b1e20dc13f866e94e9b9c10070aa7269fd69ff0e5742d21a2f7311cf"
+    },
+    {
+      "code": "STP",
+      "file": "/data/global/stp-adm2.geojson",
+      "count": 7,
+      "bytes": 8507,
+      "sha256": "0ab0da34623ec6b2014aa9c4170ae24de17960976f8ef9658000aceaffe6da30"
+    },
+    {
+      "code": "SUR",
+      "file": "/data/global/sur-adm2.geojson",
+      "count": 59,
+      "bytes": 67544,
+      "sha256": "856ac193a43e85f6d4f55060227281d20715288fa23750d9ab1aed3438f291cf"
+    },
+    {
+      "code": "SVK",
+      "file": "/data/global/svk-adm3.geojson",
+      "count": 2927,
+      "bytes": 2190992,
+      "sha256": "a1681abeeab41dfc48ee5c02e5e7ef030a0ab8afd4362aa53edd0aa5b8ebd919"
+    },
+    {
+      "code": "SVN",
+      "file": "/data/global/svn-adm2.geojson",
+      "count": 212,
+      "bytes": 248518,
+      "sha256": "224e1b5df8313f7f559a30f30f1bb99144a09994ce40aa3d607a11b5754e7978"
+    },
+    {
+      "code": "SWE",
+      "file": "/data/global/swe-adm2.geojson",
+      "count": 290,
+      "bytes": 296153,
+      "sha256": "c90258cb41fc151ca903ac4cf23f6c6e9d963670fbbbadffb0c80271d09c76de"
+    },
+    {
+      "code": "SWZ",
+      "file": "/data/global/swz-adm2.geojson",
+      "count": 53,
+      "bytes": 59384,
+      "sha256": "9f87ff172d7f2b6587a78041353d0d1b5bed46f4e5c2453e7f8405be615d7e82"
+    },
+    {
+      "code": "SXM",
+      "file": "/data/supplements/sxm.geojson",
+      "count": 8,
+      "bytes": 54630,
+      "sha256": "dc1c44f777f4b17bf31ed1627bcaa8681b4da524ce262a652a6a8ffe82cb08e7"
+    },
+    {
+      "code": "SYC",
+      "file": "/data/global/syc-adm3.geojson",
+      "count": 27,
+      "bytes": 30409,
+      "sha256": "944f7059f0f59b03ad2a42a28d427995a15cab3e42dc6c68eff859f6479a0a9c"
+    },
+    {
+      "code": "SYR",
+      "file": "/data/global/syr-adm2.geojson",
+      "count": 61,
+      "bytes": 101814,
+      "sha256": "9a4a7a6080a499f594dac46ccad6191460d9829df5290b4cf297cd339e9b64ed"
+    },
+    {
+      "code": "TCA",
+      "file": "/data/supplements/tca.geojson",
+      "count": 6,
+      "bytes": 7783,
+      "sha256": "d7f12d0944a8f5fc33398e081a555d6ddd906edeef1befedf1b129b85850f097"
+    },
+    {
+      "code": "TCD",
+      "file": "/data/global/tcd-adm2.geojson",
+      "count": 70,
+      "bytes": 81788,
+      "sha256": "c4ce252500b96bf5c43dacc3c359b091445928f7bd44f2cefd17c09c2e22e669"
+    },
+    {
+      "code": "TGO",
+      "file": "/data/global/tgo-adm2.geojson",
+      "count": 37,
+      "bytes": 42381,
+      "sha256": "7a53af1a4c49986b70fb419c57f284ffe85a5696d555b98909b4aed2be9a5fbd"
+    },
+    {
+      "code": "THA",
+      "file": "/data/global/tha-adm2.geojson",
+      "count": 928,
+      "bytes": 1819457,
+      "sha256": "6c006f9bf4cb2401497914847bd582070129b279509ebf01e6d041084ba55238"
+    },
+    {
+      "code": "TJK",
+      "file": "/data/global/tjk-adm2.geojson",
+      "count": 58,
+      "bytes": 94548,
+      "sha256": "72119b38779165d807ba814a265e4a0fcc4d6abbbdd5a81536ca2c25c8b7d6da"
+    },
+    {
+      "code": "TKM",
+      "file": "/data/global/tkm-adm2.geojson",
+      "count": 59,
+      "bytes": 90979,
+      "sha256": "a0de176a618eb439956ad44bfa40375aebb7b19c53670ad5407e21574b07f83a"
+    },
+    {
+      "code": "TLS",
+      "file": "/data/global/tls-adm2.geojson",
+      "count": 65,
+      "bytes": 84356,
+      "sha256": "44a09a648a3953171e83e8885b6d25f6bb4b8e4041aae1ed14cc92dd761cb97a"
+    },
+    {
+      "code": "TON",
+      "file": "/data/global/ton-adm2.geojson",
+      "count": 23,
+      "bytes": 20816,
+      "sha256": "b265346945036d39a0e00e7ba5f233b052ef93490cabf4cd9ab965d8b79ceede"
+    },
+    {
+      "code": "TTO",
+      "file": "/data/supplements/tto.geojson",
+      "count": 15,
+      "bytes": 20514,
+      "sha256": "00d6cee966a292b6012ebd5eba9014b8541716b4424275aa5c13bd0c6eea1a53"
+    },
+    {
+      "code": "TUN",
+      "file": "/data/global/tun-adm2.geojson",
+      "count": 264,
+      "bytes": 334421,
+      "sha256": "4bff46446294f897ef36bc6502e0a9aea5d8cf8fc0e658fe411c9bc8101ef21b"
+    },
+    {
+      "code": "TUR",
+      "file": "/data/global/tur-adm2.geojson",
+      "count": 973,
+      "bytes": 1477965,
+      "sha256": "f6ab20abeb597dfba5c043ed822b053cb16db77437a3036f253159a82c1ad622"
+    },
+    {
+      "code": "TUV",
+      "file": "/data/global/tuv-adm2.geojson",
+      "count": 34,
+      "bytes": 18621,
+      "sha256": "3521af1b835b3fc055c5c5e31c7a523c935abfa5f4775dead064af3f44044ec4"
+    },
+    {
+      "code": "TWN",
+      "file": "/data/global/twn-adm2.geojson",
+      "count": 368,
+      "bytes": 412242,
+      "sha256": "7b042c0065343487481dedf0d3914a61e949b7c5bd919b1ff72811f7f2c258a9"
+    },
+    {
+      "code": "TZA",
+      "file": "/data/global/tza-adm2.geojson",
+      "count": 170,
+      "bytes": 580380,
+      "sha256": "5db6ca0cd049ddbbf1cec6c75ae743d6f69ee935750864035d99068801af3063"
+    },
+    {
+      "code": "UGA",
+      "file": "/data/global/uga-adm3.geojson",
+      "count": 137,
+      "bytes": 140487,
+      "sha256": "5e78ea47742c826f3e9cac68dc6cf1a5a998aa06cc3fb7747c171b9c0d21ccd2"
+    },
+    {
+      "code": "UKR",
+      "file": "/data/global/ukr-adm2.geojson",
+      "count": 495,
+      "bytes": 355286,
+      "sha256": "83df44e67293982b7116e19771102632962cb0cc75dacd488a5236f18b8b8c3f"
+    },
+    {
+      "code": "URY",
+      "file": "/data/global/ury-adm2.geojson",
+      "count": 124,
+      "bytes": 179813,
+      "sha256": "1e6bbe7ed2bef1fa980cd533b10dffa8531aa4a81e8aae4df668cc4e122d2fc4"
+    },
+    {
+      "code": "USA",
+      "file": "/data/usa.geojson",
+      "count": 3233,
+      "bytes": 3763843,
+      "sha256": "51f54d118100c244e148c09ae360106aac0f301c6b8931e2cd30e09a5ae74c00"
+    },
+    {
+      "code": "UZB",
+      "file": "/data/global/uzb-adm2.geojson",
+      "count": 199,
+      "bytes": 212370,
+      "sha256": "0f577fe2dff5819caf33e2692ac2a00bb45d6213232d5f1c55b78cca072c0237"
+    },
+    {
+      "code": "VCT",
+      "file": "/data/global/vct-adm1.geojson",
+      "count": 6,
+      "bytes": 8343,
+      "sha256": "c5d8915e0e5af08f5ce42b8a3c7319ad1feb2b116886f95160fa418394469f8b"
+    },
+    {
+      "code": "VEN",
+      "file": "/data/global/ven-adm2.geojson",
+      "count": 335,
+      "bytes": 686219,
+      "sha256": "5df106ee3c968de0f1e1d0ea9392543f95f709d3a4ea3c35753ae7cc332a2919"
+    },
+    {
+      "code": "VIR",
+      "file": "/data/global/vir-adm3.geojson",
+      "count": 20,
+      "bytes": 17858,
+      "sha256": "5467c292d6bf927e2a9d173b5d0b0ade543581eb3aa9c6c72e3b25f2a4d2e87a"
+    },
+    {
+      "code": "VNM",
+      "file": "/data/global/vnm-adm2.geojson",
+      "count": 708,
+      "bytes": 1216521,
+      "sha256": "f1c0574cf62573b3deba14bb9f5153c1b0b827b852182e8a5479665932cce28d"
+    },
+    {
+      "code": "VUT",
+      "file": "/data/global/vut-adm2.geojson",
+      "count": 65,
+      "bytes": 92874,
+      "sha256": "f385b82ff8b9283e7d3a1f3bfa9d1f9d5184abe25f2db42bfb1fe5d3a46feef0"
+    },
+    {
+      "code": "WLF",
+      "file": "/data/supplements/wlf.geojson",
+      "count": 3,
+      "bytes": 3055,
+      "sha256": "175e6cc1e483cfadb8e1bdec23360e228fc420750a94a3b802cc7808c7438503"
+    },
+    {
+      "code": "WSM",
+      "file": "/data/global/wsm-adm2.geojson",
+      "count": 43,
+      "bytes": 38626,
+      "sha256": "a38fc8051c5dbaba0d474071efb5cd6bbeea662cc2bfa35e3f42c5ed98209a89"
+    },
+    {
+      "code": "YEM",
+      "file": "/data/global/yem-adm2.geojson",
+      "count": 335,
+      "bytes": 382478,
+      "sha256": "65555131804dc47382b1ad11a933702b858cbbc4408d44f1219f9530b3caa71e"
+    },
+    {
+      "code": "ZAF",
+      "file": "/data/global/zaf-adm3.geojson",
+      "count": 213,
+      "bytes": 593637,
+      "sha256": "37948117b7b9f4ba43087dc8a8e8cc263ad8de4ada28f362f407127564186ed9"
+    },
+    {
+      "code": "ZMB",
+      "file": "/data/global/zmb-adm2.geojson",
+      "count": 116,
+      "bytes": 619760,
+      "sha256": "990adb20e1307bca940c762e011935632c027ab9b882674557bdb52bd3351e82"
+    },
+    {
+      "code": "ZWE",
+      "file": "/data/global/zwe-adm2.geojson",
+      "count": 91,
+      "bytes": 219481,
+      "sha256": "125fb712e5efd50510cdb6072fc636dff6521c21d38cd327794a39568fd2f68b"
+    }
+  ]
+}

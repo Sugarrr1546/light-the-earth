@@ -1,0 +1,963 @@
+{
+  "retrievedAt": "2026-10-25",
+  "catalogUrl": "https://www.geoboundaries.org/api/current/gbOpen/ALL/ALL/",
+  "coveredCountriesAndTerritories": 230,
+  "regionalOnly": [
+    "ATF",
+    "BHR",
+    "LBY",
+    "SHN"
+  ],
+  "unavailable": [
+    {
+      "code": "VAT",
+      "name": "梵蒂冈",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        12.45342,
+        41.90332
+      ],
+      "reasonZh": "微型城市国家，无县市等常规地方行政层；整体点亮适用。"
+    },
+    {
+      "code": "SGS",
+      "name": "南乔治亚和南桑威奇群岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -31.06318,
+        -55.6834
+      ],
+      "reasonZh": "无人常住/科研与驻地领地；未发现普通县市层级，不能将岛屿自然轮廓冒称行政县。"
+    },
+    {
+      "code": "IOT",
+      "name": "英属印度洋领地",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        71.34835,
+        -6.19083
+      ],
+      "reasonZh": "未找到适用县市单位；岛屿自然分区需要与行政层级清楚区分。"
+    },
+    {
+      "code": "PCN",
+      "name": "皮特凯恩群岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -128.31754,
+        -24.36458
+      ],
+      "reasonZh": "未找到县市层级；4岛的自然分区可以未来作为岛屿记录，不应虚构县市。"
+    },
+    {
+      "code": "FLK",
+      "name": "福克兰群岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -58.7386,
+        -51.60891
+      ],
+      "reasonZh": "Geofabrik取得108个OSM admin_level10面，但实际是农场/产权范围，明确不当县市接入。"
+    },
+    {
+      "code": "VGB",
+      "name": "英属维尔京群岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -64.63661,
+        18.42661
+      ],
+      "reasonZh": "保留国家/地区级点亮；未核验到适合再分发的基层面边界，不能推定不存在细分。"
+    },
+    {
+      "code": "ABW",
+      "name": "阿鲁巴",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -69.9728,
+        12.5174
+      ],
+      "reasonZh": "CBS官方有8地区/更细GAC统计区，但未取得已核验许可的多边形源；不可称不存在细分。"
+    },
+    {
+      "code": "CUW",
+      "name": "库拉索",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -68.92058,
+        12.14504
+      ],
+      "reasonZh": "未核验到可直接接入的开放基层多边形；保留整体记录与后续CBS统计区来源调查。"
+    },
+    {
+      "code": "ESH",
+      "name": "西撒哈拉",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -12.6303,
+        23.96759
+      ],
+      "reasonZh": "未核验在当前显示范围内可复用且许可清楚的细分源；存在行政与控制边界口径差异，保持范围说明。"
+    },
+    {
+      "code": "MAF",
+      "name": "法属圣马丁",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -63.0494,
+        18.0813
+      ],
+      "reasonZh": "法国官方commune API仅1个整片collectivité；居民区并不自动成为行政县市。"
+    },
+    {
+      "code": "BLM",
+      "name": "圣巴泰勒米",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        -62.83319,
+        17.90199
+      ],
+      "reasonZh": "法国官方commune API仅1个整片collectivité。"
+    },
+    {
+      "code": "HMD",
+      "name": "赫德岛和麦克唐纳群岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        73.50521,
+        -53.10346
+      ],
+      "reasonZh": "无人常住澳大利亚外部领地；没有县市单位。"
+    },
+    {
+      "code": "NFK",
+      "name": "诺福克岛",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        167.95453,
+        -29.03304
+      ],
+      "reasonZh": "未核验可再分发基层多边形；诺福克地方政府统一管辖，社区点记录适用。"
+    },
+    {
+      "code": "KAS",
+      "name": "锡亚琴冰川",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        77.12955,
+        35.34061
+      ],
+      "reasonZh": "现有地图的争议显示单元，不对应常规县市行政区；不据此创造地方行政建制。"
+    },
+    {
+      "code": "ATA",
+      "name": "南极洲",
+      "reason": "No gbOpen local administrative layer in the pinned catalog",
+      "availableLevel": "ADM0",
+      "center": [
+        35.88546,
+        -79.84322
+      ],
+      "reasonZh": "无一般国家县市行政体系；科研站和旅行登陆点可作为后续地点记录，不能伪造县市网格。"
+    }
+  ],
+  "failures": [],
+  "rejectedMetadata": [
+    {
+      "boundaryID": "IND-ADM0-90661403",
+      "boundaryType": "ADM1",
+      "reason": "boundaryID and declared level disagree"
+    }
+  ],
+  "aliases": [
+    {
+      "sourceISO": "XKX",
+      "mapISO": "KOS",
+      "evidence": "geoBoundaries XKX and Natural Earth KOS are both named Kosovo / 科索沃"
+    }
+  ],
+  "supplementAudit": [
+    {
+      "code": "AND",
+      "name": "安道尔",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/and-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/AND/ADM1/",
+        "https://visc.ad/parroquies",
+        "https://visitandorra.com/en/explore-andorra/"
+      ],
+      "note": "2007年来源，实载7个教区／地方自治单位。现有7个parish是地方自治单位，已足够对应一般县市级旅行收藏。改掉统一省/州提示。更细quarts/veinats在部分parish存在，但未核实有全国可再分发的面。",
+      "afterCount": 7
+    },
+    {
+      "code": "ARE",
+      "name": "阿拉伯联合酋长国",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/are-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/ARE/ADM1/",
+        "https://wiki.openstreetmap.org/wiki/United_Arab_Emirates",
+        "https://sdi.gov.abudhabi/sdi/opendata.html",
+        "https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/0"
+      ],
+      "note": "375个OSM城区／社区，集中在有可用面的城市；部分覆盖且源面存在少量重叠。未有县市面的位置仍可先记录国家级回忆，不代表全国375个官方县市。",
+      "afterCount": 375
+    },
+    {
+      "code": "ATG",
+      "name": "安提瓜和巴布达",
+      "before": "ADM1",
+      "beforeCount": 8,
+      "beforeUrl": "/data/global/atg-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/ATG/ADM1/",
+        "https://statistics.gov.ag/wp-content/uploads/2017/12/2015-Health-Statistical-Digest.pdf"
+      ],
+      "note": "2009年来源，实载8个教区与属地。6个教区+2属地，现有8单元是当地地方划分；没有可核实的全国更细县市面。不要将教区误称省/州。",
+      "afterCount": 8
+    },
+    {
+      "code": "BHR",
+      "name": "巴林",
+      "before": "ADM1",
+      "beforeCount": 4,
+      "beforeUrl": "/data/global/bhr-adm1.geojson",
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/BHR/ADM1/",
+        "https://www.bahrain.gov.bh/wps/wcm/connect/628e2f3b-e9f6-4a3a-9369-a12a14c5d951/27872%2BeGOV%2BUNDESA%2BStudy%2BTour%2B2015%2BV16_HR%2B%281%29.pdf?CVID=oF-oxIr&MOD=AJPERES",
+        "https://www.moh.gov.bh/Contact/HealthCenter/AHC?lang=en"
+      ],
+      "note": "2017年来源，实载4个省；地区／街区候选。已从当前GCC PBF验证：仅Block101（OSM10）与Block1056（OSM9）两个更细局部面。无全国地区/blocks细分，保留4省基础覆盖并注明更细数据不足；官方Locator有块边界但未获再分发授权，不直接搬运。",
+      "afterCount": 4
+    },
+    {
+      "code": "BRB",
+      "name": "巴巴多斯",
+      "before": "ADM1",
+      "beforeCount": 11,
+      "beforeUrl": "/data/global/brb-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/BRB/ADM1/",
+        "https://stats.gov.bb/census2020/"
+      ],
+      "note": "2005年来源，实载11个教区。11个parishes可作为地方层级。官方609个ED是统计枚举区，并非县市；未核实开放再分发矢量边界，不将609个网格冒充县市。",
+      "afterCount": 11
+    },
+    {
+      "code": "DMA",
+      "name": "多米尼克",
+      "before": "ADM1",
+      "beforeCount": 10,
+      "beforeUrl": "/data/global/dma-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/DMA/ADM1/",
+        "https://stats.gov.dm/wp-content/uploads/2019/06/Environmental_Statistics_2011.pdf"
+      ],
+      "note": "2005年来源，实载10个教区。10教区是当地地方行政/人口区域，现有标签可改为地方级；未核实更细全国行政面。",
+      "afterCount": 10
+    },
+    {
+      "code": "GRD",
+      "name": "格林纳达",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/grd-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/GRD/ADM1/",
+        "https://climateresilience.gov.gd/wp-content/uploads/2025/10/2025-GCREWS-Ecoflow.pdf"
+      ],
+      "note": "2017年来源，实载7个教区与属地。6教区+1属地的地方划分，应标教区/属地。需保留来源年份及Carriacou/Petite Martinique海岛覆盖提示。",
+      "afterCount": 7
+    },
+    {
+      "code": "GRL",
+      "name": "格陵兰",
+      "before": "ADM1",
+      "beforeCount": 6,
+      "beforeUrl": "/data/global/grl-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/GRL/ADM1/",
+        "https://nunagis.gl/en/web-services/",
+        "https://bank.stat.gl/pxweb/en/Greenland/Greenland__BE__BE01__BE0120/BEXSTC.px/"
+      ],
+      "note": "2020年来源，实载6个市镇与国家公园。已验证当前OSM仅Igaliku和Qassiarsuk两个地方OSM5面。保留现5市镇+公园；17历史统计区的全国开放边界仍未找到。可以另加这2个局部点亮面但不得写全境县市补齐。",
+      "afterCount": 6
+    },
+    {
+      "code": "KNA",
+      "name": "圣基茨和尼维斯",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/kna-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/KNA/ADM1/",
+        "https://www.clgf.org.uk/default/assets/File/Country_profiles/Saint_Kitts_and_Nevis.pdf",
+        "https://nia.gov.kn/wp-content/uploads/2025/03/Census-Report-2021-2022.pdf"
+      ],
+      "note": "2021年来源，实载14个教区。14教区（Saint Kitts9、Nevis5）是可用地方单元；Nevis有自治机构，Saint Kitts教区是行政区，未核实更细全域再分发矢量。",
+      "afterCount": 14
+    },
+    {
+      "code": "LBY",
+      "name": "利比亚",
+      "before": "ADM1",
+      "beforeCount": 22,
+      "beforeUrl": "/data/global/lby-adm1.geojson",
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/LBY/ADM1/",
+        "https://data.humdata.org/dataset/cod-ab-lby",
+        "https://dtm.iom.int/sites/g/files/tmzbdl1461/files/reports/Mobility%20Tracking%20Methodology%202017%20V.11%20-%20Mobility%20Tracking%20DTM%20Libya%20%28E....pdf"
+      ],
+      "note": "2021年来源，实载22个历史行政区。现有22区偏粗但覆盖全域；HDX ADM2同样22，并不增加县市细节。100/104市镇IOM数据中很多为点，不能用点生成虚构县市面。当前OSM仅1个本国level6闭合面，维持22区并标更细覆盖不足。",
+      "afterCount": 22
+    },
+    {
+      "code": "LIE",
+      "name": "列支敦士登",
+      "before": "ADM1",
+      "beforeCount": 11,
+      "beforeUrl": "/data/global/lie-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/LIE/ADM1/",
+        "https://www.llv.li/en/national-administration/public-procurement-department/provisions-communities/who-are-customers-communities-"
+      ],
+      "note": "2017年来源，实载11个市镇。11 municipalities正是基层市镇，已达到县市级语义；更新标签即可，不应因ADM1号而标不足。",
+      "afterCount": 11
+    },
+    {
+      "code": "MDA",
+      "name": "摩尔多瓦",
+      "before": "ADM1",
+      "beforeCount": 37,
+      "beforeUrl": "/data/global/mda-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MDA/ADM1/",
+        "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+        "https://statistica.gov.md/files/files/publicatii_electronice/Statistica_teritoriala/Statistica_teritoriala_editia_2024.pdf"
+      ],
+      "note": "982个OSM市镇／乡，数量与摩尔多瓦统计局2025年口径一致（915乡村、67城），几何来自OSM，不是官方边界认证。",
+      "afterCount": 982
+    },
+    {
+      "code": "MHL",
+      "name": "马绍尔群岛",
+      "before": "ADM1",
+      "beforeCount": 24,
+      "beforeUrl": "/data/global/mhl-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MHL/ADM1/",
+        "https://data.humdata.org/dataset/cod-ab-mhl"
+      ],
+      "note": "官方HDX源SHP实际载入152个地方面；目录记载153且注明缺MH0609，忠实保留下载版152个。包含岛屿／地方细分，并非连续陆海全域覆盖。",
+      "afterCount": 152
+    },
+    {
+      "code": "MLT",
+      "name": "马耳他",
+      "before": "ADM1",
+      "beforeCount": 68,
+      "beforeUrl": "/data/global/mlt-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MLT/ADM1/",
+        "https://nao.gov.mt/wp-content/uploads/2022/11/LC2022Nov.pdf",
+        "https://portal.data.gov.mt/mt/data-service/inspire-directive-annex-iii-nso?license_id=CC-BY-4.0&organization=national-statistics-office&res_format=wfs&tags=Statistical+Units+Vector"
+      ],
+      "note": "2022年来源，实载68个地方议会辖区。68 Local Councils就是基层市镇；当前2022边界已属当地地方级。官方LAU2也68，可核验，重新标注即可。",
+      "afterCount": 68
+    },
+    {
+      "code": "MNE",
+      "name": "黑山",
+      "before": "ADM1",
+      "beforeCount": 23,
+      "beforeUrl": "/data/global/mne-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MNE/ADM1/",
+        "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+        "https://www.gov.me/en/article/delegation-of-congress-of-local-and-regional-authorities-of-council-of-europe-visits-ministry-of-finance"
+      ],
+      "note": "25个OSM市镇，包含Tuzi、Zeta；来源下载快照为2026年。",
+      "afterCount": 25
+    },
+    {
+      "code": "MUS",
+      "name": "毛里求斯",
+      "before": "ADM1",
+      "beforeCount": 12,
+      "beforeUrl": "/data/global/mus-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MUS/ADM1/",
+        "https://localgovernment.govmu.org/Pages/TheMinistry.aspx",
+        "https://housing.govmu.org/Pages/Services/The-Cartographic-Section---Sale-of-Maps.aspx"
+      ],
+      "note": "164个OSM地方区域，含VCA方位细分及市镇；4组来源区域有重叠，不能视为官方164县市或全国完整覆盖。保留原面并明确部分覆盖。",
+      "afterCount": 164
+    },
+    {
+      "code": "NIU",
+      "name": "纽埃",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/niu-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/NIU/ADM1/",
+        "https://www.gov.nu/government"
+      ],
+      "note": "2020年来源，实载14个村。14村已是基层行政/选区，不应标省州。现有CC BY4来源可直接保留。",
+      "afterCount": 14
+    },
+    {
+      "code": "NRU",
+      "name": "瑙鲁",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/nru-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/NRU/ADM1/",
+        "https://www.nauru.gov.nr/government-information-office/media-release/nauru-national-sustainable-development-strategy-public-consultation-covers-all-14-districts.aspx"
+      ],
+      "note": "2005年来源，实载14个区。14districts属于小国地方单元，已达县市级可用语义。",
+      "afterCount": 14
+    },
+    {
+      "code": "SMR",
+      "name": "圣马力诺",
+      "before": "ADM1",
+      "beforeCount": 9,
+      "beforeUrl": "/data/global/smr-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/SMR/ADM1/",
+        "https://www.gov.sm/pub1/GovSM/dam/jcr%3A42a8bce9-6303-446b-ad8e-8dbc3e74ff37/PROFILO%2520SALUTE%25202022_ultima%2520versione_24_7_2023_DEFINITIVO.pdf"
+      ],
+      "note": "2017年来源，实载9个堡区／市镇。9 Castelli为地方自治单元，现有ADM1可标当地地方级。",
+      "afterCount": 9
+    },
+    {
+      "code": "TTO",
+      "name": "特立尼达和多巴哥",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/tto-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/TTO/ADM1/",
+        "https://rdlg.gov.tt/our-ministry/",
+        "https://cso.gov.tt/subjects/population-and-vital-statistics/population/",
+        "https://hub.arcgis.com/maps/3717258e46c2443cbb000c351064c96d/about",
+        "https://www.arcgis.com/sharing/rest/content/items/122d5885924142e082effaf294e18a65/info/metadata/metadata.xml?format=default&output=html"
+      ],
+      "note": "Natural Earth 2022来源：14个特立尼达地方区／市，加1个多巴哥自治辖区，共15个；补入旧图缺失的Arima。按地方政府口径合并原源中多巴哥东、西两面；保留真实边界。1:10m概化历史快照，非地籍或更细社区边界。",
+      "afterCount": 15
+    },
+    {
+      "code": "VCT",
+      "name": "圣文森特和格林纳丁斯",
+      "before": "ADM1",
+      "beforeCount": 6,
+      "beforeUrl": "/data/global/vct-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/VCT/ADM1/",
+        "https://nemo.gov.vc/nemo/images/PoliciesActsAndBills/Final-Country-Profile-SVG-DEC2014.pdf"
+      ],
+      "note": "2017年来源，实载6个教区。6parishes是地方行政划分，已达小国县市级等价。暂无证实开放全国更细行政面。",
+      "afterCount": 6
+    },
+    {
+      "code": "VAT",
+      "name": "梵蒂冈",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.vaticanstate.va/"
+      ],
+      "note": "微型城市国家，无县市等常规地方行政层；整体点亮适用。",
+      "afterCount": 0
+    },
+    {
+      "code": "SGS",
+      "name": "南乔治亚和南桑威奇群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.gov.gs/"
+      ],
+      "note": "无人常住/科研与驻地领地；未发现普通县市层级，不能将岛屿自然轮廓冒称行政县。",
+      "afterCount": 0
+    },
+    {
+      "code": "IOT",
+      "name": "英属印度洋领地",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.biot.gov.io/"
+      ],
+      "note": "未找到适用县市单位；岛屿自然分区需要与行政层级清楚区分。",
+      "afterCount": 0
+    },
+    {
+      "code": "SHN",
+      "name": "圣赫勒拿",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个岛屿属地；来源文件为2022年快照，无统一区划有效年份。当前为圣赫勒拿、阿森松与特里斯坦-达库尼亚3个属地，尚未细到圣赫勒拿各区。",
+      "afterCount": 3
+    },
+    {
+      "code": "PCN",
+      "name": "皮特凯恩群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.government.pn/"
+      ],
+      "note": "未找到县市层级；4岛的自然分区可以未来作为岛屿记录，不应虚构县市。",
+      "afterCount": 0
+    },
+    {
+      "code": "AIA",
+      "name": "安圭拉",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 15 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 15
+    },
+    {
+      "code": "FLK",
+      "name": "福克兰群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/united-kingdom/falklands.html"
+      ],
+      "note": "Geofabrik取得108个OSM admin_level10面，但实际是农场/产权范围，明确不当县市接入。",
+      "afterCount": 0
+    },
+    {
+      "code": "CYM",
+      "name": "开曼群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.openstreetmap.org/api/0.6/relations?relations=13777966,13777967,13777968,13777969,13777970,13777971",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "六个实际OSM admin_level8地方区；不使用含GADM来源的gbHumanitarian数据。",
+      "afterCount": 6
+    },
+    {
+      "code": "BMU",
+      "name": "百慕大",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 11 个教区与市；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 11
+    },
+    {
+      "code": "VGB",
+      "name": "英属维尔京群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://data.humdata.org/dataset/cod-ab-vgb",
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1.geojson"
+      ],
+      "note": "保留国家/地区级点亮；未核验到适合再分发的基层面边界，不能推定不存在细分。",
+      "afterCount": 0
+    },
+    {
+      "code": "TCA",
+      "name": "特克斯和凯科斯群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 6 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 6
+    },
+    {
+      "code": "MSR",
+      "name": "蒙特塞拉特",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个历史教区；来源文件为2022年快照，无统一区划有效年份。历史教区可能包含已疏散地区，不代表现行地方政府。",
+      "afterCount": 3
+    },
+    {
+      "code": "JEY",
+      "name": "泽西",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/guernsey-jersey.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "12个教区；Nominatim补全Grouville relation9238571。",
+      "afterCount": 12
+    },
+    {
+      "code": "GGY",
+      "name": "根西",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/guernsey-jersey.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "根西主岛10教区，加Alderney与Sark独立岛屿单位，混合基层层级；Herm等小岛依OSM覆盖，不能声称全群岛县级无缺口。",
+      "afterCount": 12
+    },
+    {
+      "code": "IMN",
+      "name": "马恩岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/isle-of-man.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "OSM 24个level8教区和镇；部分地方政府历史上已合并，数量不能解读为当前地方政府数。",
+      "afterCount": 24
+    },
+    {
+      "code": "SOL",
+      "name": "索马里兰",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "显示范围子集：从SOM ADM2保留超过50%源几何面积落在现有world SOL轮廓内的19区；不裁边界，不代表主权归属，争议及边界附近覆盖应标partial。",
+      "afterCount": 19
+    },
+    {
+      "code": "COK",
+      "name": "库克群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/australia-oceania/cook-islands.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "混合层级：10个岛屿单元+Rarotonga的5个OSM level8地方区。5区union覆盖Rarotonga源轮廓100%，保留源名称（包括Takitumu），不宣称等于当前地方政府数量。",
+      "afterCount": 15
+    },
+    {
+      "code": "ABW",
+      "name": "阿鲁巴",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://cbs.aw/wp/index.php/category/environment-space/gac-geographical-address-and-classification/"
+      ],
+      "note": "CBS官方有8地区/更细GAC统计区，但未取得已核验许可的多边形源；不可称不存在细分。",
+      "afterCount": 0
+    },
+    {
+      "code": "CUW",
+      "name": "库拉索",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.cbs.cw/"
+      ],
+      "note": "未核验到可直接接入的开放基层多边形；保留整体记录与后续CBS统计区来源调查。",
+      "afterCount": 0
+    },
+    {
+      "code": "ESH",
+      "name": "西撒哈拉",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "未核验在当前显示范围内可复用且许可清楚的细分源；存在行政与控制边界口径差异，保持范围说明。",
+      "afterCount": 0
+    },
+    {
+      "code": "SPM",
+      "name": "圣皮埃尔和密克隆",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 2 个市镇／commune；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 2
+    },
+    {
+      "code": "WLF",
+      "name": "瓦利斯和富图纳",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个传统王国地方单元；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 3
+    },
+    {
+      "code": "MAF",
+      "name": "法属圣马丁",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=978&format=geojson&geometry=contour"
+      ],
+      "note": "法国官方commune API仅1个整片collectivité；居民区并不自动成为行政县市。",
+      "afterCount": 0
+    },
+    {
+      "code": "BLM",
+      "name": "圣巴泰勒米",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=977&format=geojson&geometry=contour"
+      ],
+      "note": "法国官方commune API仅1个整片collectivité。",
+      "afterCount": 0
+    },
+    {
+      "code": "PYF",
+      "name": "法属波利尼西亚",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=987&format=geojson&geometry=contour",
+        "https://github.com/etalab/contours-administratifs",
+        "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise"
+      ],
+      "note": "法国官方 API Géo 载入48个市镇，按INSEE编号保留原文名称；边界年份见原始来源，下载于2026-10-26。",
+      "afterCount": 48
+    },
+    {
+      "code": "NCL",
+      "name": "新喀里多尼亚",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://data.gouv.nc/explore/dataset/communes-nc-limites-terrestres-simplifiees/information/",
+        "https://data.gouv.nc/api/explore/v2.1/catalog/datasets/communes-nc-limites-terrestres-simplifiees/exports/geojson"
+      ],
+      "note": "官方新喀里多尼亚开放数据平台33个市镇陆地边界，数据集更新于2024-12-06，来源许可为LO2。保留INSEE市镇编号和原文名称。",
+      "afterCount": 33
+    },
+    {
+      "code": "ATF",
+      "name": "法属南部和南极领地",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 4 个领地区；来源文件为2022年快照，无统一区划有效年份。仅载来源中的4个地区，未补画南极领地；部分覆盖。",
+      "afterCount": 4
+    },
+    {
+      "code": "ALA",
+      "name": "奥兰",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "按明确16市镇名单从FIN ADM3筛选；保留原几何和源shapeID，需独立命名空间避免与FIN重复ID；世界海岸粗轮廓会误删岛屿，未以相交面积筛选。",
+      "afterCount": 16
+    },
+    {
+      "code": "FRO",
+      "name": "法罗群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/faroe-islands.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "29个OSM admin_level7 kommune；未混入更细的村域与上级区。",
+      "afterCount": 29
+    },
+    {
+      "code": "CYN",
+      "name": "北塞浦路斯土耳其共和国",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "显示范围子集：从CYP ADM2保留超过50%源几何面积落在现有world CYN轮廓内的203个单元；不裁边界，不代表主权归属或当前政治行政建制，边界附近可能有缺口，应标partial。",
+      "afterCount": 203
+    },
+    {
+      "code": "MAC",
+      "name": "澳门",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/asia/china/macau.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "7堂区及路氹区域；以OSM级别6为准。Nominatim补全嘉模堂区relation5758865。",
+      "afterCount": 8
+    },
+    {
+      "code": "HKG",
+      "name": "香港",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 18 个区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 18
+    },
+    {
+      "code": "HMD",
+      "name": "赫德岛和麦克唐纳群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://heardisland.antarctica.gov.au/"
+      ],
+      "note": "无人常住澳大利亚外部领地；没有县市单位。",
+      "afterCount": 0
+    },
+    {
+      "code": "NFK",
+      "name": "诺福克岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.norfolkisland.gov.nf/"
+      ],
+      "note": "未核验可再分发基层多边形；诺福克地方政府统一管辖，社区点记录适用。",
+      "afterCount": 0
+    },
+    {
+      "code": "KAS",
+      "name": "锡亚琴冰川",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/about/disputed-boundaries-policy/"
+      ],
+      "note": "现有地图的争议显示单元，不对应常规县市行政区；不据此创造地方行政建制。",
+      "afterCount": 0
+    },
+    {
+      "code": "ATA",
+      "name": "南极洲",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.ats.aq/e/antarctictreaty.html"
+      ],
+      "note": "无一般国家县市行政体系；科研站和旅行登陆点可作为后续地点记录，不能伪造县市网格。",
+      "afterCount": 0
+    },
+    {
+      "code": "SXM",
+      "name": "荷属圣马丁",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://data.humdata.org/dataset/cod-ab-sxm",
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1.geojson"
+      ],
+      "note": "源catalog直接列明开放许可。",
+      "afterCount": 8
+    }
+  ],
+  "updatedAt": "2026-10-26"
+}

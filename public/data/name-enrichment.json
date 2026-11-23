@@ -1,0 +1,77 @@
+{
+  "62558664B9496053300630": {
+    "name": "海淀区",
+    "originalName": "Haidian District",
+    "aliases": [
+      "海淀",
+      "北京海淀",
+      "北京海淀区"
+    ],
+    "parentName": "北京市",
+    "entity": "Q393454",
+    "nameSource": "https://www.wikidata.org/wiki/Q393454",
+    "coordinate": [
+      116.29214,
+      39.95812
+    ],
+    "validation": "Source English name matched; Wikidata coordinate falls inside this geoBoundaries source polygon.",
+    "license": "CC0",
+    "retrievedAt": "2026-10-22"
+  },
+  "62558664B78645465192316": {
+    "name": "浦东新区",
+    "originalName": "Pudong New District",
+    "aliases": [
+      "浦东",
+      "上海浦东",
+      "上海浦东新区"
+    ],
+    "parentName": "上海市",
+    "entity": "Q125378",
+    "nameSource": "https://www.wikidata.org/wiki/Q125378",
+    "coordinate": [
+      121.53972222222,
+      31.223055555556
+    ],
+    "validation": "Source English name matched; Wikidata coordinate falls inside this geoBoundaries source polygon.",
+    "license": "CC0",
+    "retrievedAt": "2026-10-22"
+  },
+  "62558664B82614955491445": {
+    "name": "西湖区",
+    "originalName": "Xihu District",
+    "aliases": [
+      "杭州西湖",
+      "杭州西湖区"
+    ],
+    "parentName": "杭州市",
+    "entity": "Q155441",
+    "nameSource": "https://www.wikidata.org/wiki/Q155441",
+    "coordinate": [
+      120.12549,
+      30.2619
+    ],
+    "validation": "Source English name matched; Wikidata coordinate falls inside this geoBoundaries source polygon.",
+    "license": "CC0",
+    "retrievedAt": "2026-10-22"
+  },
+  "62558664B96431386194678": {
+    "name": "大理市",
+    "originalName": "Dali City",
+    "aliases": [
+      "大理",
+      "云南大理",
+      "云南大理市"
+    ],
+    "parentName": "大理白族自治州",
+    "entity": "Q855228",
+    "nameSource": "https://www.wikidata.org/wiki/Q855228",
+    "coordinate": [
+      100.30027777777778,
+      25.68111111111111
+    ],
+    "validation": "Source English name matched; Wikidata coordinate falls inside this geoBoundaries source polygon.",
+    "license": "CC0",
+    "retrievedAt": "2026-10-22"
+  }
+}

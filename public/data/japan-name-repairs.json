@@ -1,0 +1,915 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "purpose": "Additive verified Japanese feature-name repairs; no geometry or ID replacement",
+    "geometrySnapshotYear": "2017 (source metadata; preserved)",
+    "officialNameSnapshots": [
+      "2017-01-01",
+      "2025-01-01"
+    ],
+    "attribution": "国土交通省 国土数値情報（行政区域データ）を利用して地名対応表を作成",
+    "license2025": "CC BY 4.0",
+    "sourceURLs": [
+      "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+      "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html"
+    ],
+    "sourceArchiveSHA256": {
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_03_GML.zip": "be3f862c7c4f2674a34d33625d252d7b2d0e28de7f7d5b778d44cd183b112f05",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip": "2bf2dcec6378533d487ad16153581ca5f01e79fb8850a713508fade069fc7d98",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_12_GML.zip": "2d29571fe497034e0984a036552a87aabb6f095712bec447104549c8383ad54a",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_19_GML.zip": "e34d372fb6f13cf569777e3d5e394c41cca9c2de631bc2bb13bca205911bb2a8",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_03_GML.zip": "6db1628d6af14f04699a8957d576b8fe954cf363ccb8aab0cbe284561c49a588",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip": "6f00c4266e536d884c8cab8cf3c825308063d5655b8e0555c916d38d750424bd",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_12_GML.zip": "06c8f490bf5062234f9cbbdff078da6f67b405b3ee362ae0481c470f43356147",
+      "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_19_GML.zip": "c8cc8d44a8b52a7458d61a2dfc136fe140ffac3da5552087ef71232819d8bad6"
+    },
+    "repairCount": 26,
+    "boundaryUnassignedCount": 1
+  },
+  "repairs": {
+    "GB-22064153B22262945271660": {
+      "name": "普代村",
+      "aliases": [
+        "普代村",
+        "岩手県普代村"
+      ],
+      "parentName": "岩手県 / 下閉伊郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_03_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_03_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "03485",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99369369,
+        "overlapFraction2017": 0.99419166,
+        "officialName2017": "普代村",
+        "officialName2025": "普代村",
+        "officialCode2017": "03485",
+        "officialCode2025": "03485",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B42815652831414": {
+      "name": "一戸町",
+      "aliases": [
+        "一戸町",
+        "岩手県一戸町"
+      ],
+      "parentName": "岩手県 / 二戸郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_03_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_03_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "03524",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99795898,
+        "overlapFraction2017": 0.99795898,
+        "officialName2017": "一戸町",
+        "officialName2025": "一戸町",
+        "officialCode2017": "03524",
+        "officialCode2025": "03524",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B52893965353266": {
+      "name": "九戸村",
+      "aliases": [
+        "九戸村",
+        "岩手県九戸村"
+      ],
+      "parentName": "岩手県 / 九戸郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_03_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_03_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "03506",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99627584,
+        "overlapFraction2017": 0.99627584,
+        "officialName2017": "九戸村",
+        "officialName2025": "九戸村",
+        "officialCode2017": "03506",
+        "officialCode2025": "03506",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B55567026325895": {
+      "name": "葛巻町",
+      "aliases": [
+        "葛巻町",
+        "岩手県葛巻町"
+      ],
+      "parentName": "岩手県 / 岩手郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_03_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_03_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "03302",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99836096,
+        "overlapFraction2017": 0.99836096,
+        "officialName2017": "葛巻町",
+        "officialName2025": "葛巻町",
+        "officialCode2017": "03302",
+        "officialCode2025": "03302",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B60558378980420": {
+      "name": "小鹿野町",
+      "aliases": [
+        "小鹿野町",
+        "埼玉県小鹿野町"
+      ],
+      "parentName": "埼玉県 / 秩父郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11365",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99742496,
+        "overlapFraction2017": 0.99742496,
+        "officialName2017": "小鹿野町",
+        "officialName2025": "小鹿野町",
+        "officialCode2017": "11365",
+        "officialCode2025": "11365",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B11347435242213": {
+      "name": "横瀬町",
+      "aliases": [
+        "横瀬町",
+        "埼玉県横瀬町"
+      ],
+      "parentName": "埼玉県 / 秩父郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11361",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99508279,
+        "overlapFraction2017": 0.99508279,
+        "officialName2017": "横瀬町",
+        "officialName2025": "横瀬町",
+        "officialCode2017": "11361",
+        "officialCode2025": "11361",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B41312501853097": {
+      "name": "毛呂山町",
+      "aliases": [
+        "毛呂山町",
+        "埼玉県毛呂山町"
+      ],
+      "parentName": "埼玉県 / 入間郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11326",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.98995306,
+        "overlapFraction2017": 0.98995306,
+        "officialName2017": "毛呂山町",
+        "officialName2025": "毛呂山町",
+        "officialCode2017": "11326",
+        "officialCode2025": "11326",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B55422469295161": {
+      "name": "越生町",
+      "aliases": [
+        "越生町",
+        "埼玉県越生町"
+      ],
+      "parentName": "埼玉県 / 入間郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11327",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99476997,
+        "overlapFraction2017": 0.99476997,
+        "officialName2017": "越生町",
+        "officialName2025": "越生町",
+        "officialCode2017": "11327",
+        "officialCode2025": "11327",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B14191280892347": {
+      "name": "松伏町",
+      "aliases": [
+        "松伏町",
+        "埼玉県松伏町"
+      ],
+      "parentName": "埼玉県 / 北葛飾郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11465",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99252706,
+        "overlapFraction2017": 0.99252706,
+        "officialName2017": "松伏町",
+        "officialName2025": "松伏町",
+        "officialCode2017": "11465",
+        "officialCode2025": "11465",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B51464692079899": {
+      "name": "宮代町",
+      "aliases": [
+        "宮代町",
+        "埼玉県宮代町"
+      ],
+      "parentName": "埼玉県 / 南埼玉郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11442",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.98981772,
+        "overlapFraction2017": 0.98981772,
+        "officialName2017": "宮代町",
+        "officialName2025": "宮代町",
+        "officialCode2017": "11442",
+        "officialCode2025": "11442",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B81183812222249": {
+      "name": "杉戸町",
+      "aliases": [
+        "杉戸町",
+        "埼玉県杉戸町"
+      ],
+      "parentName": "埼玉県 / 北葛飾郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11464",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.98947893,
+        "overlapFraction2017": 0.98947893,
+        "officialName2017": "杉戸町",
+        "officialName2025": "杉戸町",
+        "officialCode2017": "11464",
+        "officialCode2025": "11464",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B1420949553929": {
+      "name": "伊奈町",
+      "aliases": [
+        "伊奈町",
+        "埼玉県伊奈町"
+      ],
+      "parentName": "埼玉県 / 北足立郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11301",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99437745,
+        "overlapFraction2017": 0.99437745,
+        "officialName2017": "伊奈町",
+        "officialName2025": "伊奈町",
+        "officialCode2017": "11301",
+        "officialCode2025": "11301",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B79488910412367": {
+      "name": "川島町",
+      "aliases": [
+        "川島町",
+        "埼玉県川島町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11346",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99146635,
+        "overlapFraction2017": 0.99146635,
+        "officialName2017": "川島町",
+        "officialName2025": "川島町",
+        "officialCode2017": "11346",
+        "officialCode2025": "11346",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B83233320380459": {
+      "name": "ときがわ町",
+      "aliases": [
+        "ときがわ町",
+        "埼玉県ときがわ町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11349",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.9951467,
+        "overlapFraction2017": 0.9951467,
+        "officialName2017": "ときがわ町",
+        "officialName2025": "ときがわ町",
+        "officialCode2017": "11349",
+        "officialCode2025": "11349",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B7091731953162": {
+      "name": "嵐山町",
+      "aliases": [
+        "嵐山町",
+        "埼玉県嵐山町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11342",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.9888122,
+        "overlapFraction2017": 0.9888122,
+        "officialName2017": "嵐山町",
+        "officialName2025": "嵐山町",
+        "officialCode2017": "11342",
+        "officialCode2025": "11342",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B42446330332241": {
+      "name": "滑川町",
+      "aliases": [
+        "滑川町",
+        "埼玉県滑川町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11341",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99379564,
+        "overlapFraction2017": 0.99379564,
+        "officialName2017": "滑川町",
+        "officialName2025": "滑川町",
+        "officialCode2017": "11341",
+        "officialCode2025": "11341",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B84652164446594": {
+      "name": "鳩山町",
+      "aliases": [
+        "鳩山町",
+        "埼玉県鳩山町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11348",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99323839,
+        "overlapFraction2017": 0.99323839,
+        "officialName2017": "鳩山町",
+        "officialName2025": "鳩山町",
+        "officialCode2017": "11348",
+        "officialCode2025": "11348",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B63829453739833": {
+      "name": "寄居町",
+      "aliases": [
+        "寄居町",
+        "埼玉県寄居町"
+      ],
+      "parentName": "埼玉県 / 大里郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11408",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99367927,
+        "overlapFraction2017": 0.99367927,
+        "officialName2017": "寄居町",
+        "officialName2025": "寄居町",
+        "officialCode2017": "11408",
+        "officialCode2025": "11408",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B93622399148332": {
+      "name": "小川町",
+      "aliases": [
+        "小川町",
+        "埼玉県小川町"
+      ],
+      "parentName": "埼玉県 / 比企郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11343",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99358788,
+        "overlapFraction2017": 0.99358788,
+        "officialName2017": "小川町",
+        "officialName2025": "小川町",
+        "officialCode2017": "11343",
+        "officialCode2025": "11343",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B74511540229227": {
+      "name": "東秩父村",
+      "aliases": [
+        "東秩父村",
+        "埼玉県東秩父村"
+      ],
+      "parentName": "埼玉県 / 秩父郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11369",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99617816,
+        "overlapFraction2017": 0.99617816,
+        "officialName2017": "東秩父村",
+        "officialName2025": "東秩父村",
+        "officialCode2017": "11369",
+        "officialCode2025": "11369",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B67559782883122": {
+      "name": "皆野町",
+      "aliases": [
+        "皆野町",
+        "埼玉県皆野町"
+      ],
+      "parentName": "埼玉県 / 秩父郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11362",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99480245,
+        "overlapFraction2017": 0.99480245,
+        "officialName2017": "皆野町",
+        "officialName2025": "皆野町",
+        "officialCode2017": "11362",
+        "officialCode2025": "11362",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B18486924389046": {
+      "name": "美里町",
+      "aliases": [
+        "美里町",
+        "埼玉県美里町"
+      ],
+      "parentName": "埼玉県 / 児玉郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11381",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99409464,
+        "overlapFraction2017": 0.99409464,
+        "officialName2017": "美里町",
+        "officialName2025": "美里町",
+        "officialCode2017": "11381",
+        "officialCode2025": "11381",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B25299017238233": {
+      "name": "長瀞町",
+      "aliases": [
+        "長瀞町",
+        "埼玉県長瀞町"
+      ],
+      "parentName": "埼玉県 / 秩父郡",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11363",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99437851,
+        "overlapFraction2017": 0.99437851,
+        "officialName2017": "長瀞町",
+        "officialName2025": "長瀞町",
+        "officialCode2017": "11363",
+        "officialCode2025": "11363",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    },
+    "GB-22064153B42729341445185": {
+      "name": "千葉県所属未定地",
+      "aliases": [
+        "千葉県所属未定地",
+        "所属未定地"
+      ],
+      "parentName": "千葉県",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_12_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_12_GML.zip"
+      ],
+      "nameStatus": "boundary-unassigned",
+      "nameConfidence": "high",
+      "officialCode": "12000",
+      "expectedOriginalName": "?????",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.87447396,
+        "overlapFraction2017": 0.87721526,
+        "officialName2017": "所属未定地",
+        "officialName2025": "所属未定地",
+        "officialCode2017": null,
+        "officialCode2025": "12000",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "国土数値情報の正式属性は「所属未定地」。市町村への所属は未定のため、近隣市名を割り当てない。"
+    },
+    "GB-22064153B20100015994007": {
+      "name": "さいたま市西区",
+      "aliases": [
+        "さいたま市西区",
+        "埼玉県さいたま市西区"
+      ],
+      "parentName": "埼玉県 / さいたま市",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_11_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_11_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "11101",
+      "expectedOriginalName": "",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.94397343,
+        "overlapFraction2017": 0.94397343,
+        "officialName2017": "さいたま市西区",
+        "officialName2025": "さいたま市西区",
+        "officialCode2017": "11101",
+        "officialCode2025": "11101",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。小さな境界片であり、公式西区との重なりは約94.4%。代表点も公式西区内。"
+    },
+    "GB-22064153B45156088025009": {
+      "name": "富士吉田市",
+      "aliases": [
+        "富士吉田市",
+        "山梨県富士吉田市"
+      ],
+      "parentName": "山梨県",
+      "nameSource": "国土交通省 国土数値情報 N03 行政区域データ",
+      "nameSourceURLs": [
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2025/N03-20250101_19_GML.zip",
+        "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html",
+        "https://nlftp.mlit.go.jp/ksj/gml/data/N03/N03-2017/N03-170101_19_GML.zip"
+      ],
+      "nameStatus": "official-name-verified",
+      "nameConfidence": "high",
+      "officialCode": "19202",
+      "expectedOriginalName": "?????",
+      "nameEvidence": {
+        "method": "equal-area polygon intersection with official N03; independently matched 2017 and 2025",
+        "overlapFraction2025": 0.99696704,
+        "overlapFraction2017": 0.99696704,
+        "officialName2017": "富士吉田市",
+        "officialName2025": "富士吉田市",
+        "officialCode2017": "19202",
+        "officialCode2025": "19202",
+        "sourceGeometryYear": "2017",
+        "nameSourceDates": [
+          "2017-01-01",
+          "2025-01-01"
+        ]
+      },
+      "nameNote": "2017年と2025年の公式行政区域データで同名を確認。元の境界と識別子を保持。"
+    }
+  }
+}

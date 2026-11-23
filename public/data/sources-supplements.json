@@ -1,0 +1,4102 @@
+{
+  "retrievedAt": "2026-10-26",
+  "description": "Audited supplements to 21 former ADM1-only and 37 former missing countries/territories. Administrative meaning, history, partial coverage and licenses are source-specific. No private travel records.",
+  "classifications": {
+    "AND": {
+      "label": "教区／地方自治单位",
+      "detailTier": "local",
+      "coverageNote": "2007年来源，实载7个教区／地方自治单位。现有7个parish是地方自治单位，已足够对应一般县市级旅行收藏。改掉统一省/州提示。更细quarts/veinats在部分parish存在，但未核实有全国可再分发的面。",
+      "partial": false
+    },
+    "ARE": {
+      "label": "酋长国；市镇候选",
+      "detailTier": "regional",
+      "coverageNote": "2017年来源，实载7个酋长国；市镇候选。可接入375个OSM城区/社区面，保留部分覆盖与轻微同级重叠说明，不能称375官方县市；Abu Dhabi的3市镇OSM6也另附。源只有部分城市细分，不能全域替换7酋长国而不提示。",
+      "partial": false
+    },
+    "ATG": {
+      "label": "教区与属地",
+      "detailTier": "local",
+      "coverageNote": "2009年来源，实载8个教区与属地。6个教区+2属地，现有8单元是当地地方划分；没有可核实的全国更细县市面。不要将教区误称省/州。",
+      "partial": false
+    },
+    "BHR": {
+      "label": "省；地区／街区候选",
+      "detailTier": "regional",
+      "coverageNote": "2017年来源，实载4个省；地区／街区候选。已从当前GCC PBF验证：仅Block101（OSM10）与Block1056（OSM9）两个更细局部面。无全国地区/blocks细分，保留4省基础覆盖并注明更细数据不足；官方Locator有块边界但未获再分发授权，不直接搬运。",
+      "partial": false
+    },
+    "BRB": {
+      "label": "教区",
+      "detailTier": "local",
+      "coverageNote": "2005年来源，实载11个教区。11个parishes可作为地方层级。官方609个ED是统计枚举区，并非县市；未核实开放再分发矢量边界，不将609个网格冒充县市。",
+      "partial": false
+    },
+    "DMA": {
+      "label": "教区",
+      "detailTier": "local",
+      "coverageNote": "2005年来源，实载10个教区。10教区是当地地方行政/人口区域，现有标签可改为地方级；未核实更细全国行政面。",
+      "partial": false
+    },
+    "GRD": {
+      "label": "教区与属地",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载7个教区与属地。6教区+1属地的地方划分，应标教区/属地。需保留来源年份及Carriacou/Petite Martinique海岛覆盖提示。",
+      "partial": false
+    },
+    "GRL": {
+      "label": "市镇与国家公园",
+      "detailTier": "local",
+      "coverageNote": "2020年来源，实载6个市镇与国家公园。已验证当前OSM仅Igaliku和Qassiarsuk两个地方OSM5面。保留现5市镇+公园；17历史统计区的全国开放边界仍未找到。可以另加这2个局部点亮面但不得写全境县市补齐。",
+      "partial": false
+    },
+    "KNA": {
+      "label": "教区",
+      "detailTier": "local",
+      "coverageNote": "2021年来源，实载14个教区。14教区（Saint Kitts9、Nevis5）是可用地方单元；Nevis有自治机构，Saint Kitts教区是行政区，未核实更细全域再分发矢量。",
+      "partial": false
+    },
+    "LBY": {
+      "label": "历史行政区",
+      "detailTier": "regional",
+      "coverageNote": "2021年来源，实载22个历史行政区。现有22区偏粗但覆盖全域；HDX ADM2同样22，并不增加县市细节。100/104市镇IOM数据中很多为点，不能用点生成虚构县市面。当前OSM仅1个本国level6闭合面，维持22区并标更细覆盖不足。",
+      "partial": false
+    },
+    "LIE": {
+      "label": "市镇",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载11个市镇。11 municipalities正是基层市镇，已达到县市级语义；更新标签即可，不应因ADM1号而标不足。",
+      "partial": false
+    },
+    "MDA": {
+      "label": "市镇／乡",
+      "detailTier": "local",
+      "coverageNote": "2020年来源，实载37个市镇／乡。接入当前OSM level8的982面（67城+915乡），数量与官方2025一致；国家覆盖面合并后匹配当前OSM国界，几何无实质同级重叠。",
+      "partial": false
+    },
+    "MHL": {
+      "label": "岛屿／地方细分区",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载24个岛屿／地方细分区。接入HDX本地下载的2021 ADM2原始SHP，实际152面。官方metadata宣称153且明示缺MH0609，必须按实际152披露。不使用缩放有误的geoservices。",
+      "partial": false
+    },
+    "MLT": {
+      "label": "地方议会辖区",
+      "detailTier": "local",
+      "coverageNote": "2022年来源，实载68个地方议会辖区。68 Local Councils就是基层市镇；当前2022边界已属当地地方级。官方LAU2也68，可核验，重新标注即可。",
+      "partial": false
+    },
+    "MNE": {
+      "label": "市镇",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载23个市镇。原2017已有23市镇，本身并非省州但过时。当前OSM level6 25面包含Tuzi和Zeta，可更新到现行基层市镇。level8多为地籍/聚落，不应自动当新一级county。",
+      "partial": false
+    },
+    "MUS": {
+      "label": "村委会区／市镇",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载12个村委会区／市镇。当前OSM level8 164面提供大量VCA和市镇（含Rodrigues本地面）。官方130 Village Councils，OSM某些VCA拆方位部分且4组有重叠，不能写成官方164县市全覆盖。建议标源部分/重叠；不静默裁剪虚构边界。",
+      "partial": false
+    },
+    "NIU": {
+      "label": "村",
+      "detailTier": "local",
+      "coverageNote": "2020年来源，实载14个村。14村已是基层行政/选区，不应标省州。现有CC BY4来源可直接保留。",
+      "partial": false
+    },
+    "NRU": {
+      "label": "区",
+      "detailTier": "local",
+      "coverageNote": "2005年来源，实载14个区。14districts属于小国地方单元，已达县市级可用语义。",
+      "partial": false
+    },
+    "SMR": {
+      "label": "堡区／市镇",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载9个堡区／市镇。9 Castelli为地方自治单元，现有ADM1可标当地地方级。",
+      "partial": false
+    },
+    "TTO": {
+      "label": "市／自治市／区域",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载14个市／自治市／区域。现有14面含Tobago而遗漏Arima，官方Trinidad14市政单位+Tobago应至少15。行政层级本已地方级；更细community数据官方CSO提供PDF，UWIArcGIS公共数据未给许可，ESRI新版禁止离线导出，不能直接再分发。Humanitarian15源为GADM，许可冲突未澄清，不建议拿来替换。",
+      "partial": true
+    },
+    "VCT": {
+      "label": "教区",
+      "detailTier": "local",
+      "coverageNote": "2017年来源，实载6个教区。6parishes是地方行政划分，已达小国县市级等价。暂无证实开放全国更细行政面。",
+      "partial": false
+    }
+  },
+  "datasets": [
+    {
+      "code": "SHN",
+      "name": "圣赫勒拿",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "岛屿属地",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 3,
+      "coverageNote": "Natural Earth 1:10m 实载 3 个岛屿属地；来源文件为2022年快照，无统一区划有效年份。当前为圣赫勒拿、阿森松与特里斯坦-达库尼亚3个属地，尚未细到圣赫勒拿各区。",
+      "detailTier": "regional",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "611f5505325cf42d17a0e32802746cdc3872e83acfc4e104d54d4e9334c76e61",
+      "outputFile": "/data/supplements/shn.geojson",
+      "outputBytes": 3342
+    },
+    {
+      "code": "AIA",
+      "name": "安圭拉",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "地方区",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 15,
+      "coverageNote": "Natural Earth 1:10m 实载 15 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "62efc9482f679731488230ee63a3ef19edb4e214bc7528909240ba4a56be529b",
+      "outputFile": "/data/supplements/aia.geojson",
+      "outputBytes": 10754
+    },
+    {
+      "code": "CYM",
+      "name": "开曼群岛",
+      "cacheFile": "local-selected-CYM.geojson",
+      "format": "osm",
+      "label": "地方区／district",
+      "adminLevel": "ADM1",
+      "source": "© OpenStreetMap contributors · Nominatim geometry / official OSM relation API",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relations?relations=13777966,13777967,13777968,13777969,13777970,13777971",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（OSM下载快照）",
+      "expectedCount": 6,
+      "coverageNote": "六个实际OSM admin_level8地方区；不使用含GADM来源的gbHumanitarian数据。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "a524645654db46aed5c6260c5376266a60d6e20542a979c56b5130abd83cfb42",
+      "alias": false,
+      "outputSHA256": "23501f8db5d6f3e9fb04e446075da3ee013bb6887c16f6bdd2e38a54d84ddd7b",
+      "outputFile": "/data/supplements/cym.geojson",
+      "outputBytes": 76677
+    },
+    {
+      "code": "BMU",
+      "name": "百慕大",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "教区与市",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 11,
+      "coverageNote": "Natural Earth 1:10m 实载 11 个教区与市；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "f3acceef5b798a777eac9e177a531b66a9039f10495c1b0e88c31038a116825d",
+      "outputFile": "/data/supplements/bmu.geojson",
+      "outputBytes": 8548
+    },
+    {
+      "code": "TCA",
+      "name": "特克斯和凯科斯群岛",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "地方区",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 6,
+      "coverageNote": "Natural Earth 1:10m 实载 6 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "d7f12d0944a8f5fc33398e081a555d6ddd906edeef1befedf1b129b85850f097",
+      "outputFile": "/data/supplements/tca.geojson",
+      "outputBytes": 7783
+    },
+    {
+      "code": "MSR",
+      "name": "蒙特塞拉特",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "历史教区",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 3,
+      "coverageNote": "Natural Earth 1:10m 实载 3 个历史教区；来源文件为2022年快照，无统一区划有效年份。历史教区可能包含已疏散地区，不代表现行地方政府。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "25c69010b5c506d7efe2ed8ca4807e90cd09a303fc556d1724f35a61e2bfd566",
+      "outputFile": "/data/supplements/msr.geojson",
+      "outputBytes": 2366
+    },
+    {
+      "code": "JEY",
+      "name": "泽西",
+      "cacheFile": "local-selected-JEY.geojson",
+      "format": "osm",
+      "label": "教区",
+      "adminLevel": "ADM1",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/europe/guernsey-jersey.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 12,
+      "coverageNote": "12个教区；Nominatim补全Grouville relation9238571。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "132fe8aaca802b829c18e7c0f6a347cb96c4310ceaac20aa51560dd13a017904",
+      "alias": false,
+      "outputSHA256": "add4fe0037754b31ce65eb181cc146d0bfc1ce0ede5b7150007f263a55f7fc9a",
+      "outputFile": "/data/supplements/jey.geojson",
+      "outputBytes": 120145
+    },
+    {
+      "code": "GGY",
+      "name": "根西",
+      "cacheFile": "local-selected-GGY.geojson",
+      "format": "osm",
+      "label": "教区／岛屿自治单位",
+      "adminLevel": "ADM1",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/europe/guernsey-jersey.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 12,
+      "coverageNote": "根西主岛10教区，加Alderney与Sark独立岛屿单位，混合基层层级；Herm等小岛依OSM覆盖，不能声称全群岛县级无缺口。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "f5ff776a7b8f04b3fb5c3297448e50d16c91027903472f9bc62ca1cf304cabfa",
+      "alias": false,
+      "outputSHA256": "f7fc96cff18603c67a4159ddc2f7b044621662c1cab896be10ef4494b404a284",
+      "outputFile": "/data/supplements/ggy.geojson",
+      "outputBytes": 155783
+    },
+    {
+      "code": "IMN",
+      "name": "马恩岛",
+      "cacheFile": "local-selected-IMN.geojson",
+      "format": "osm",
+      "label": "教区／镇",
+      "adminLevel": "ADM1",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/europe/isle-of-man.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 24,
+      "coverageNote": "OSM 24个level8教区和镇；部分地方政府历史上已合并，数量不能解读为当前地方政府数。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "51ba1650d0720c983617e0feff16549d99e8b28274d48feab456a36f9e666427",
+      "alias": false,
+      "outputSHA256": "9f3f4671422e6075d5b7426083956dbe7a9693670a21d53c2df9b6d8f176d775",
+      "outputFile": "/data/supplements/imn.geojson",
+      "outputBytes": 190865
+    },
+    {
+      "code": "SOL",
+      "name": "索马里兰",
+      "cacheFile": "local-selected-SOL.geojson",
+      "format": "geoBoundaries",
+      "label": "地方行政区",
+      "adminLevel": "ADM2",
+      "source": "geoBoundaries gbOpen · Global Polio Eradication Initiative (GPEI), Frank Salet",
+      "sourceUrl": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.geojson",
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "year": "2022",
+      "expectedCount": 19,
+      "coverageNote": "显示范围子集：从SOM ADM2保留超过50%源几何面积落在现有world SOL轮廓内的19区；不裁边界，不代表主权归属，争议及边界附近覆盖应标partial。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "aaddd971d4d155bd0db069b8999d0ddee828b53cfb24c772ac14e187b526c24d",
+      "alias": true,
+      "outputSHA256": "4ed2495e5e7300207fd744c72b5f2ae8efd2d2a40212df895d038ced4921d1d8",
+      "outputFile": "/data/supplements/sol.geojson",
+      "outputBytes": 43169
+    },
+    {
+      "code": "COK",
+      "name": "库克群岛",
+      "cacheFile": "local-selected-COK.geojson",
+      "format": "osm",
+      "label": "岛屿／地方区",
+      "adminLevel": "ADM2",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/australia-oceania/cook-islands.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 15,
+      "coverageNote": "混合层级：10个岛屿单元+Rarotonga的5个OSM level8地方区。5区union覆盖Rarotonga源轮廓100%，保留源名称（包括Takitumu），不宣称等于当前地方政府数量。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "3ffb410693016056b1b401e2c784e8089577aed5c81825524afcbc11bee74393",
+      "alias": false,
+      "outputSHA256": "3d0a899f76d7a014f775087e3b9d39022d72e81c28f0a2876420dd4b78f31423",
+      "outputFile": "/data/supplements/cok.geojson",
+      "outputBytes": 48977
+    },
+    {
+      "code": "SPM",
+      "name": "圣皮埃尔和密克隆",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "市镇／commune",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 2,
+      "coverageNote": "Natural Earth 1:10m 实载 2 个市镇／commune；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "6435a4c08e563f44bc05d66894af440bf36548ffd998aab49de6a340463d2310",
+      "outputFile": "/data/supplements/spm.geojson",
+      "outputBytes": 2869
+    },
+    {
+      "code": "WLF",
+      "name": "瓦利斯和富图纳",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "传统王国地方单元",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 3,
+      "coverageNote": "Natural Earth 1:10m 实载 3 个传统王国地方单元；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "175e6cc1e483cfadb8e1bdec23360e228fc420750a94a3b802cc7808c7438503",
+      "outputFile": "/data/supplements/wlf.geojson",
+      "outputBytes": 3055
+    },
+    {
+      "code": "ATF",
+      "name": "法属南部和南极领地",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "领地区",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 4,
+      "coverageNote": "Natural Earth 1:10m 实载 4 个领地区；来源文件为2022年快照，无统一区划有效年份。仅载来源中的4个地区，未补画南极领地；部分覆盖。",
+      "detailTier": "regional",
+      "partial": true,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "98a30007dae3f7f41c92250e4b19a3498dc9232f3272db44fa1a7eae5b66cf43",
+      "outputFile": "/data/supplements/atf.geojson",
+      "outputBytes": 14040
+    },
+    {
+      "code": "ALA",
+      "name": "奥兰",
+      "cacheFile": "local-selected-ALA.geojson",
+      "format": "geoBoundaries",
+      "label": "市镇",
+      "adminLevel": "ADM3",
+      "source": "geoBoundaries gbOpen · OpenStreetMap, Wambacher",
+      "sourceUrl": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.geojson",
+      "license": "Open Data Commons Open Database License 1.0",
+      "year": "2017",
+      "expectedCount": 16,
+      "coverageNote": "按明确16市镇名单从FIN ADM3筛选；保留原几何和源shapeID，需独立命名空间避免与FIN重复ID；世界海岸粗轮廓会误删岛屿，未以相交面积筛选。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "a74047b83666a98a7430f15e6d5027b1b86b7698c3dbe5aca5375cf98c8f0cc8",
+      "alias": true,
+      "outputSHA256": "df829cfbd4aff2ed1610bc9903a207be82e28a56e355e9f11f849357dd84fbce",
+      "outputFile": "/data/supplements/ala.geojson",
+      "outputBytes": 117770
+    },
+    {
+      "code": "FRO",
+      "name": "法罗群岛",
+      "cacheFile": "local-selected-FRO.geojson",
+      "format": "osm",
+      "label": "市镇",
+      "adminLevel": "ADM2",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/europe/faroe-islands.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 29,
+      "coverageNote": "29个OSM admin_level7 kommune；未混入更细的村域与上级区。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "f6abe19812d62f9c6a56eae219b9000d93f1c683bcd9b3c7388029e1ed260986",
+      "alias": false,
+      "outputSHA256": "f2ee0f1c361e01919f14ba41cccbbde85fff7ad08f484bb4ce10b8c5df76bdb6",
+      "outputFile": "/data/supplements/fro.geojson",
+      "outputBytes": 386299
+    },
+    {
+      "code": "CYN",
+      "name": "北塞浦路斯土耳其共和国",
+      "cacheFile": "local-selected-CYN.geojson",
+      "format": "geoBoundaries",
+      "label": "地方行政区",
+      "adminLevel": "ADM2",
+      "source": "geoBoundaries gbOpen · Wikipedia, Cyprus Department of Land Registry and Geometry",
+      "sourceUrl": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.geojson",
+      "license": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+      "year": "2009",
+      "expectedCount": 203,
+      "coverageNote": "显示范围子集：从CYP ADM2保留超过50%源几何面积落在现有world CYN轮廓内的203个单元；不裁边界，不代表主权归属或当前政治行政建制，边界附近可能有缺口，应标partial。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "c80ace129358330208d3ba27966fbc2f5f74aa0f1c11f2f35040bcd9cf0e979e",
+      "alias": true,
+      "outputSHA256": "7fe2248fd1b9974bd8c14fa88e4094c1bfe3927d3b0a5c7ccfc3901fb3a86ed6",
+      "outputFile": "/data/supplements/cyn.geojson",
+      "outputBytes": 341611
+    },
+    {
+      "code": "MAC",
+      "name": "澳门",
+      "cacheFile": "local-selected-MAC.geojson",
+      "format": "osm",
+      "label": "堂区／路氹区域",
+      "adminLevel": "ADM2",
+      "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+      "sourceUrl": "https://download.geofabrik.de/asia/china/macau.html",
+      "license": "Open Database License (ODbL) 1.0",
+      "year": "2026（下载快照；源边界可能含历史区划）",
+      "expectedCount": 8,
+      "coverageNote": "7堂区及路氹区域；以OSM级别6为准。Nominatim补全嘉模堂区relation5758865。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "6d2a7c0b813eceb11cfbcd7e0b69ef8e0bf53b61c97b5602da9f720be4310262",
+      "alias": false,
+      "outputSHA256": "0e73ee05f05551f840de6f3a60bd6c6d7bb8608740e0c362579c1db9a47a6698",
+      "outputFile": "/data/supplements/mac.geojson",
+      "outputBytes": 33461
+    },
+    {
+      "code": "HKG",
+      "name": "香港",
+      "cacheFile": "natural-earth-admin1.geojson",
+      "format": "naturalEarth",
+      "label": "区",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth 1:10m Admin 1",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 18,
+      "coverageNote": "Natural Earth 1:10m 实载 18 个区；来源文件为2022年快照，无统一区划有效年份。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+      "outputSHA256": "e55550edffd03dda93728308049d792b164c12a68185d675ed652d67e62b978d",
+      "outputFile": "/data/supplements/hkg.geojson",
+      "outputBytes": 21304
+    },
+    {
+      "code": "SXM",
+      "name": "荷属圣马丁",
+      "cacheFile": "gbHumanitarian-SXM-ADM1.geojson",
+      "format": "geoBoundaries",
+      "label": "统计区／地方区",
+      "adminLevel": "ADM1",
+      "source": "geoBoundaries gbHumanitarian · Sint Maarten Ministry of Public Housing, Spatial Planning, Environment and Infrastructure (VROMI), HDX",
+      "sourceUrl": "https://data.humdata.org/dataset/cod-ab-sxm",
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "year": "2018",
+      "expectedCount": 8,
+      "coverageNote": "源catalog直接列明开放许可。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "aba5e7d9eb2a8273f2d68a101efd0baed8b9280b17938f0c346ec631da11a2c5",
+      "alias": false,
+      "outputSHA256": "dc1c44f777f4b17bf31ed1627bcaa8681b4da524ce262a652a6a8ffe82cb08e7",
+      "outputFile": "/data/supplements/sxm.geojson",
+      "outputBytes": 54630
+    },
+    {
+      "code": "PYF",
+      "name": "法属波利尼西亚",
+      "cacheFile": "geo-api-fr-PYF.geojson",
+      "format": "frCommune",
+      "label": "市镇／commune",
+      "adminLevel": "ADM2",
+      "source": "Section Cadastre-Topographie de la Polynésie française via Etalab API Géo",
+      "sourceUrl": "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise",
+      "license": "Creative Commons Attribution",
+      "year": "2026（API下载快照；原始几何年份见来源）",
+      "expectedCount": 48,
+      "coverageNote": "法国官方 API Géo 载入48个市镇，按INSEE编号保留原文名称；边界年份见原始来源，下载于2026-10-26。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "97ed05c83d7df1adea52054a9c8b7299532d96b870ba50de3fd683cc2cb75ba2",
+      "downloadUrl": "https://geo.api.gouv.fr/communes?codeDepartement=987&format=geojson&geometry=contour",
+      "outputSHA256": "b0490c31813921d7b6a8efecff106ac41a1e9179d52c2423e030c79b090e0ef2",
+      "outputFile": "/data/supplements/pyf.geojson",
+      "outputBytes": 1632037
+    },
+    {
+      "code": "NCL",
+      "name": "新喀里多尼亚",
+      "cacheFile": "official-NCL-communes.geojson",
+      "format": "frCommune",
+      "label": "市镇／commune",
+      "adminLevel": "ADM2",
+      "source": "Gouvernement de la Nouvelle-Calédonie · Communes (limites terrestres simplifiées)",
+      "sourceUrl": "https://data.gouv.nc/explore/dataset/communes-nc-limites-terrestres-simplifiees/information/",
+      "license": "Licence Ouverte v2.0",
+      "year": "2026（下载快照）",
+      "expectedCount": 33,
+      "coverageNote": "官方新喀里多尼亚开放数据平台33个市镇陆地边界，数据集更新于2024-12-06，来源许可为LO2。保留INSEE市镇编号和原文名称。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "a66991706af278f952650e6008b6f141169eb9c9c5dc286b68385835cc3c5f25",
+      "idField": "code_com",
+      "nameField": "nom_minus",
+      "upstream": {
+        "title": "Communes de la Nouvelle-Calédonie (limites communales terrestres simplifiées)",
+        "title_fr": "Communes de la Nouvelle-Calédonie (limites communales terrestres simplifiées)",
+        "title_en": "Communes de la Nouvelle-Calédonie (limites communales terrestres simplifiées)",
+        "description": "<p>Ce jeu de données présente les limites communales terrestres simplifiées de la Nouvelle-Calédonie.</p>\n\n<p><u>Voici le lien vers le jeu de données original non simplifié du Géorep:</u> <a href=\"https://georep-dtsi-sgt.opendata.arcgis.com/maps/limites-administratives-terrestres-1/about\">Limites administratives communales terrestres (BDADMIN-NC)</a></p>\n<br/>",
+        "description_fr": "<p>Ce jeu de données présente les limites communales terrestres simplifiées de la Nouvelle-Calédonie.</p>\n\n<p><u>Voici le lien vers le jeu de données original non simplifié du Géorep:</u> <a href=\"https://georep-dtsi-sgt.opendata.arcgis.com/maps/limites-administratives-terrestres-1/about\">Limites administratives communales terrestres (BDADMIN-NC)</a></p>\n<br/>",
+        "description_en": "<p>Ce jeu de données présente les limites communales terrestres simplifiées de la Nouvelle-Calédonie.</p>\n\n<p><u>Voici le lien vers le jeu de données original non simplifié du Géorep:</u> <a href=\"https://georep-dtsi-sgt.opendata.arcgis.com/maps/limites-administratives-terrestres-1/about\">Limites administratives communales terrestres (BDADMIN-NC)</a></p>\n<br/>",
+        "theme": [
+          "Aménagement, Infrastructures, Territoire"
+        ],
+        "theme_fr": [
+          "Aménagement, Infrastructures, Territoire"
+        ],
+        "theme_en": [
+          "Territory Development, Infrastructure, Territory"
+        ],
+        "keyword": [
+          "commune",
+          "code postal",
+          "COG",
+          "ville",
+          "referentiel",
+          "limite",
+          "communale",
+          "SIG"
+        ],
+        "keyword_fr": [
+          "commune",
+          "code postal",
+          "COG",
+          "ville",
+          "referentiel",
+          "limite",
+          "communale",
+          "SIG"
+        ],
+        "keyword_en": [
+          "commune",
+          "code postal",
+          "COG",
+          "ville",
+          "referentiel",
+          "limite",
+          "communale",
+          "SIG"
+        ],
+        "license": "Licence Ouverte v2.0",
+        "license_fr": "Licence Ouverte v2.0",
+        "license_en": "Licence Ouverte v2.0",
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "license_url_fr": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "license_url_en": "https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf",
+        "language": "fr",
+        "modified": "2024-12-06T22:02:56+00:00",
+        "publisher": "Gouvernement de la Nouvelle-Calédonie",
+        "publisher_fr": "Gouvernement de la Nouvelle-Calédonie",
+        "publisher_en": "Gouvernement de la Nouvelle-Calédonie",
+        "references": null,
+        "attributions": null,
+        "update_frequency": null,
+        "bbox": {
+          "type": "Feature",
+          "geometry": {
+            "coordinates": [
+              [
+                [
+                  168.13369257375598,
+                  -19.52507426496595
+                ],
+                [
+                  163.56968267820776,
+                  -19.52507426496595
+                ],
+                [
+                  163.56968267820776,
+                  -22.881755959242582
+                ],
+                [
+                  168.13369257375598,
+                  -22.881755959242582
+                ],
+                [
+                  168.13369257375598,
+                  -19.52507426496595
+                ]
+              ]
+            ],
+            "type": "Polygon"
+          },
+          "properties": {}
+        },
+        "data_processed": "2024-12-06T22:02:56+00:00",
+        "federated": false,
+        "geographic_reference": [
+          "fr_60_988"
+        ],
+        "geographic_reference_auto": true,
+        "geometry_types": [
+          "MultiPolygon",
+          "Polygon"
+        ],
+        "metadata_languages": [
+          "fr"
+        ],
+        "metadata_processed": "2025-04-25T08:58:43.927000+00:00",
+        "modified_updates_on_data_change": true,
+        "modified_updates_on_metadata_change": false,
+        "parent_domain": null,
+        "records_count": 33,
+        "shared_catalog": null,
+        "source_dataset": null,
+        "source_domain": null,
+        "source_domain_address": null,
+        "source_domain_title": null,
+        "territory": [
+          "Nouvelle-Calédonie"
+        ],
+        "timezone": null
+      },
+      "downloadUrl": "https://data.gouv.nc/api/explore/v2.1/catalog/datasets/communes-nc-limites-terrestres-simplifiees/exports/geojson",
+      "outputSHA256": "9286f1d50fa99c0c169ab245b0901e58fb69537f9058bee61c329c1fcb98ebe0",
+      "outputFile": "/data/supplements/ncl.geojson",
+      "outputBytes": 1966097
+    },
+    {
+      "code": "MDA",
+      "name": "摩尔多瓦",
+      "cacheFile": "MDA-OSM-level8.geojson",
+      "format": "osm",
+      "label": "市镇／乡",
+      "adminLevel": "OSM8",
+      "source": "OpenStreetMap contributors, Geofabrik extract",
+      "sourceUrl": "https://download.geofabrik.de/europe/moldova.html",
+      "license": "ODbL 1.0",
+      "year": "2026（OSM快照）",
+      "expectedCount": 982,
+      "coverageNote": "982个OSM市镇／乡，数量与摩尔多瓦统计局2025年口径一致（915乡村、67城），几何来自OSM，不是官方边界认证。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "bd0c5d7bf653f2e126600591b82b3ae191275a3f11fe1605eeb1dcb8ce75b4ef",
+      "sourceEvidence": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MDA/ADM1/",
+        "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+        "https://statistica.gov.md/files/files/publicatii_electronice/Statistica_teritoriala/Statistica_teritoriala_editia_2024.pdf"
+      ],
+      "upstream": {
+        "code": "MDA",
+        "source": "OpenStreetMap contributors, Geofabrik extract",
+        "sourceURL": "https://download.geofabrik.de/europe/moldova.html",
+        "downloadURL": "https://download.geofabrik.de/europe/moldova-latest.osm.pbf",
+        "license": "ODbL 1.0",
+        "licenseURL": "https://www.openstreetmap.org/copyright",
+        "pbfSHA256": "346cdc4ee07675890f3d3a1839c633a7ecadbd9fe4c3f1c85398389ff7fa461a",
+        "pbfBytes": 101409211,
+        "osmHeader": {
+          "generator": "osmium/1.16.0",
+          "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+          "osmosis_replication_sequence_number": "4947",
+          "osmosis_replication_base_url": "https://download.geofabrik.de/europe/moldova-updates"
+        },
+        "allAdminCounts": {
+          "10": 1,
+          "8": 982,
+          "9": 1682,
+          "7": 7,
+          "4": 37,
+          "5": 10,
+          "3": 1,
+          "2": 1
+        },
+        "selectedOSMAdminLevel": "8",
+        "selectedCount": 982,
+        "selectedFile": "outputs/boundary-supplements/MDA-OSM-level8.geojson",
+        "countryRelations": [
+          "relation/58974"
+        ],
+        "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+        "partial": false,
+        "partialNote": "Current OSM local-area count equals official 2025 administrative towns+villages/communes count (982), union matches current country polygon, with negligible ring precision overlap. Names/list not individually matched to CUATM official codes; source remains community maintained.",
+        "errors": [],
+        "retrievedAt": "2026-10-26",
+        "officialCountEvidence": {
+          "url": "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+          "referenceDate": "2025-01-01",
+          "townsAndMunicipalities": 67,
+          "villagesCommunes": 915,
+          "expectedCount": 982
+        }
+      },
+      "reproduce": "scripts/source-research/extract-regional-osm.py",
+      "outputSHA256": "4b16a357199997af1a275695046fd267ff84c7a1883da0def22718c46f536d75",
+      "outputFile": "/data/supplements/mda.geojson",
+      "outputBytes": 3185868
+    },
+    {
+      "code": "MNE",
+      "name": "黑山",
+      "cacheFile": "MNE-OSM-level6.geojson",
+      "format": "osm",
+      "label": "市镇",
+      "adminLevel": "OSM6",
+      "source": "OpenStreetMap contributors, Geofabrik extract",
+      "sourceUrl": "https://download.geofabrik.de/europe/montenegro.html",
+      "license": "ODbL 1.0",
+      "year": "2026（OSM快照）",
+      "expectedCount": 25,
+      "coverageNote": "25个OSM市镇，包含Tuzi、Zeta；来源下载快照为2026年。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "b359dd64f4c3173ee52dda9c84df40dc1d7d52db61f005aa846ee54f0aa8f316",
+      "sourceEvidence": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MNE/ADM1/",
+        "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+        "https://www.gov.me/en/article/delegation-of-congress-of-local-and-regional-authorities-of-council-of-europe-visits-ministry-of-finance"
+      ],
+      "upstream": {
+        "code": "MNE",
+        "source": "OpenStreetMap contributors, Geofabrik extract",
+        "sourceURL": "https://download.geofabrik.de/europe/montenegro.html",
+        "downloadURL": "https://download.geofabrik.de/europe/montenegro-latest.osm.pbf",
+        "license": "ODbL 1.0",
+        "licenseURL": "https://www.openstreetmap.org/copyright",
+        "pbfSHA256": "00e66178baa12367b2d4d5f5e87e34c64eb1343628789a79738c0b70eb817df1",
+        "pbfBytes": 34581519,
+        "osmHeader": {
+          "generator": "osmium/1.16.0",
+          "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+          "osmosis_replication_sequence_number": "4935",
+          "osmosis_replication_base_url": "https://download.geofabrik.de/europe/montenegro-updates"
+        },
+        "allAdminCounts": {
+          "8": 241,
+          "6": 25,
+          "9": 84,
+          "2": 1
+        },
+        "selectedOSMAdminLevel": "6",
+        "selectedCount": 25,
+        "selectedFile": "outputs/boundary-supplements/MNE-OSM-level6.geojson",
+        "countryRelations": [
+          "relation/53296"
+        ],
+        "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+        "partial": false,
+        "partialNote": "Current OSM 25 municipalities matches 2025 official/UNECE local-government count, includes Tuzi and Zeta absent in old 2017 layer. Polygon area excludes coastal territorial water, as appropriate for land travel map.",
+        "errors": [],
+        "retrievedAt": "2026-10-26",
+        "officialCountEvidence": {
+          "url": "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+          "expectedCount": 25
+        }
+      },
+      "reproduce": "scripts/source-research/extract-regional-osm.py",
+      "outputSHA256": "294f436aeb80061b1108c25cef8d611a707bf3e032d7f9c3ff87a64c30d9bb2d",
+      "outputFile": "/data/supplements/mne.geojson",
+      "outputBytes": 318587
+    },
+    {
+      "code": "MUS",
+      "name": "毛里求斯",
+      "cacheFile": "MUS-OSM-level8.geojson",
+      "format": "osm",
+      "label": "村委会区／市镇",
+      "adminLevel": "OSM8",
+      "source": "OpenStreetMap contributors, Geofabrik extract",
+      "sourceUrl": "https://download.geofabrik.de/africa/mauritius.html",
+      "license": "ODbL 1.0",
+      "year": "2026（OSM快照）",
+      "expectedCount": 164,
+      "coverageNote": "164个OSM地方区域，含VCA方位细分及市镇；4组来源区域有重叠，不能视为官方164县市或全国完整覆盖。保留原面并明确部分覆盖。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "cf5e3e72d1042d90417a1f415e2c0ff227bcaa1c27aadbb55937d4e35372b5b3",
+      "sourceEvidence": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MUS/ADM1/",
+        "https://localgovernment.govmu.org/Pages/TheMinistry.aspx",
+        "https://housing.govmu.org/Pages/Services/The-Cartographic-Section---Sale-of-Maps.aspx"
+      ],
+      "upstream": {
+        "code": "MUS",
+        "source": "OpenStreetMap contributors, Geofabrik extract",
+        "sourceURL": "https://download.geofabrik.de/africa/mauritius.html",
+        "downloadURL": "https://download.geofabrik.de/africa/mauritius-latest.osm.pbf",
+        "license": "ODbL 1.0",
+        "licenseURL": "https://www.openstreetmap.org/copyright",
+        "pbfSHA256": "7636b3fef9872ea856914534f1440ebd254e5225b6b18eca8ab31b31e895840f",
+        "pbfBytes": 9426079,
+        "osmHeader": {
+          "generator": "osmium/1.16.0",
+          "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+          "osmosis_replication_sequence_number": "3650",
+          "osmosis_replication_base_url": "https://download.geofabrik.de/africa/mauritius-updates"
+        },
+        "allAdminCounts": {
+          "3": 3,
+          "2": 5,
+          "10": 39,
+          "8": 164,
+          "9": 35,
+          "4": 9
+        },
+        "selectedOSMAdminLevel": "8",
+        "selectedCount": 164,
+        "selectedFile": "outputs/boundary-supplements/MUS-OSM-level8.geojson",
+        "countryRelations": [
+          "relation/535828"
+        ],
+        "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+        "partial": true,
+        "partialNote": "164 source OSM admin_level8 local polygons; some village council areas split into geographic parts, and four same-level groups contain overlapping/duplicated geometries. Count is not official130 village council count; expose partial/source limitation.",
+        "errors": [],
+        "retrievedAt": "2026-10-26",
+        "overlapAudit": "outputs/boundary-supplements/MUS-overlap-audit.json"
+      },
+      "reproduce": "scripts/source-research/extract-regional-osm.py",
+      "outputSHA256": "4e9f81f4f2cba855560277b48ac4ca6fe86b242bc353a055f0266373a05a2703",
+      "outputFile": "/data/supplements/mus.geojson",
+      "outputBytes": 855667
+    },
+    {
+      "code": "ARE",
+      "name": "阿拉伯联合酋长国",
+      "cacheFile": "ARE-OSM-level8.geojson",
+      "format": "osm",
+      "label": "城区／社区（OSM部分）",
+      "adminLevel": "OSM8",
+      "source": "OpenStreetMap contributors, Geofabrik extract",
+      "sourceUrl": "https://download.geofabrik.de/asia/gcc-states.html",
+      "license": "ODbL 1.0",
+      "year": "2026（OSM快照）",
+      "expectedCount": 375,
+      "coverageNote": "375个OSM城区／社区，集中在有可用面的城市；部分覆盖且源面存在少量重叠。未有县市面的位置仍可先记录国家级回忆，不代表全国375个官方县市。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "793fc0e0a3997739ee83ea3a85502ee7fe2f194bd17ff2be48bb392e484c6902",
+      "sourceEvidence": [
+        "https://www.geoboundaries.org/api/current/gbOpen/ARE/ADM1/",
+        "https://wiki.openstreetmap.org/wiki/United_Arab_Emirates",
+        "https://sdi.gov.abudhabi/sdi/opendata.html",
+        "https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/0"
+      ],
+      "upstream": {
+        "code": "ARE",
+        "source": "OpenStreetMap contributors, Geofabrik extract",
+        "sourceURL": "https://download.geofabrik.de/asia/gcc-states.html",
+        "downloadURL": "https://download.geofabrik.de/asia/gcc-states-latest.osm.pbf",
+        "license": "ODbL 1.0",
+        "licenseURL": "https://www.openstreetmap.org/copyright",
+        "pbfSHA256": "1f5acbbeaced9796ac4b589189bb53589dbbe9bb2836b97d001acbfeb61347a1",
+        "pbfBytes": 256114784,
+        "osmHeader": {
+          "generator": "osmium/1.16.0",
+          "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+          "osmosis_replication_sequence_number": "3865",
+          "osmosis_replication_base_url": "https://download.geofabrik.de/asia/gcc-states-updates"
+        },
+        "allAdminCounts": {
+          "8": 478,
+          "6": 431,
+          "10": 2739,
+          "11": 36,
+          "2": 12,
+          "9": 20,
+          "7": 867,
+          "4": 50,
+          "هجرة الجيبان": 1,
+          "1": 1,
+          "5": 1
+        },
+        "selectedOSMAdminLevel": "8",
+        "selectedCount": 375,
+        "selectedFile": "outputs/boundary-supplements/ARE-OSM-level8.geojson",
+        "countryRelations": [
+          "relation/307763"
+        ],
+        "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+        "partial": true,
+        "partialNote": "375 OSM level8 district/community/neighbourhood polygons, especially developed urban areas; not an official375 municipality total, not whole-country local-level coverage. OSM6 has3 municipalities forAbuDhabi, but lacks consistent municipality coverage in all emirates.",
+        "errors": [
+          {
+            "id": 8835312,
+            "tags": {
+              "admin_level": "9",
+              "boundary": "administrative",
+              "name": "بلدية الشفا",
+              "name:ar": "بلدية الشفا",
+              "name:de": "Stadtbezirk asch-Schafā",
+              "name:en": "Municipality of Shifa",
+              "wikipedia": "ar:بلدية الشفا"
+            },
+            "error": "invalid area (area_id=17670625)"
+          },
+          {
+            "id": 8835311,
+            "tags": {
+              "admin_level": "9",
+              "alt_name": "Azizia",
+              "boundary": "administrative",
+              "name": "Al Aziziyah Municipality",
+              "wikipedia": "ar:بلدية العزيزية"
+            },
+            "error": "invalid area (area_id=17670623)"
+          },
+          {
+            "id": 13254477,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "العريجاء الغربية",
+              "name:ar": "العريجاء الغربية",
+              "name:en": "Al Uarayja al Gharbiyah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508955)"
+          },
+          {
+            "id": 13254495,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "العزيزية",
+              "name:ar": "العزيزية",
+              "name:en": "Al Aziziyah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508991)"
+          },
+          {
+            "id": 13254435,
+            "tags": {
+              "admin_level": "10",
+              "alt_name": "Ad Dirah",
+              "boundary": "administrative",
+              "name": "الديرة",
+              "name:ar": "الديرة",
+              "name:en": "Al Deerah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508871)"
+          },
+          {
+            "id": 17668025,
+            "tags": {
+              "admin_level": "10",
+              "admin_type:SA": "district",
+              "boundary": "administrative",
+              "name": "الواجهة البحرية",
+              "name:ar": "الواجهة البحرية",
+              "name:en": "Sea Front"
+            },
+            "error": "invalid area (area_id=35336051)"
+          },
+          {
+            "id": 8835054,
+            "tags": {
+              "admin_level": "9",
+              "alt_name": "Ulaya;Supreme;Higher",
+              "boundary": "administrative",
+              "name": "بلدية العليا",
+              "name:de": "Stadtbezirlk Al Olaya",
+              "name:en": "Municipality of Olaya",
+              "place": "municipality",
+              "wikipedia": "ar:بلدية العليا"
+            },
+            "error": "invalid area (area_id=17670109)"
+          },
+          {
+            "id": 13254465,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "الفاروق",
+              "name:ar": "الفاروق",
+              "name:en": "Al Faruq District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508931)"
+          },
+          {
+            "id": 13254466,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "الفيصلية",
+              "name:ar": "الفيصلية",
+              "name:en": "Al Faisaliah District",
+              "place": "neighbourhood",
+              "wikidata": "Q6764776"
+            },
+            "error": "invalid area (area_id=26508933)"
+          },
+          {
+            "id": 8835310,
+            "tags": {
+              "admin_level": "9",
+              "boundary": "administrative",
+              "name": "بلدية الملز",
+              "name:en": "Al Malaz Municipality",
+              "place": "municipality",
+              "wikipedia": "ar:بلدية الملز"
+            },
+            "error": "invalid area (area_id=17670621)"
+          },
+          {
+            "id": 13253999,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "حي المعيزيلة",
+              "name:ar": "حي المعيزيلة",
+              "name:en": "Al Maizliyyah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26507999)"
+          },
+          {
+            "id": 13253981,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "النهضة",
+              "name:ar": "النهضة",
+              "name:en": "Al Nahdhah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26507963)"
+          },
+          {
+            "id": 8835309,
+            "tags": {
+              "admin_level": "9",
+              "alt_name": "al-Bathā'",
+              "boundary": "administrative",
+              "name": "Al Batha Muncipality",
+              "wikipedia": "ar:بلدية البطحاء"
+            },
+            "error": "invalid area (area_id=17670619)"
+          },
+          {
+            "id": 13254417,
+            "tags": {
+              "admin_level": "10",
+              "alt_name": "Ulaya;Al Alia",
+              "boundary": "administrative",
+              "name": "العليا",
+              "name:ar": "العليا",
+              "name:en": "Al Olaya District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508835)"
+          },
+          {
+            "id": 13254433,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "المربع",
+              "name:ar": "المربع",
+              "name:en": "Al Murabba District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508867)"
+          },
+          {
+            "id": 13254422,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "الناصرية",
+              "name:ar": "الناصرية",
+              "name:en": "An Nasiriyah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508845)"
+          },
+          {
+            "id": 13254414,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "المعذر",
+              "name:ar": "المعذر",
+              "name:en": "Al Madhar ash Shamali District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508829)"
+          },
+          {
+            "id": 13254434,
+            "tags": {
+              "admin_level": "10",
+              "boundary": "administrative",
+              "name": "الفوطة",
+              "name:ar": "الفوطة",
+              "name:en": "Al Futah District",
+              "place": "neighbourhood"
+            },
+            "error": "invalid area (area_id=26508869)"
+          }
+        ],
+        "retrievedAt": "2026-10-26",
+        "countryAdminCounts": {
+          "8": 375,
+          "11": 34,
+          "10": 246,
+          "9": 8,
+          "2": 6,
+          "7": 16,
+          "1": 1,
+          "6": 3,
+          "5": 1,
+          "4": 7
+        },
+        "errorsScope": "Whole GCC extract; errors primarily in Saudi Arabia outside ARE/BHR. Only valid country-filtered polygons exported.",
+        "label": "城区／社区（OSM部分）",
+        "sameLevelOverlapFraction": 0.004649148138489973
+      },
+      "reproduce": "scripts/source-research/extract-regional-osm.py",
+      "outputSHA256": "bd326d40b50d61f071aaa17f025b71569f021e2c915ce80c34760d262f7c9fce",
+      "outputFile": "/data/supplements/are.geojson",
+      "outputBytes": 615463
+    },
+    {
+      "code": "MHL",
+      "name": "马绍尔群岛",
+      "cacheFile": "MHL-HDX-ADM2.geojson",
+      "format": "hdx",
+      "label": "岛屿／地方细分区",
+      "adminLevel": "ADM2",
+      "source": "Secretariat of the Pacific Community, Statistics for Development Division; OCHA HDX",
+      "sourceUrl": "https://data.humdata.org/dataset/cod-ab-mhl",
+      "license": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+      "year": "2021",
+      "expectedCount": 152,
+      "coverageNote": "官方HDX源SHP实际载入152个地方面；目录记载153且注明缺MH0609，忠实保留下载版152个。包含岛屿／地方细分，并非连续陆海全域覆盖。",
+      "detailTier": "local",
+      "partial": true,
+      "sourceSHA256": "78f4173fe29f7bf3944cc4f8f86fdd14651cddfaed4c4343a816679c468b01bc",
+      "upstream": {
+        "code": "MHL",
+        "count": 152,
+        "year": "2021",
+        "source": "Secretariat of the Pacific Community, Statistics for Development Division; OCHA HDX",
+        "sourceURL": "https://data.humdata.org/dataset/cod-ab-mhl",
+        "catalogURL": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-mhl",
+        "downloadURL": "https://data.humdata.org/dataset/c215706c-9c22-43ca-8d36-9de4726eb9e0/resource/383a9368-998f-4657-a380-6323bb827296/download/mhl_admbnda_wgs84_ab_shp.zip",
+        "license": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+        "licenseURL": "https://creativecommons.org/licenses/by/3.0/igo/",
+        "sha256": "92ee6a69280c6ebd9cdca77cbfff0f828bcd1dec823a0d8edfd9ed41130f1e23",
+        "rawFeatureFields": [
+          "ADM0_EN",
+          "ADM0_PCODE",
+          "ADM1_EN",
+          "ADM1_PCODE",
+          "ADM2_EN",
+          "ADM2_PCODE",
+          "Shape_Leng",
+          "Shape_Area"
+        ],
+        "conversion": "shp/dbf/shx in EPSG:4326 per bundled PRJ; polygons converted with pyshp then invalid geometry repaired using Shapely make_valid",
+        "partial": true,
+        "notes": "Original HDX metadata advertises 153 ADM2; downloaded SHP contains 152. Source also states MH0609 omitted relative to COD-PS. Published count must use actual 152. Geoservices not scaled correctly so SHP used. Areas are local islet/subdivision polygons, not continuous land/sea coverage."
+      },
+      "reproduce": "scripts/source-research/extract-regional-osm.py",
+      "outputSHA256": "1b662bd519eb78af6cda72aa70972ef661f42c6056a60bc998e49f92381e20da",
+      "outputFile": "/data/supplements/mhl.geojson",
+      "outputBytes": 611355
+    },
+    {
+      "code": "TTO",
+      "name": "特立尼达和多巴哥",
+      "cacheFile": "TTO-naturalearth-local15.geojson",
+      "format": "naturalEarth",
+      "label": "地方区／市",
+      "adminLevel": "ADM1",
+      "source": "Natural Earth v5.1.0 packaging (2022-05-05), 1:10 million generalized geometry",
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "license": "Public Domain",
+      "year": "2022（来源快照）",
+      "expectedCount": 15,
+      "coverageNote": "Natural Earth 2022来源：14个特立尼达地方区／市，加1个多巴哥自治辖区，共15个；补入旧图缺失的Arima。按地方政府口径合并原源中多巴哥东、西两面；保留真实边界。1:10m概化历史快照，非地籍或更细社区边界。",
+      "detailTier": "local",
+      "partial": false,
+      "sourceSHA256": "9675b7dae4d1827fe80db9bf4e80a4dca56ffab36eb5dd80a0fb157f258ec2a8",
+      "upstream": {
+        "code": "TTO",
+        "source": "Natural Earth v5.1.0 packaging (2022-05-05), 1:10 million generalized geometry",
+        "sourceURL": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+        "downloadURL": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "sourceCommit": "117488dc884bad03366ff727eca013e434615127",
+        "sourceFileSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+        "license": "Public Domain",
+        "licenseURL": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "year": "2022",
+        "count": 15,
+        "rawCount": 16,
+        "localFile": "outputs/boundary-supplements/TTO-naturalearth-local15.geojson",
+        "rawFile": "outputs/boundary-supplements/TTO-naturalearth-ADM1.geojson",
+        "granularity": "14 city/borough/regional-corporation areas on Trinidad + Tobago local-government area",
+        "partial": false,
+        "limitations": "Generalized1:10m and historical2022 release; not current cadastre nor finer community/neighbourhood boundaries. Some municipality type labels changed after source release, so neutral地方区／市label recommended.",
+        "transformation": "Two NaturalEarth historical Eastern/WesternTobago polygons dissolved to singleTobago jurisdiction; original16 retained; no invented boundaries.",
+        "officialStructureEvidence": "https://dmbc.gov.tt/lga/",
+        "allGeometriesValid": true
+      },
+      "reproduce": "scripts/source-research/build-tto-local-layer.py",
+      "outputSHA256": "00d6cee966a292b6012ebd5eba9014b8541716b4424275aa5c13bd0c6eea1a53",
+      "outputFile": "/data/supplements/tto.geojson",
+      "outputBytes": 20514
+    }
+  ],
+  "audit": [
+    {
+      "code": "AND",
+      "name": "安道尔",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/and-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/AND/ADM1/",
+        "https://visc.ad/parroquies",
+        "https://visitandorra.com/en/explore-andorra/"
+      ],
+      "note": "2007年来源，实载7个教区／地方自治单位。现有7个parish是地方自治单位，已足够对应一般县市级旅行收藏。改掉统一省/州提示。更细quarts/veinats在部分parish存在，但未核实有全国可再分发的面。",
+      "afterCount": 7
+    },
+    {
+      "code": "ARE",
+      "name": "阿拉伯联合酋长国",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/are-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/ARE/ADM1/",
+        "https://wiki.openstreetmap.org/wiki/United_Arab_Emirates",
+        "https://sdi.gov.abudhabi/sdi/opendata.html",
+        "https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/0"
+      ],
+      "note": "375个OSM城区／社区，集中在有可用面的城市；部分覆盖且源面存在少量重叠。未有县市面的位置仍可先记录国家级回忆，不代表全国375个官方县市。",
+      "afterCount": 375
+    },
+    {
+      "code": "ATG",
+      "name": "安提瓜和巴布达",
+      "before": "ADM1",
+      "beforeCount": 8,
+      "beforeUrl": "/data/global/atg-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/ATG/ADM1/",
+        "https://statistics.gov.ag/wp-content/uploads/2017/12/2015-Health-Statistical-Digest.pdf"
+      ],
+      "note": "2009年来源，实载8个教区与属地。6个教区+2属地，现有8单元是当地地方划分；没有可核实的全国更细县市面。不要将教区误称省/州。",
+      "afterCount": 8
+    },
+    {
+      "code": "BHR",
+      "name": "巴林",
+      "before": "ADM1",
+      "beforeCount": 4,
+      "beforeUrl": "/data/global/bhr-adm1.geojson",
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/BHR/ADM1/",
+        "https://www.bahrain.gov.bh/wps/wcm/connect/628e2f3b-e9f6-4a3a-9369-a12a14c5d951/27872%2BeGOV%2BUNDESA%2BStudy%2BTour%2B2015%2BV16_HR%2B%281%29.pdf?CVID=oF-oxIr&MOD=AJPERES",
+        "https://www.moh.gov.bh/Contact/HealthCenter/AHC?lang=en"
+      ],
+      "note": "2017年来源，实载4个省；地区／街区候选。已从当前GCC PBF验证：仅Block101（OSM10）与Block1056（OSM9）两个更细局部面。无全国地区/blocks细分，保留4省基础覆盖并注明更细数据不足；官方Locator有块边界但未获再分发授权，不直接搬运。",
+      "afterCount": 4
+    },
+    {
+      "code": "BRB",
+      "name": "巴巴多斯",
+      "before": "ADM1",
+      "beforeCount": 11,
+      "beforeUrl": "/data/global/brb-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/BRB/ADM1/",
+        "https://stats.gov.bb/census2020/"
+      ],
+      "note": "2005年来源，实载11个教区。11个parishes可作为地方层级。官方609个ED是统计枚举区，并非县市；未核实开放再分发矢量边界，不将609个网格冒充县市。",
+      "afterCount": 11
+    },
+    {
+      "code": "DMA",
+      "name": "多米尼克",
+      "before": "ADM1",
+      "beforeCount": 10,
+      "beforeUrl": "/data/global/dma-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/DMA/ADM1/",
+        "https://stats.gov.dm/wp-content/uploads/2019/06/Environmental_Statistics_2011.pdf"
+      ],
+      "note": "2005年来源，实载10个教区。10教区是当地地方行政/人口区域，现有标签可改为地方级；未核实更细全国行政面。",
+      "afterCount": 10
+    },
+    {
+      "code": "GRD",
+      "name": "格林纳达",
+      "before": "ADM1",
+      "beforeCount": 7,
+      "beforeUrl": "/data/global/grd-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/GRD/ADM1/",
+        "https://climateresilience.gov.gd/wp-content/uploads/2025/10/2025-GCREWS-Ecoflow.pdf"
+      ],
+      "note": "2017年来源，实载7个教区与属地。6教区+1属地的地方划分，应标教区/属地。需保留来源年份及Carriacou/Petite Martinique海岛覆盖提示。",
+      "afterCount": 7
+    },
+    {
+      "code": "GRL",
+      "name": "格陵兰",
+      "before": "ADM1",
+      "beforeCount": 6,
+      "beforeUrl": "/data/global/grl-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/GRL/ADM1/",
+        "https://nunagis.gl/en/web-services/",
+        "https://bank.stat.gl/pxweb/en/Greenland/Greenland__BE__BE01__BE0120/BEXSTC.px/"
+      ],
+      "note": "2020年来源，实载6个市镇与国家公园。已验证当前OSM仅Igaliku和Qassiarsuk两个地方OSM5面。保留现5市镇+公园；17历史统计区的全国开放边界仍未找到。可以另加这2个局部点亮面但不得写全境县市补齐。",
+      "afterCount": 6
+    },
+    {
+      "code": "KNA",
+      "name": "圣基茨和尼维斯",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/kna-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/KNA/ADM1/",
+        "https://www.clgf.org.uk/default/assets/File/Country_profiles/Saint_Kitts_and_Nevis.pdf",
+        "https://nia.gov.kn/wp-content/uploads/2025/03/Census-Report-2021-2022.pdf"
+      ],
+      "note": "2021年来源，实载14个教区。14教区（Saint Kitts9、Nevis5）是可用地方单元；Nevis有自治机构，Saint Kitts教区是行政区，未核实更细全域再分发矢量。",
+      "afterCount": 14
+    },
+    {
+      "code": "LBY",
+      "name": "利比亚",
+      "before": "ADM1",
+      "beforeCount": 22,
+      "beforeUrl": "/data/global/lby-adm1.geojson",
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/LBY/ADM1/",
+        "https://data.humdata.org/dataset/cod-ab-lby",
+        "https://dtm.iom.int/sites/g/files/tmzbdl1461/files/reports/Mobility%20Tracking%20Methodology%202017%20V.11%20-%20Mobility%20Tracking%20DTM%20Libya%20%28E....pdf"
+      ],
+      "note": "2021年来源，实载22个历史行政区。现有22区偏粗但覆盖全域；HDX ADM2同样22，并不增加县市细节。100/104市镇IOM数据中很多为点，不能用点生成虚构县市面。当前OSM仅1个本国level6闭合面，维持22区并标更细覆盖不足。",
+      "afterCount": 22
+    },
+    {
+      "code": "LIE",
+      "name": "列支敦士登",
+      "before": "ADM1",
+      "beforeCount": 11,
+      "beforeUrl": "/data/global/lie-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/LIE/ADM1/",
+        "https://www.llv.li/en/national-administration/public-procurement-department/provisions-communities/who-are-customers-communities-"
+      ],
+      "note": "2017年来源，实载11个市镇。11 municipalities正是基层市镇，已达到县市级语义；更新标签即可，不应因ADM1号而标不足。",
+      "afterCount": 11
+    },
+    {
+      "code": "MDA",
+      "name": "摩尔多瓦",
+      "before": "ADM1",
+      "beforeCount": 37,
+      "beforeUrl": "/data/global/mda-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MDA/ADM1/",
+        "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+        "https://statistica.gov.md/files/files/publicatii_electronice/Statistica_teritoriala/Statistica_teritoriala_editia_2024.pdf"
+      ],
+      "note": "982个OSM市镇／乡，数量与摩尔多瓦统计局2025年口径一致（915乡村、67城），几何来自OSM，不是官方边界认证。",
+      "afterCount": 982
+    },
+    {
+      "code": "MHL",
+      "name": "马绍尔群岛",
+      "before": "ADM1",
+      "beforeCount": 24,
+      "beforeUrl": "/data/global/mhl-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MHL/ADM1/",
+        "https://data.humdata.org/dataset/cod-ab-mhl"
+      ],
+      "note": "官方HDX源SHP实际载入152个地方面；目录记载153且注明缺MH0609，忠实保留下载版152个。包含岛屿／地方细分，并非连续陆海全域覆盖。",
+      "afterCount": 152
+    },
+    {
+      "code": "MLT",
+      "name": "马耳他",
+      "before": "ADM1",
+      "beforeCount": 68,
+      "beforeUrl": "/data/global/mlt-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MLT/ADM1/",
+        "https://nao.gov.mt/wp-content/uploads/2022/11/LC2022Nov.pdf",
+        "https://portal.data.gov.mt/mt/data-service/inspire-directive-annex-iii-nso?license_id=CC-BY-4.0&organization=national-statistics-office&res_format=wfs&tags=Statistical+Units+Vector"
+      ],
+      "note": "2022年来源，实载68个地方议会辖区。68 Local Councils就是基层市镇；当前2022边界已属当地地方级。官方LAU2也68，可核验，重新标注即可。",
+      "afterCount": 68
+    },
+    {
+      "code": "MNE",
+      "name": "黑山",
+      "before": "ADM1",
+      "beforeCount": 23,
+      "beforeUrl": "/data/global/mne-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MNE/ADM1/",
+        "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+        "https://www.gov.me/en/article/delegation-of-congress-of-local-and-regional-authorities-of-council-of-europe-visits-ministry-of-finance"
+      ],
+      "note": "25个OSM市镇，包含Tuzi、Zeta；来源下载快照为2026年。",
+      "afterCount": 25
+    },
+    {
+      "code": "MUS",
+      "name": "毛里求斯",
+      "before": "ADM1",
+      "beforeCount": 12,
+      "beforeUrl": "/data/global/mus-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/MUS/ADM1/",
+        "https://localgovernment.govmu.org/Pages/TheMinistry.aspx",
+        "https://housing.govmu.org/Pages/Services/The-Cartographic-Section---Sale-of-Maps.aspx"
+      ],
+      "note": "164个OSM地方区域，含VCA方位细分及市镇；4组来源区域有重叠，不能视为官方164县市或全国完整覆盖。保留原面并明确部分覆盖。",
+      "afterCount": 164
+    },
+    {
+      "code": "NIU",
+      "name": "纽埃",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/niu-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/NIU/ADM1/",
+        "https://www.gov.nu/government"
+      ],
+      "note": "2020年来源，实载14个村。14村已是基层行政/选区，不应标省州。现有CC BY4来源可直接保留。",
+      "afterCount": 14
+    },
+    {
+      "code": "NRU",
+      "name": "瑙鲁",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/nru-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/NRU/ADM1/",
+        "https://www.nauru.gov.nr/government-information-office/media-release/nauru-national-sustainable-development-strategy-public-consultation-covers-all-14-districts.aspx"
+      ],
+      "note": "2005年来源，实载14个区。14districts属于小国地方单元，已达县市级可用语义。",
+      "afterCount": 14
+    },
+    {
+      "code": "SMR",
+      "name": "圣马力诺",
+      "before": "ADM1",
+      "beforeCount": 9,
+      "beforeUrl": "/data/global/smr-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/SMR/ADM1/",
+        "https://www.gov.sm/pub1/GovSM/dam/jcr%3A42a8bce9-6303-446b-ad8e-8dbc3e74ff37/PROFILO%2520SALUTE%25202022_ultima%2520versione_24_7_2023_DEFINITIVO.pdf"
+      ],
+      "note": "2017年来源，实载9个堡区／市镇。9 Castelli为地方自治单元，现有ADM1可标当地地方级。",
+      "afterCount": 9
+    },
+    {
+      "code": "TTO",
+      "name": "特立尼达和多巴哥",
+      "before": "ADM1",
+      "beforeCount": 14,
+      "beforeUrl": "/data/global/tto-adm1.geojson",
+      "result": "upgraded_layer",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/TTO/ADM1/",
+        "https://rdlg.gov.tt/our-ministry/",
+        "https://cso.gov.tt/subjects/population-and-vital-statistics/population/",
+        "https://hub.arcgis.com/maps/3717258e46c2443cbb000c351064c96d/about",
+        "https://www.arcgis.com/sharing/rest/content/items/122d5885924142e082effaf294e18a65/info/metadata/metadata.xml?format=default&output=html"
+      ],
+      "note": "Natural Earth 2022来源：14个特立尼达地方区／市，加1个多巴哥自治辖区，共15个；补入旧图缺失的Arima。按地方政府口径合并原源中多巴哥东、西两面；保留真实边界。1:10m概化历史快照，非地籍或更细社区边界。",
+      "afterCount": 15
+    },
+    {
+      "code": "VCT",
+      "name": "圣文森特和格林纳丁斯",
+      "before": "ADM1",
+      "beforeCount": 6,
+      "beforeUrl": "/data/global/vct-adm1.geojson",
+      "result": "classification_corrected",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/api/current/gbOpen/VCT/ADM1/",
+        "https://nemo.gov.vc/nemo/images/PoliciesActsAndBills/Final-Country-Profile-SVG-DEC2014.pdf"
+      ],
+      "note": "2017年来源，实载6个教区。6parishes是地方行政划分，已达小国县市级等价。暂无证实开放全国更细行政面。",
+      "afterCount": 6
+    },
+    {
+      "code": "VAT",
+      "name": "梵蒂冈",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.vaticanstate.va/"
+      ],
+      "note": "微型城市国家，无县市等常规地方行政层；整体点亮适用。",
+      "afterCount": 0
+    },
+    {
+      "code": "SGS",
+      "name": "南乔治亚和南桑威奇群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.gov.gs/"
+      ],
+      "note": "无人常住/科研与驻地领地；未发现普通县市层级，不能将岛屿自然轮廓冒称行政县。",
+      "afterCount": 0
+    },
+    {
+      "code": "IOT",
+      "name": "英属印度洋领地",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.biot.gov.io/"
+      ],
+      "note": "未找到适用县市单位；岛屿自然分区需要与行政层级清楚区分。",
+      "afterCount": 0
+    },
+    {
+      "code": "SHN",
+      "name": "圣赫勒拿",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个岛屿属地；来源文件为2022年快照，无统一区划有效年份。当前为圣赫勒拿、阿森松与特里斯坦-达库尼亚3个属地，尚未细到圣赫勒拿各区。",
+      "afterCount": 3
+    },
+    {
+      "code": "PCN",
+      "name": "皮特凯恩群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.government.pn/"
+      ],
+      "note": "未找到县市层级；4岛的自然分区可以未来作为岛屿记录，不应虚构县市。",
+      "afterCount": 0
+    },
+    {
+      "code": "AIA",
+      "name": "安圭拉",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 15 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 15
+    },
+    {
+      "code": "FLK",
+      "name": "福克兰群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/united-kingdom/falklands.html"
+      ],
+      "note": "Geofabrik取得108个OSM admin_level10面，但实际是农场/产权范围，明确不当县市接入。",
+      "afterCount": 0
+    },
+    {
+      "code": "CYM",
+      "name": "开曼群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.openstreetmap.org/api/0.6/relations?relations=13777966,13777967,13777968,13777969,13777970,13777971",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "六个实际OSM admin_level8地方区；不使用含GADM来源的gbHumanitarian数据。",
+      "afterCount": 6
+    },
+    {
+      "code": "BMU",
+      "name": "百慕大",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 11 个教区与市；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 11
+    },
+    {
+      "code": "VGB",
+      "name": "英属维尔京群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://data.humdata.org/dataset/cod-ab-vgb",
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1.geojson"
+      ],
+      "note": "保留国家/地区级点亮；未核验到适合再分发的基层面边界，不能推定不存在细分。",
+      "afterCount": 0
+    },
+    {
+      "code": "TCA",
+      "name": "特克斯和凯科斯群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 6 个地方区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 6
+    },
+    {
+      "code": "MSR",
+      "name": "蒙特塞拉特",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个历史教区；来源文件为2022年快照，无统一区划有效年份。历史教区可能包含已疏散地区，不代表现行地方政府。",
+      "afterCount": 3
+    },
+    {
+      "code": "JEY",
+      "name": "泽西",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/guernsey-jersey.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "12个教区；Nominatim补全Grouville relation9238571。",
+      "afterCount": 12
+    },
+    {
+      "code": "GGY",
+      "name": "根西",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/guernsey-jersey.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "根西主岛10教区，加Alderney与Sark独立岛屿单位，混合基层层级；Herm等小岛依OSM覆盖，不能声称全群岛县级无缺口。",
+      "afterCount": 12
+    },
+    {
+      "code": "IMN",
+      "name": "马恩岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/isle-of-man.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "OSM 24个level8教区和镇；部分地方政府历史上已合并，数量不能解读为当前地方政府数。",
+      "afterCount": 24
+    },
+    {
+      "code": "SOL",
+      "name": "索马里兰",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "显示范围子集：从SOM ADM2保留超过50%源几何面积落在现有world SOL轮廓内的19区；不裁边界，不代表主权归属，争议及边界附近覆盖应标partial。",
+      "afterCount": 19
+    },
+    {
+      "code": "COK",
+      "name": "库克群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/australia-oceania/cook-islands.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "混合层级：10个岛屿单元+Rarotonga的5个OSM level8地方区。5区union覆盖Rarotonga源轮廓100%，保留源名称（包括Takitumu），不宣称等于当前地方政府数量。",
+      "afterCount": 15
+    },
+    {
+      "code": "ABW",
+      "name": "阿鲁巴",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://cbs.aw/wp/index.php/category/environment-space/gac-geographical-address-and-classification/"
+      ],
+      "note": "CBS官方有8地区/更细GAC统计区，但未取得已核验许可的多边形源；不可称不存在细分。",
+      "afterCount": 0
+    },
+    {
+      "code": "CUW",
+      "name": "库拉索",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.cbs.cw/"
+      ],
+      "note": "未核验到可直接接入的开放基层多边形；保留整体记录与后续CBS统计区来源调查。",
+      "afterCount": 0
+    },
+    {
+      "code": "ESH",
+      "name": "西撒哈拉",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "未核验在当前显示范围内可复用且许可清楚的细分源；存在行政与控制边界口径差异，保持范围说明。",
+      "afterCount": 0
+    },
+    {
+      "code": "SPM",
+      "name": "圣皮埃尔和密克隆",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 2 个市镇／commune；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 2
+    },
+    {
+      "code": "WLF",
+      "name": "瓦利斯和富图纳",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 3 个传统王国地方单元；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 3
+    },
+    {
+      "code": "MAF",
+      "name": "法属圣马丁",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=978&format=geojson&geometry=contour"
+      ],
+      "note": "法国官方commune API仅1个整片collectivité；居民区并不自动成为行政县市。",
+      "afterCount": 0
+    },
+    {
+      "code": "BLM",
+      "name": "圣巴泰勒米",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=977&format=geojson&geometry=contour"
+      ],
+      "note": "法国官方commune API仅1个整片collectivité。",
+      "afterCount": 0
+    },
+    {
+      "code": "PYF",
+      "name": "法属波利尼西亚",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://geo.api.gouv.fr/communes?codeDepartement=987&format=geojson&geometry=contour",
+        "https://github.com/etalab/contours-administratifs",
+        "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise"
+      ],
+      "note": "法国官方 API Géo 载入48个市镇，按INSEE编号保留原文名称；边界年份见原始来源，下载于2026-10-26。",
+      "afterCount": 48
+    },
+    {
+      "code": "NCL",
+      "name": "新喀里多尼亚",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://data.gouv.nc/explore/dataset/communes-nc-limites-terrestres-simplifiees/information/",
+        "https://data.gouv.nc/api/explore/v2.1/catalog/datasets/communes-nc-limites-terrestres-simplifiees/exports/geojson"
+      ],
+      "note": "官方新喀里多尼亚开放数据平台33个市镇陆地边界，数据集更新于2024-12-06，来源许可为LO2。保留INSEE市镇编号和原文名称。",
+      "afterCount": 33
+    },
+    {
+      "code": "ATF",
+      "name": "法属南部和南极领地",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 4 个领地区；来源文件为2022年快照，无统一区划有效年份。仅载来源中的4个地区，未补画南极领地；部分覆盖。",
+      "afterCount": 4
+    },
+    {
+      "code": "ALA",
+      "name": "奥兰",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "按明确16市镇名单从FIN ADM3筛选；保留原几何和源shapeID，需独立命名空间避免与FIN重复ID；世界海岸粗轮廓会误删岛屿，未以相交面积筛选。",
+      "afterCount": 16
+    },
+    {
+      "code": "FRO",
+      "name": "法罗群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/europe/faroe-islands.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "29个OSM admin_level7 kommune；未混入更细的村域与上级区。",
+      "afterCount": 29
+    },
+    {
+      "code": "CYN",
+      "name": "北塞浦路斯土耳其共和国",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.geojson",
+        "https://www.geoboundaries.org/"
+      ],
+      "note": "显示范围子集：从CYP ADM2保留超过50%源几何面积落在现有world CYN轮廓内的203个单元；不裁边界，不代表主权归属或当前政治行政建制，边界附近可能有缺口，应标partial。",
+      "afterCount": 203
+    },
+    {
+      "code": "MAC",
+      "name": "澳门",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://download.geofabrik.de/asia/china/macau.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "note": "7堂区及路氹区域；以OSM级别6为准。Nominatim补全嘉模堂区relation5758865。",
+      "afterCount": 8
+    },
+    {
+      "code": "HKG",
+      "name": "香港",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      ],
+      "note": "Natural Earth 1:10m 实载 18 个区；来源文件为2022年快照，无统一区划有效年份。",
+      "afterCount": 18
+    },
+    {
+      "code": "HMD",
+      "name": "赫德岛和麦克唐纳群岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://heardisland.antarctica.gov.au/"
+      ],
+      "note": "无人常住澳大利亚外部领地；没有县市单位。",
+      "afterCount": 0
+    },
+    {
+      "code": "NFK",
+      "name": "诺福克岛",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.norfolkisland.gov.nf/"
+      ],
+      "note": "未核验可再分发基层多边形；诺福克地方政府统一管辖，社区点记录适用。",
+      "afterCount": 0
+    },
+    {
+      "code": "KAS",
+      "name": "锡亚琴冰川",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.naturalearthdata.com/about/disputed-boundaries-policy/"
+      ],
+      "note": "现有地图的争议显示单元，不对应常规县市行政区；不据此创造地方行政建制。",
+      "afterCount": 0
+    },
+    {
+      "code": "ATA",
+      "name": "南极洲",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "finer_layer_unavailable",
+      "evidenceURLs": [
+        "https://www.ats.aq/e/antarctictreaty.html"
+      ],
+      "note": "无一般国家县市行政体系；科研站和旅行登陆点可作为后续地点记录，不能伪造县市网格。",
+      "afterCount": 0
+    },
+    {
+      "code": "SXM",
+      "name": "荷属圣马丁",
+      "before": "missing",
+      "beforeCount": 0,
+      "result": "new_local_layer",
+      "evidenceURLs": [
+        "https://data.humdata.org/dataset/cod-ab-sxm",
+        "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1.geojson"
+      ],
+      "note": "源catalog直接列明开放许可。",
+      "afterCount": 8
+    }
+  ],
+  "remainingReasons": {
+    "VAT": "微型城市国家，无县市等常规地方行政层；整体点亮适用。",
+    "SGS": "无人常住/科研与驻地领地；未发现普通县市层级，不能将岛屿自然轮廓冒称行政县。",
+    "IOT": "未找到适用县市单位；岛屿自然分区需要与行政层级清楚区分。",
+    "PCN": "未找到县市层级；4岛的自然分区可以未来作为岛屿记录，不应虚构县市。",
+    "FLK": "Geofabrik取得108个OSM admin_level10面，但实际是农场/产权范围，明确不当县市接入。",
+    "VGB": "保留国家/地区级点亮；未核验到适合再分发的基层面边界，不能推定不存在细分。",
+    "ABW": "CBS官方有8地区/更细GAC统计区，但未取得已核验许可的多边形源；不可称不存在细分。",
+    "CUW": "未核验到可直接接入的开放基层多边形；保留整体记录与后续CBS统计区来源调查。",
+    "ESH": "未核验在当前显示范围内可复用且许可清楚的细分源；存在行政与控制边界口径差异，保持范围说明。",
+    "MAF": "法国官方commune API仅1个整片collectivité；居民区并不自动成为行政县市。",
+    "BLM": "法国官方commune API仅1个整片collectivité。",
+    "HMD": "无人常住澳大利亚外部领地；没有县市单位。",
+    "NFK": "未核验可再分发基层多边形；诺福克地方政府统一管辖，社区点记录适用。",
+    "KAS": "现有地图的争议显示单元，不对应常规县市行政区；不据此创造地方行政建制。",
+    "ATA": "无一般国家县市行政体系；科研站和旅行登陆点可作为后续地点记录，不能伪造县市网格。"
+  },
+  "reproductionNotes": [
+    "Use scripts/prepare-boundary-supplements.py with the pinned cached source files. Latest OSM/API resources may change; source SHA checks stop unreviewed changes.",
+    "OSM/HDX subset extraction scripts and upstream hashes are retained with recipes. Retain previous GeoJSON layer assets for old saved IDs.",
+    "Saved-area paint assets are simplified true polygons with source IDs, and include earlier layer IDs."
+  ],
+  "sourceResearch": {
+    "missing": {
+      "retrievedAt": "2026-10-26",
+      "scope": "Original 37 missing local-boundary display regions; labels do not assert sovereignty.",
+      "reproductionScripts": [
+        "outputs/boundary-supplements/extract-osm-local-areas.py",
+        "outputs/boundary-supplements/build-missing-local-source-subsets.py"
+      ],
+      "notes": [
+        "OSM database derivatives remain ODbL and need attribution + downstream database access.",
+        "Do not claim uniform county equivalence across jurisdictions; source layer types are recorded.",
+        "Do not import FLK farm/property polygons as local administrative units.",
+        "NCL now uses directly licensed data.gouv.nc source; CYM now uses OSM source, superseding earlier pending license notes."
+      ],
+      "regions": [
+        {
+          "code": "VAT",
+          "name": "梵蒂冈",
+          "status": "whole-area-appropriate",
+          "recommendation": "微型城市国家，无县市等常规地方行政层；整体点亮适用。",
+          "evidenceURLs": [
+            "https://www.vaticanstate.va/"
+          ]
+        },
+        {
+          "code": "SGS",
+          "name": "南乔治亚和南桑威奇群岛",
+          "status": "whole-area-appropriate",
+          "recommendation": "无人常住/科研与驻地领地；未发现普通县市层级，不能将岛屿自然轮廓冒称行政县。",
+          "evidenceURLs": [
+            "https://www.gov.gs/"
+          ]
+        },
+        {
+          "code": "IOT",
+          "name": "英属印度洋领地",
+          "status": "whole-area-appropriate",
+          "recommendation": "未找到适用县市单位；岛屿自然分区需要与行政层级清楚区分。",
+          "evidenceURLs": [
+            "https://www.biot.gov.io/"
+          ]
+        },
+        {
+          "code": "SHN",
+          "name": "圣赫勒拿",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 3,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "SHN"
+          }
+        },
+        {
+          "code": "PCN",
+          "name": "皮特凯恩群岛",
+          "status": "whole-area-appropriate",
+          "recommendation": "未找到县市层级；4岛的自然分区可以未来作为岛屿记录，不应虚构县市。",
+          "evidenceURLs": [
+            "https://www.government.pn/"
+          ]
+        },
+        {
+          "code": "AIA",
+          "name": "安圭拉",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 15,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "AIA"
+          }
+        },
+        {
+          "code": "FLK",
+          "name": "福克兰群岛",
+          "status": "whole-area-appropriate",
+          "recommendation": "Geofabrik取得108个OSM admin_level10面，但实际是农场/产权范围，明确不当县市接入。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/europe/united-kingdom/falklands.html"
+          ]
+        },
+        {
+          "code": "CYM",
+          "name": "开曼群岛",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.openstreetmap.org/api/0.6/relations?relations=13777966,13777967,13777968,13777969,13777970,13777971",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-CYM.geojson",
+          "count": 6,
+          "source": "© OpenStreetMap contributors · Nominatim geometry / official OSM relation API",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM1",
+          "label": "地方区／district",
+          "coverageNote": "六个实际OSM admin_level8地方区；不使用含GADM来源的gbHumanitarian数据。",
+          "sha256": "a524645654db46aed5c6260c5376266a60d6e20542a979c56b5130abd83cfb42",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "CYM-ADM1-29945783",
+            "boundaryName": "Cayman Islands",
+            "boundaryISO": "CYM",
+            "boundaryYearRepresented": "2020",
+            "boundaryType": "ADM1",
+            "boundaryCanonical": "Unknown",
+            "boundarySource": "www.gadm.org, HDX",
+            "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+            "licenseDetail": "nan",
+            "licenseSource": "data.humdata.org/dataset/cod-ab-cym",
+            "boundarySourceURL": "data.humdata.org/dataset/cod-ab-cym",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Latin America and the Caribbean",
+            "UNSDG-region": "Latin America and the Caribbean",
+            "UNSDG-subregion": "Caribbean",
+            "worldBankIncomeGroup": "High-income Countries",
+            "admUnitCount": "6",
+            "meanVertices": "874.0",
+            "minVertices": "188",
+            "maxVertices": "1934",
+            "meanPerimeterLengthKM": "53.2784462160323",
+            "minPerimeterLengthKM": "15.703031633387562",
+            "maxPerimeterLengthKM": "107.17448150106893",
+            "meanAreaSqKM": "46.73460142624254",
+            "minAreaSqKM": "8.293175841291172",
+            "maxAreaSqKM": "88.98811382073579",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CYM/ADM1/geoBoundaries-CYM-ADM1-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CYM/ADM1/geoBoundaries-CYM-ADM1.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CYM/ADM1/geoBoundaries-CYM-ADM1.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CYM/ADM1/geoBoundaries-CYM-ADM1-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CYM/ADM1/geoBoundaries-CYM-ADM1_simplified.geojson",
+            "file": "outputs/boundary-supplements/gbHumanitarian-CYM-ADM1.geojson",
+            "actualCount": 6
+          },
+          "year": "2026（OSM下载快照）",
+          "metadataFile": "outputs/boundary-supplements/osm-CYM-relation-metadata.xml",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceRegionId": "properties.sourceId"
+        },
+        {
+          "code": "BMU",
+          "name": "百慕大",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 11,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "BMU"
+          }
+        },
+        {
+          "code": "VGB",
+          "name": "英属维尔京群岛",
+          "status": "license-review",
+          "recommendation": "保留国家/地区级点亮；未核验到适合再分发的基层面边界，不能推定不存在细分。",
+          "evidenceURLs": [
+            "https://data.humdata.org/dataset/cod-ab-vgb",
+            "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1.geojson"
+          ],
+          "file": "outputs/boundary-supplements/gbHumanitarian-VGB-ADM1.geojson",
+          "count": 7,
+          "source": "geoBoundaries gbHumanitarian · www.gadm.org, HDX",
+          "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+          "adminLevel": "ADM1",
+          "label": "统计区／地方区",
+          "coverageNote": "源catalog直接列明开放许可。上游来源包含GADM，尽管catalog标CC BY IGO，建议进一步核查HDX源许可再接入。",
+          "sha256": "0c860f628531c99a1bf0175b99e40137ad948fa2c23f7629d2fc52788128b395",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "VGB-ADM1-34233081",
+            "boundaryName": "British Virgin Islands",
+            "boundaryISO": "VGB",
+            "boundaryYearRepresented": "2017",
+            "boundaryType": "ADM1",
+            "boundaryCanonical": "Unknown",
+            "boundarySource": "www.gadm.org, HDX",
+            "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+            "licenseDetail": "nan",
+            "licenseSource": "data.humdata.org/dataset/cod-ab-vgb",
+            "boundarySourceURL": "data.humdata.org/dataset/cod-ab-vgb",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Latin America and the Caribbean",
+            "UNSDG-region": "Latin America and the Caribbean",
+            "UNSDG-subregion": "Caribbean",
+            "worldBankIncomeGroup": "High-income Countries",
+            "admUnitCount": "7",
+            "meanVertices": "1103.0",
+            "minVertices": "189",
+            "maxVertices": "2563",
+            "meanPerimeterLengthKM": "64.44945745576128",
+            "minPerimeterLengthKM": "11.566620966698974",
+            "maxPerimeterLengthKM": "147.80118734165143",
+            "meanAreaSqKM": "24.19381593292434",
+            "minAreaSqKM": "2.0072820657073818",
+            "maxAreaSqKM": "72.04693823001853",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/VGB/ADM1/geoBoundaries-VGB-ADM1_simplified.geojson",
+            "file": "outputs/boundary-supplements/gbHumanitarian-VGB-ADM1.geojson",
+            "actualCount": 7
+          },
+          "year": "2017"
+        },
+        {
+          "code": "TCA",
+          "name": "特克斯和凯科斯群岛",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 6,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "TCA"
+          }
+        },
+        {
+          "code": "MSR",
+          "name": "蒙特塞拉特",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "count": 3,
+          "source": "Natural Earth 1:10m · 历史教区",
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "MSR"
+          },
+          "license": "Public Domain",
+          "coverageNote": "3个历史教区，非现行地方政府；只用于旅行区域记录。",
+          "partial": true
+        },
+        {
+          "code": "JEY",
+          "name": "泽西",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/europe/guernsey-jersey.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-JEY.geojson",
+          "count": 12,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM1",
+          "label": "教区",
+          "coverageNote": "12个教区；Nominatim补全Grouville relation9238571。",
+          "sha256": "132fe8aaca802b829c18e7c0f6a347cb96c4310ceaac20aa51560dd13a017904",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "GGY",
+          "name": "根西",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/europe/guernsey-jersey.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-GGY.geojson",
+          "count": 12,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM1",
+          "label": "教区／岛屿自治单位",
+          "coverageNote": "根西主岛10教区，加Alderney与Sark独立岛屿单位，混合基层层级；Herm等小岛依OSM覆盖，不能声称全群岛县级无缺口。",
+          "sha256": "f5ff776a7b8f04b3fb5c3297448e50d16c91027903472f9bc62ca1cf304cabfa",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "IMN",
+          "name": "马恩岛",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/europe/isle-of-man.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-IMN.geojson",
+          "count": 24,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM1",
+          "label": "教区／镇",
+          "coverageNote": "OSM 24个level8教区和镇；部分地方政府历史上已合并，数量不能解读为当前地方政府数。",
+          "sha256": "51ba1650d0720c983617e0feff16549d99e8b28274d48feab456a36f9e666427",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "SOL",
+          "name": "索马里兰",
+          "status": "partial",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.geojson",
+            "https://www.geoboundaries.org/"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-SOL.geojson",
+          "count": 19,
+          "source": "geoBoundaries gbOpen · Global Polio Eradication Initiative (GPEI), Frank Salet",
+          "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+          "adminLevel": "ADM2",
+          "label": "地方行政区",
+          "coverageNote": "显示范围子集：从SOM ADM2保留超过50%源几何面积落在现有world SOL轮廓内的19区；不裁边界，不代表主权归属，争议及边界附近覆盖应标partial。",
+          "sha256": "aaddd971d4d155bd0db069b8999d0ddee828b53cfb24c772ac14e187b526c24d",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "SOM-ADM2-84685775",
+            "boundaryName": "Somalia",
+            "boundaryISO": "SOM",
+            "boundaryYearRepresented": "2022",
+            "boundaryType": "ADM2",
+            "boundaryCanonical": "Districts",
+            "boundarySource": "Global Polio Eradication Initiative (GPEI), Frank Salet",
+            "boundaryLicense": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+            "licenseDetail": "Licensed by originating party (Frank Salet) May 2022",
+            "licenseSource": "polioeradication.org/",
+            "boundarySourceURL": "polioeradication.org/",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Africa",
+            "UNSDG-region": "Sub-Saharan Africa",
+            "UNSDG-subregion": "Eastern Africa",
+            "worldBankIncomeGroup": "Low-income Countries",
+            "admUnitCount": "118",
+            "meanVertices": "98.0",
+            "minVertices": "6",
+            "maxVertices": "797",
+            "meanPerimeterLengthKM": "292.6769647652104",
+            "minPerimeterLengthKM": "3.5500883420074585",
+            "maxPerimeterLengthKM": "700.4041462063324",
+            "meanAreaSqKM": "5406.349843008743",
+            "minAreaSqKM": "0.5797005437899856",
+            "maxAreaSqKM": "22860.11334943507",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM2/geoBoundaries-SOM-ADM2_simplified.geojson"
+          },
+          "sourceRegionId": "properties.shapeID",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "year": "2022"
+        },
+        {
+          "code": "COK",
+          "name": "库克群岛",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/australia-oceania/cook-islands.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-COK.geojson",
+          "count": 15,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM2",
+          "label": "岛屿／地方区",
+          "coverageNote": "混合层级：10个岛屿单元+Rarotonga的5个OSM level8地方区。5区union覆盖Rarotonga源轮廓100%，保留源名称（包括Takitumu），不宣称等于当前地方政府数量。",
+          "sha256": "3ffb410693016056b1b401e2c784e8089577aed5c81825524afcbc11bee74393",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "ABW",
+          "name": "阿鲁巴",
+          "status": "unresolved",
+          "recommendation": "CBS官方有8地区/更细GAC统计区，但未取得已核验许可的多边形源；不可称不存在细分。",
+          "evidenceURLs": [
+            "https://cbs.aw/wp/index.php/category/environment-space/gac-geographical-address-and-classification/"
+          ]
+        },
+        {
+          "code": "CUW",
+          "name": "库拉索",
+          "status": "unresolved",
+          "recommendation": "未核验到可直接接入的开放基层多边形；保留整体记录与后续CBS统计区来源调查。",
+          "evidenceURLs": [
+            "https://www.cbs.cw/"
+          ]
+        },
+        {
+          "code": "ESH",
+          "name": "西撒哈拉",
+          "status": "unresolved",
+          "recommendation": "未核验在当前显示范围内可复用且许可清楚的细分源；存在行政与控制边界口径差异，保持范围说明。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/"
+          ]
+        },
+        {
+          "code": "SPM",
+          "name": "圣皮埃尔和密克隆",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 2,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "SPM"
+          }
+        },
+        {
+          "code": "WLF",
+          "name": "瓦利斯和富图纳",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 3,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "WLF"
+          }
+        },
+        {
+          "code": "MAF",
+          "name": "法属圣马丁",
+          "status": "whole-area-appropriate",
+          "recommendation": "法国官方commune API仅1个整片collectivité；居民区并不自动成为行政县市。",
+          "evidenceURLs": [
+            "https://geo.api.gouv.fr/communes?codeDepartement=978&format=geojson&geometry=contour"
+          ]
+        },
+        {
+          "code": "BLM",
+          "name": "圣巴泰勒米",
+          "status": "whole-area-appropriate",
+          "recommendation": "法国官方commune API仅1个整片collectivité。",
+          "evidenceURLs": [
+            "https://geo.api.gouv.fr/communes?codeDepartement=977&format=geojson&geometry=contour"
+          ]
+        },
+        {
+          "code": "PYF",
+          "name": "法属波利尼西亚",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://geo.api.gouv.fr/communes?codeDepartement=987&format=geojson&geometry=contour",
+            "https://github.com/etalab/contours-administratifs",
+            "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise"
+          ],
+          "file": "outputs/boundary-supplements/geo-api-fr-PYF.geojson",
+          "count": 48,
+          "source": "Section Cadastre-Topographie de la Polynésie française via Etalab API Géo",
+          "license": "Creative Commons Attribution",
+          "adminLevel": "ADM2",
+          "label": "市镇／commune",
+          "coverageNote": "API实际返回完整33/48 commune；每feature的properties.code为稳定INSEE编号，properties.nom为原名。",
+          "sha256": "97ed05c83d7df1adea52054a9c8b7299532d96b870ba50de3fd683cc2cb75ba2",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（API下载快照；原始几何年份见来源）"
+        },
+        {
+          "code": "NCL",
+          "name": "新喀里多尼亚",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://data.gouv.nc/explore/dataset/communes-nc-limites-terrestres-simplifiees/information/",
+            "https://data.gouv.nc/api/explore/v2.1/catalog/datasets/communes-nc-limites-terrestres-simplifiees/exports/geojson"
+          ],
+          "file": "outputs/boundary-supplements/official-NCL-communes.geojson",
+          "count": 33,
+          "source": "Gouvernement de la Nouvelle-Calédonie · Communes (limites terrestres simplifiées)",
+          "license": "Licence Ouverte v2.0",
+          "adminLevel": "ADM2",
+          "label": "市镇／commune",
+          "coverageNote": "33个commune；官方明确LO2许可；采用陆地边界简化版本。",
+          "sha256": "a66991706af278f952650e6008b6f141169eb9c9c5dc286b68385835cc3c5f25",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（API下载快照；原始几何年份见来源）",
+          "licenseURL": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+          "metadataFile": "outputs/boundary-supplements/official-NCL-communes-metadata.json",
+          "sourceRegionId": "properties.code_com",
+          "nameField": "properties.nom_minus"
+        },
+        {
+          "code": "ATF",
+          "name": "法属南部和南极领地",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 4,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "ATF"
+          }
+        },
+        {
+          "code": "ALA",
+          "name": "奥兰",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.geojson",
+            "https://www.geoboundaries.org/"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-ALA.geojson",
+          "count": 16,
+          "source": "geoBoundaries gbOpen · OpenStreetMap, Wambacher",
+          "license": "Open Data Commons Open Database License 1.0",
+          "adminLevel": "ADM3",
+          "label": "市镇",
+          "coverageNote": "按明确16市镇名单从FIN ADM3筛选；保留原几何和源shapeID，需独立命名空间避免与FIN重复ID；世界海岸粗轮廓会误删岛屿，未以相交面积筛选。",
+          "sha256": "a74047b83666a98a7430f15e6d5027b1b86b7698c3dbe5aca5375cf98c8f0cc8",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "FIN-ADM3-76405175",
+            "boundaryName": "Finland",
+            "boundaryISO": "FIN",
+            "boundaryYearRepresented": "2017",
+            "boundaryType": "ADM3",
+            "boundaryCanonical": "Unknown",
+            "boundarySource": "OpenStreetMap, Wambacher",
+            "boundaryLicense": "Open Data Commons Open Database License 1.0",
+            "licenseDetail": "Open Data Commons Open Database License 1.0",
+            "licenseSource": "www.openstreetmap.org/copyright",
+            "boundarySourceURL": "wambachers-osm.website/boundaries/",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Europe",
+            "UNSDG-region": "Europe and Northern America",
+            "UNSDG-subregion": "Northern Europe",
+            "worldBankIncomeGroup": "High-income Countries",
+            "admUnitCount": "313",
+            "meanVertices": "1481.0",
+            "minVertices": "10",
+            "maxVertices": "27768",
+            "meanPerimeterLengthKM": "336.13703083934485",
+            "minPerimeterLengthKM": "2.318435632396997",
+            "maxPerimeterLengthKM": "2446.019118681116",
+            "meanAreaSqKM": "1077.4943720856547",
+            "minAreaSqKM": "0.115773148508356",
+            "maxAreaSqKM": "17316.619150882336",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM3/geoBoundaries-FIN-ADM3_simplified.geojson"
+          },
+          "sourceRegionId": "properties.shapeID",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "year": "2017"
+        },
+        {
+          "code": "FRO",
+          "name": "法罗群岛",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/europe/faroe-islands.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-FRO.geojson",
+          "count": 29,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM2",
+          "label": "市镇",
+          "coverageNote": "29个OSM admin_level7 kommune；未混入更细的村域与上级区。",
+          "sha256": "f6abe19812d62f9c6a56eae219b9000d93f1c683bcd9b3c7388029e1ed260986",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "CYN",
+          "name": "北塞浦路斯土耳其共和国",
+          "status": "partial",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.geojson",
+            "https://www.geoboundaries.org/"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-CYN.geojson",
+          "count": 203,
+          "source": "geoBoundaries gbOpen · Wikipedia, Cyprus Department of Land Registry and Geometry",
+          "license": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+          "adminLevel": "ADM2",
+          "label": "地方行政区",
+          "coverageNote": "显示范围子集：从CYP ADM2保留超过50%源几何面积落在现有world CYN轮廓内的203个单元；不裁边界，不代表主权归属或当前政治行政建制，边界附近可能有缺口，应标partial。",
+          "sha256": "c80ace129358330208d3ba27966fbc2f5f74aa0f1c11f2f35040bcd9cf0e979e",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "CYP-ADM2-46923920",
+            "boundaryName": "Cyprus",
+            "boundaryISO": "CYP",
+            "boundaryYearRepresented": "2009",
+            "boundaryType": "ADM2",
+            "boundaryCanonical": "Unknown",
+            "boundarySource": "Wikipedia, Cyprus Department of Land Registry and Geometry",
+            "boundaryLicense": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+            "licenseDetail": "nan",
+            "licenseSource": "commons.wikimedia.org/wiki/File",
+            "boundarySourceURL": "commons.wikimedia.org/wiki/File",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Asia",
+            "UNSDG-region": "Northern Africa and Western Asia",
+            "UNSDG-subregion": "Western Asia",
+            "worldBankIncomeGroup": "High-income Countries",
+            "admUnitCount": "612",
+            "meanVertices": "112.0",
+            "minVertices": "12",
+            "maxVertices": "1957",
+            "meanPerimeterLengthKM": "21.61198288795672",
+            "minPerimeterLengthKM": "3.366413780497747",
+            "maxPerimeterLengthKM": "99.57572637252044",
+            "meanAreaSqKM": "15.20399673968887",
+            "minAreaSqKM": "0.300915409859589",
+            "maxAreaSqKM": "153.97323675136138",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM2/geoBoundaries-CYP-ADM2_simplified.geojson"
+          },
+          "sourceRegionId": "properties.shapeID",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "year": "2009"
+        },
+        {
+          "code": "MAC",
+          "name": "澳门",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://download.geofabrik.de/asia/china/macau.html",
+            "https://www.openstreetmap.org/copyright"
+          ],
+          "file": "outputs/boundary-supplements/local-selected-MAC.geojson",
+          "count": 8,
+          "source": "© OpenStreetMap contributors · Geofabrik / PyOsmium",
+          "license": "Open Database License (ODbL) 1.0",
+          "adminLevel": "ADM2",
+          "label": "堂区／路氹区域",
+          "coverageNote": "7堂区及路氹区域；以OSM级别6为准。Nominatim补全嘉模堂区relation5758865。",
+          "sha256": "6d2a7c0b813eceb11cfbcd7e0b69ef8e0bf53b61c97b5602da9f720be4310262",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "year": "2026（下载快照；源边界可能含历史区划）",
+          "reproduceScript": "outputs/boundary-supplements/build-missing-local-source-subsets.py",
+          "sourceIDs": "Each feature properties.sourceId / sourceURL"
+        },
+        {
+          "code": "HKG",
+          "name": "香港",
+          "status": "ready-natural-earth",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+          ],
+          "source": "Natural Earth 1:10m admin1",
+          "license": "Public Domain",
+          "count": 18,
+          "file": "outputs/boundary-supplements/natural-earth-admin1.geojson",
+          "selector": {
+            "property": "adm0_a3",
+            "equals": "HKG"
+          }
+        },
+        {
+          "code": "HMD",
+          "name": "赫德岛和麦克唐纳群岛",
+          "status": "whole-area-appropriate",
+          "recommendation": "无人常住澳大利亚外部领地；没有县市单位。",
+          "evidenceURLs": [
+            "https://heardisland.antarctica.gov.au/"
+          ]
+        },
+        {
+          "code": "NFK",
+          "name": "诺福克岛",
+          "status": "whole-area-appropriate",
+          "recommendation": "未核验可再分发基层多边形；诺福克地方政府统一管辖，社区点记录适用。",
+          "evidenceURLs": [
+            "https://www.norfolkisland.gov.nf/"
+          ]
+        },
+        {
+          "code": "KAS",
+          "name": "锡亚琴冰川",
+          "status": "whole-area-appropriate",
+          "recommendation": "现有地图的争议显示单元，不对应常规县市行政区；不据此创造地方行政建制。",
+          "evidenceURLs": [
+            "https://www.naturalearthdata.com/about/disputed-boundaries-policy/"
+          ]
+        },
+        {
+          "code": "ATA",
+          "name": "南极洲",
+          "status": "whole-area-appropriate",
+          "recommendation": "无一般国家县市行政体系；科研站和旅行登陆点可作为后续地点记录，不能伪造县市网格。",
+          "evidenceURLs": [
+            "https://www.ats.aq/e/antarctictreaty.html"
+          ]
+        },
+        {
+          "code": "SXM",
+          "name": "荷属圣马丁",
+          "status": "ready",
+          "recommendation": "可接入所列真实边界；显示实际地方层级与coverageNote。",
+          "evidenceURLs": [
+            "https://data.humdata.org/dataset/cod-ab-sxm",
+            "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1.geojson"
+          ],
+          "file": "outputs/boundary-supplements/gbHumanitarian-SXM-ADM1.geojson",
+          "count": 8,
+          "source": "geoBoundaries gbHumanitarian · Sint Maarten Ministry of Public Housing, Spatial Planning, Environment and Infrastructure (VROMI), HDX",
+          "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+          "adminLevel": "ADM1",
+          "label": "统计区／地方区",
+          "coverageNote": "源catalog直接列明开放许可。",
+          "sha256": "aba5e7d9eb2a8273f2d68a101efd0baed8b9280b17938f0c346ec631da11a2c5",
+          "geometryUnmodified": true,
+          "retrievedAt": "2026-10-26",
+          "metadata": {
+            "boundaryID": "SXM-ADM1-10331850",
+            "boundaryName": "Sint Maarten (Dutch part)",
+            "boundaryISO": "SXM",
+            "boundaryYearRepresented": "2018",
+            "boundaryType": "ADM1",
+            "boundaryCanonical": "Unknown",
+            "boundarySource": "Sint Maarten Ministry of Public Housing, Spatial Planning, Environment and Infrastructure (VROMI), HDX",
+            "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+            "licenseDetail": "nan",
+            "licenseSource": "data.humdata.org/dataset/cod-ab-sxm",
+            "boundarySourceURL": "data.humdata.org/dataset/cod-ab-sxm",
+            "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+            "buildDate": "Dec 12, 2023",
+            "Continent": "Latin America and the Caribbean",
+            "UNSDG-region": "Latin America and the Caribbean",
+            "UNSDG-subregion": "Caribbean",
+            "worldBankIncomeGroup": "High-income Countries",
+            "admUnitCount": "8",
+            "meanVertices": "1277.0",
+            "minVertices": "479",
+            "maxVertices": "2180",
+            "meanPerimeterLengthKM": "12.744181151835496",
+            "minPerimeterLengthKM": "8.155177098922701",
+            "maxPerimeterLengthKM": "18.627977095854387",
+            "meanAreaSqKM": "4.624335743851461",
+            "minAreaSqKM": "2.4353438218357883",
+            "maxAreaSqKM": "8.928030085854585",
+            "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1-all.zip",
+            "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1.geojson",
+            "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1.topojson",
+            "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1-PREVIEW.png",
+            "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/SXM/ADM1/geoBoundaries-SXM-ADM1_simplified.geojson",
+            "file": "outputs/boundary-supplements/gbHumanitarian-SXM-ADM1.geojson",
+            "actualCount": 8
+          },
+          "year": "2018"
+        }
+      ]
+    },
+    "regional": {
+      "retrievedDate": "2026-10-26",
+      "scope": "21 previously ADM1-only countries/territories; source research and original-data supplements only; no public/site modifications",
+      "mainFinding": "ADM1 numeric depth is not a universal granularity measure. Numerous countries already have county/municipal/parish/village local units at ADM1. Correct labels and use country-specific detail tier.",
+      "catalogsChecked": [
+        "https://www.geoboundaries.org/api/current/gbHumanitarian/ALL/ALL/",
+        "https://www.geoboundaries.org/api/current/gbAuthoritative/ALL/ALL/"
+      ],
+      "catalogFindings": "gbAuthoritative contains no matching improvement. gbHumanitarian only MHL ADM2 adds finer units; LBY ADM2=22 equals old layer. gbAuthoritative is noncommercial per geoBoundaries; do not treat as gbOpen blanket license.",
+      "licensingPolicy": "Prefer primary clear license; OSM polygons ODbL1.0 with attribution and derivative database obligations; separate them from CC-BY data and preserve downloadable source. Do not use GADM non-redistributable, arbitrary GitHub no-license, or public ArcGIS without license as redistribution authorization.",
+      "items": [
+        {
+          "code": "AND",
+          "name": "安道尔",
+          "existingLevel": "ADM1",
+          "existingCount": 7,
+          "existingYear": "2007",
+          "existingCanonical": "Parish",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区／地方自治单位",
+          "recommendation": "现有7个parish是地方自治单位，已足够对应一般县市级旅行收藏。改掉统一省/州提示。更细quarts/veinats在部分parish存在，但未核实有全国可再分发的面。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/AND/ADM1/",
+            "https://visc.ad/parroquies",
+            "https://visitandorra.com/en/explore-andorra/"
+          ],
+          "existingDownloadURL": "/data/global/and-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Public Domain"
+        },
+        {
+          "code": "ARE",
+          "name": "阿拉伯联合酋长国",
+          "existingLevel": "ADM1",
+          "existingCount": 7,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "regional_with_partial_finer_candidates",
+          "recommendedLabel": "酋长国；市镇候选",
+          "recommendation": "可接入375个OSM城区/社区面，保留部分覆盖与轻微同级重叠说明，不能称375官方县市；Abu Dhabi的3市镇OSM6也另附。源只有部分城市细分，不能全域替换7酋长国而不提示。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/ARE/ADM1/",
+            "https://wiki.openstreetmap.org/wiki/United_Arab_Emirates",
+            "https://sdi.gov.abudhabi/sdi/opendata.html",
+            "https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/0"
+          ],
+          "existingDownloadURL": "/data/global/are-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "ARE",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/asia/gcc-states.html",
+            "downloadURL": "https://download.geofabrik.de/asia/gcc-states-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "1f5acbbeaced9796ac4b589189bb53589dbbe9bb2836b97d001acbfeb61347a1",
+            "pbfBytes": 256114784,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "3865",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/asia/gcc-states-updates"
+            },
+            "allAdminCounts": {
+              "8": 478,
+              "6": 431,
+              "10": 2739,
+              "11": 36,
+              "2": 12,
+              "9": 20,
+              "7": 867,
+              "4": 50,
+              "هجرة الجيبان": 1,
+              "1": 1,
+              "5": 1
+            },
+            "selectedOSMAdminLevel": "8",
+            "selectedCount": 375,
+            "selectedFile": "outputs/boundary-supplements/ARE-OSM-level8.geojson",
+            "countryRelations": [
+              "relation/307763"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": true,
+            "partialNote": "375 OSM level8 district/community/neighbourhood polygons, especially developed urban areas; not an official375 municipality total, not whole-country local-level coverage. OSM6 has3 municipalities forAbuDhabi, but lacks consistent municipality coverage in all emirates.",
+            "errors": [
+              {
+                "id": 8835312,
+                "tags": {
+                  "admin_level": "9",
+                  "boundary": "administrative",
+                  "name": "بلدية الشفا",
+                  "name:ar": "بلدية الشفا",
+                  "name:de": "Stadtbezirk asch-Schafā",
+                  "name:en": "Municipality of Shifa",
+                  "wikipedia": "ar:بلدية الشفا"
+                },
+                "error": "invalid area (area_id=17670625)"
+              },
+              {
+                "id": 8835311,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "Azizia",
+                  "boundary": "administrative",
+                  "name": "Al Aziziyah Municipality",
+                  "wikipedia": "ar:بلدية العزيزية"
+                },
+                "error": "invalid area (area_id=17670623)"
+              },
+              {
+                "id": 13254477,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "العريجاء الغربية",
+                  "name:ar": "العريجاء الغربية",
+                  "name:en": "Al Uarayja al Gharbiyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508955)"
+              },
+              {
+                "id": 13254495,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "العزيزية",
+                  "name:ar": "العزيزية",
+                  "name:en": "Al Aziziyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508991)"
+              },
+              {
+                "id": 13254435,
+                "tags": {
+                  "admin_level": "10",
+                  "alt_name": "Ad Dirah",
+                  "boundary": "administrative",
+                  "name": "الديرة",
+                  "name:ar": "الديرة",
+                  "name:en": "Al Deerah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508871)"
+              },
+              {
+                "id": 17668025,
+                "tags": {
+                  "admin_level": "10",
+                  "admin_type:SA": "district",
+                  "boundary": "administrative",
+                  "name": "الواجهة البحرية",
+                  "name:ar": "الواجهة البحرية",
+                  "name:en": "Sea Front"
+                },
+                "error": "invalid area (area_id=35336051)"
+              },
+              {
+                "id": 8835054,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "Ulaya;Supreme;Higher",
+                  "boundary": "administrative",
+                  "name": "بلدية العليا",
+                  "name:de": "Stadtbezirlk Al Olaya",
+                  "name:en": "Municipality of Olaya",
+                  "place": "municipality",
+                  "wikipedia": "ar:بلدية العليا"
+                },
+                "error": "invalid area (area_id=17670109)"
+              },
+              {
+                "id": 13254465,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفاروق",
+                  "name:ar": "الفاروق",
+                  "name:en": "Al Faruq District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508931)"
+              },
+              {
+                "id": 13254466,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفيصلية",
+                  "name:ar": "الفيصلية",
+                  "name:en": "Al Faisaliah District",
+                  "place": "neighbourhood",
+                  "wikidata": "Q6764776"
+                },
+                "error": "invalid area (area_id=26508933)"
+              },
+              {
+                "id": 8835310,
+                "tags": {
+                  "admin_level": "9",
+                  "boundary": "administrative",
+                  "name": "بلدية الملز",
+                  "name:en": "Al Malaz Municipality",
+                  "place": "municipality",
+                  "wikipedia": "ar:بلدية الملز"
+                },
+                "error": "invalid area (area_id=17670621)"
+              },
+              {
+                "id": 13253999,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "حي المعيزيلة",
+                  "name:ar": "حي المعيزيلة",
+                  "name:en": "Al Maizliyyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26507999)"
+              },
+              {
+                "id": 13253981,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "النهضة",
+                  "name:ar": "النهضة",
+                  "name:en": "Al Nahdhah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26507963)"
+              },
+              {
+                "id": 8835309,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "al-Bathā'",
+                  "boundary": "administrative",
+                  "name": "Al Batha Muncipality",
+                  "wikipedia": "ar:بلدية البطحاء"
+                },
+                "error": "invalid area (area_id=17670619)"
+              },
+              {
+                "id": 13254417,
+                "tags": {
+                  "admin_level": "10",
+                  "alt_name": "Ulaya;Al Alia",
+                  "boundary": "administrative",
+                  "name": "العليا",
+                  "name:ar": "العليا",
+                  "name:en": "Al Olaya District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508835)"
+              },
+              {
+                "id": 13254433,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "المربع",
+                  "name:ar": "المربع",
+                  "name:en": "Al Murabba District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508867)"
+              },
+              {
+                "id": 13254422,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الناصرية",
+                  "name:ar": "الناصرية",
+                  "name:en": "An Nasiriyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508845)"
+              },
+              {
+                "id": 13254414,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "المعذر",
+                  "name:ar": "المعذر",
+                  "name:en": "Al Madhar ash Shamali District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508829)"
+              },
+              {
+                "id": 13254434,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفوطة",
+                  "name:ar": "الفوطة",
+                  "name:en": "Al Futah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508869)"
+              }
+            ],
+            "retrievedAt": "2026-10-26",
+            "countryAdminCounts": {
+              "8": 375,
+              "11": 34,
+              "10": 246,
+              "9": 8,
+              "2": 6,
+              "7": 16,
+              "1": 1,
+              "6": 3,
+              "5": 1,
+              "4": 7
+            },
+            "errorsScope": "Whole GCC extract; errors primarily in Saudi Arabia outside ARE/BHR. Only valid country-filtered polygons exported.",
+            "label": "城区／社区（OSM部分）",
+            "sameLevelOverlapFraction": 0.004649148138489973
+          }
+        },
+        {
+          "code": "ATG",
+          "name": "安提瓜和巴布达",
+          "existingLevel": "ADM1",
+          "existingCount": 8,
+          "existingYear": "2009",
+          "existingCanonical": "Parish and Dependency",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区与属地",
+          "recommendation": "6个教区+2属地，现有8单元是当地地方划分；没有可核实的全国更细县市面。不要将教区误称省/州。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/ATG/ADM1/",
+            "https://statistics.gov.ag/wp-content/uploads/2017/12/2015-Health-Statistical-Digest.pdf"
+          ],
+          "existingDownloadURL": "/data/global/atg-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Public Domain"
+        },
+        {
+          "code": "BHR",
+          "name": "巴林",
+          "existingLevel": "ADM1",
+          "existingCount": 4,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "regional_with_partial_finer_candidates",
+          "recommendedLabel": "省；地区／街区候选",
+          "recommendation": "已从当前GCC PBF验证：仅Block101（OSM10）与Block1056（OSM9）两个更细局部面。无全国地区/blocks细分，保留4省基础覆盖并注明更细数据不足；官方Locator有块边界但未获再分发授权，不直接搬运。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/BHR/ADM1/",
+            "https://www.bahrain.gov.bh/wps/wcm/connect/628e2f3b-e9f6-4a3a-9369-a12a14c5d951/27872%2BeGOV%2BUNDESA%2BStudy%2BTour%2B2015%2BV16_HR%2B%281%29.pdf?CVID=oF-oxIr&MOD=AJPERES",
+            "https://www.moh.gov.bh/Contact/HealthCenter/AHC?lang=en",
+            "https://www.iga.gov.bh/Media/Publications/National%20Digital%20Policies/Bahrain%20Government%20Open%20Data%20License.pdf",
+            "https://www.iga.gov.bh/en/article/iga-launches-key-updates-to-open-data-policy-2-0"
+          ],
+          "existingDownloadURL": "/data/global/bhr-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "BHR",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/asia/gcc-states.html",
+            "downloadURL": "https://download.geofabrik.de/asia/gcc-states-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "1f5acbbeaced9796ac4b589189bb53589dbbe9bb2836b97d001acbfeb61347a1",
+            "pbfBytes": 256114784,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "3865",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/asia/gcc-states-updates"
+            },
+            "allAdminCounts": {
+              "8": 478,
+              "6": 431,
+              "10": 2739,
+              "11": 36,
+              "2": 12,
+              "9": 20,
+              "7": 867,
+              "4": 50,
+              "هجرة الجيبان": 1,
+              "1": 1,
+              "5": 1
+            },
+            "selectedOSMAdminLevel": "8",
+            "selectedCount": 0,
+            "selectedFile": "outputs/boundary-supplements/BHR-OSM-level8.geojson",
+            "countryRelations": [
+              "relation/378734"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": true,
+            "partialNote": "No OSM8 polygons; only one OSM9 and one OSM10 local unit, so cannot replace four governorates with a nationwide city/block layer.",
+            "errors": [
+              {
+                "id": 8835312,
+                "tags": {
+                  "admin_level": "9",
+                  "boundary": "administrative",
+                  "name": "بلدية الشفا",
+                  "name:ar": "بلدية الشفا",
+                  "name:de": "Stadtbezirk asch-Schafā",
+                  "name:en": "Municipality of Shifa",
+                  "wikipedia": "ar:بلدية الشفا"
+                },
+                "error": "invalid area (area_id=17670625)"
+              },
+              {
+                "id": 8835311,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "Azizia",
+                  "boundary": "administrative",
+                  "name": "Al Aziziyah Municipality",
+                  "wikipedia": "ar:بلدية العزيزية"
+                },
+                "error": "invalid area (area_id=17670623)"
+              },
+              {
+                "id": 13254477,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "العريجاء الغربية",
+                  "name:ar": "العريجاء الغربية",
+                  "name:en": "Al Uarayja al Gharbiyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508955)"
+              },
+              {
+                "id": 13254495,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "العزيزية",
+                  "name:ar": "العزيزية",
+                  "name:en": "Al Aziziyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508991)"
+              },
+              {
+                "id": 13254435,
+                "tags": {
+                  "admin_level": "10",
+                  "alt_name": "Ad Dirah",
+                  "boundary": "administrative",
+                  "name": "الديرة",
+                  "name:ar": "الديرة",
+                  "name:en": "Al Deerah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508871)"
+              },
+              {
+                "id": 17668025,
+                "tags": {
+                  "admin_level": "10",
+                  "admin_type:SA": "district",
+                  "boundary": "administrative",
+                  "name": "الواجهة البحرية",
+                  "name:ar": "الواجهة البحرية",
+                  "name:en": "Sea Front"
+                },
+                "error": "invalid area (area_id=35336051)"
+              },
+              {
+                "id": 8835054,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "Ulaya;Supreme;Higher",
+                  "boundary": "administrative",
+                  "name": "بلدية العليا",
+                  "name:de": "Stadtbezirlk Al Olaya",
+                  "name:en": "Municipality of Olaya",
+                  "place": "municipality",
+                  "wikipedia": "ar:بلدية العليا"
+                },
+                "error": "invalid area (area_id=17670109)"
+              },
+              {
+                "id": 13254465,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفاروق",
+                  "name:ar": "الفاروق",
+                  "name:en": "Al Faruq District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508931)"
+              },
+              {
+                "id": 13254466,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفيصلية",
+                  "name:ar": "الفيصلية",
+                  "name:en": "Al Faisaliah District",
+                  "place": "neighbourhood",
+                  "wikidata": "Q6764776"
+                },
+                "error": "invalid area (area_id=26508933)"
+              },
+              {
+                "id": 8835310,
+                "tags": {
+                  "admin_level": "9",
+                  "boundary": "administrative",
+                  "name": "بلدية الملز",
+                  "name:en": "Al Malaz Municipality",
+                  "place": "municipality",
+                  "wikipedia": "ar:بلدية الملز"
+                },
+                "error": "invalid area (area_id=17670621)"
+              },
+              {
+                "id": 13253999,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "حي المعيزيلة",
+                  "name:ar": "حي المعيزيلة",
+                  "name:en": "Al Maizliyyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26507999)"
+              },
+              {
+                "id": 13253981,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "النهضة",
+                  "name:ar": "النهضة",
+                  "name:en": "Al Nahdhah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26507963)"
+              },
+              {
+                "id": 8835309,
+                "tags": {
+                  "admin_level": "9",
+                  "alt_name": "al-Bathā'",
+                  "boundary": "administrative",
+                  "name": "Al Batha Muncipality",
+                  "wikipedia": "ar:بلدية البطحاء"
+                },
+                "error": "invalid area (area_id=17670619)"
+              },
+              {
+                "id": 13254417,
+                "tags": {
+                  "admin_level": "10",
+                  "alt_name": "Ulaya;Al Alia",
+                  "boundary": "administrative",
+                  "name": "العليا",
+                  "name:ar": "العليا",
+                  "name:en": "Al Olaya District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508835)"
+              },
+              {
+                "id": 13254433,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "المربع",
+                  "name:ar": "المربع",
+                  "name:en": "Al Murabba District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508867)"
+              },
+              {
+                "id": 13254422,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الناصرية",
+                  "name:ar": "الناصرية",
+                  "name:en": "An Nasiriyah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508845)"
+              },
+              {
+                "id": 13254414,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "المعذر",
+                  "name:ar": "المعذر",
+                  "name:en": "Al Madhar ash Shamali District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508829)"
+              },
+              {
+                "id": 13254434,
+                "tags": {
+                  "admin_level": "10",
+                  "boundary": "administrative",
+                  "name": "الفوطة",
+                  "name:ar": "الفوطة",
+                  "name:en": "Al Futah District",
+                  "place": "neighbourhood"
+                },
+                "error": "invalid area (area_id=26508869)"
+              }
+            ],
+            "retrievedAt": "2026-10-26",
+            "countryAdminCounts": {
+              "10": 1,
+              "4": 4,
+              "2": 1,
+              "9": 1
+            },
+            "errorsScope": "Whole GCC extract; errors primarily in Saudi Arabia outside ARE/BHR. Only valid country-filtered polygons exported.",
+            "localCandidates": [
+              {
+                "name": "Block 101",
+                "level": "10",
+                "id": "relation/10327269"
+              },
+              {
+                "name": "Block 1056",
+                "level": "9",
+                "id": "way/1473626565"
+              }
+            ]
+          },
+          "licenseFollowup": "2025-05-20 Bahrain Government Open Data License v1 allows redistribution/adaptation/commercial use with attribution+extraction date and transformation notice; applies to portal and government websites publishing government open data. data.gov.bh catalog queries blocks/boundaries returned0. Municipal ArcGIS server403; legacy BahrainLocator is Silverlight with no documented downloadable open dataset discovered. Do not assume every public rendered map is an open licensed dataset."
+        },
+        {
+          "code": "BRB",
+          "name": "巴巴多斯",
+          "existingLevel": "ADM1",
+          "existingCount": 11,
+          "existingYear": "2005",
+          "existingCanonical": "Parish",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区",
+          "recommendation": "11个parishes可作为地方层级。官方609个ED是统计枚举区，并非县市；未核实开放再分发矢量边界，不将609个网格冒充县市。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/BRB/ADM1/",
+            "https://stats.gov.bb/census2020/"
+          ],
+          "existingDownloadURL": "/data/global/brb-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution 2.5 Generic"
+        },
+        {
+          "code": "DMA",
+          "name": "多米尼克",
+          "existingLevel": "ADM1",
+          "existingCount": 10,
+          "existingYear": "2005",
+          "existingCanonical": "Parish",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区",
+          "recommendation": "10教区是当地地方行政/人口区域，现有标签可改为地方级；未核实更细全国行政面。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/DMA/ADM1/",
+            "https://stats.gov.dm/wp-content/uploads/2019/06/Environmental_Statistics_2011.pdf"
+          ],
+          "existingDownloadURL": "/data/global/dma-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution 2.5 Generic"
+        },
+        {
+          "code": "GRD",
+          "name": "格林纳达",
+          "existingLevel": "ADM1",
+          "existingCount": 7,
+          "existingYear": "2017",
+          "existingCanonical": "Parish",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区与属地",
+          "recommendation": "6教区+1属地的地方划分，应标教区/属地。需保留来源年份及Carriacou/Petite Martinique海岛覆盖提示。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/GRD/ADM1/",
+            "https://climateresilience.gov.gd/wp-content/uploads/2025/10/2025-GCREWS-Ecoflow.pdf"
+          ],
+          "existingDownloadURL": "/data/global/grd-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution-ShareAlike 2.0"
+        },
+        {
+          "code": "GRL",
+          "name": "格陵兰",
+          "existingLevel": "ADM1",
+          "existingCount": 6,
+          "existingYear": "2020",
+          "existingCanonical": "Municipalities",
+          "category": "local_municipalities_large_geographic_units",
+          "recommendedLabel": "市镇与国家公园",
+          "recommendation": "已验证当前OSM仅Igaliku和Qassiarsuk两个地方OSM5面。保留现5市镇+公园；17历史统计区的全国开放边界仍未找到。可以另加这2个局部点亮面但不得写全境县市补齐。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/GRL/ADM1/",
+            "https://nunagis.gl/en/web-services/",
+            "https://bank.stat.gl/pxweb/en/Greenland/Greenland__BE__BE01__BE0120/BEXSTC.px/"
+          ],
+          "existingDownloadURL": "/data/global/grl-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution-ShareAlike 3.0 Unported",
+          "candidate": {
+            "code": "GRL",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/north-america/greenland.html",
+            "downloadURL": "https://download.geofabrik.de/north-america/greenland-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "a241d22d05a05ab6dfe7afe87d28f28d8de84e7bfe8820c328502fea83cdac8d",
+            "pbfBytes": 26208376,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "4798",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/north-america/greenland-updates"
+            },
+            "allAdminCounts": {
+              "5": 2,
+              "2": 1,
+              "4": 6
+            },
+            "selectedOSMAdminLevel": "5",
+            "selectedCount": 2,
+            "selectedFile": "outputs/boundary-supplements/GRL-OSM-level5.geojson",
+            "countryRelations": [
+              "relation/2184073"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": true,
+            "partialNote": "Only Igaliku and Qassiarsuk local polygons at OSM5. Cannot replace whole-country municipality layer. Municipal plans/zoning are a different concept and not county equivalents.",
+            "errors": [],
+            "retrievedAt": "2026-10-26",
+            "countryAdminCounts": {
+              "5": 2,
+              "2": 1,
+              "4": 6
+            },
+            "errorsScope": "Whole GCC extract; errors primarily in Saudi Arabia outside ARE/BHR. Only valid country-filtered polygons exported."
+          }
+        },
+        {
+          "code": "KNA",
+          "name": "圣基茨和尼维斯",
+          "existingLevel": "ADM1",
+          "existingCount": 14,
+          "existingYear": "2021",
+          "existingCanonical": "parish",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区",
+          "recommendation": "14教区（Saint Kitts9、Nevis5）是可用地方单元；Nevis有自治机构，Saint Kitts教区是行政区，未核实更细全域再分发矢量。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/KNA/ADM1/",
+            "https://www.clgf.org.uk/default/assets/File/Country_profiles/Saint_Kitts_and_Nevis.pdf",
+            "https://nia.gov.kn/wp-content/uploads/2025/03/Census-Report-2021-2022.pdf"
+          ],
+          "existingDownloadURL": "/data/global/kna-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution-ShareAlike 2.0"
+        },
+        {
+          "code": "LBY",
+          "name": "利比亚",
+          "existingLevel": "ADM1",
+          "existingCount": 22,
+          "existingYear": "2021",
+          "existingCanonical": "Districts",
+          "category": "regional_finer_coverage_insufficient",
+          "recommendedLabel": "历史行政区",
+          "recommendation": "现有22区偏粗但覆盖全域；HDX ADM2同样22，并不增加县市细节。100/104市镇IOM数据中很多为点，不能用点生成虚构县市面。当前OSM仅1个本国level6闭合面，维持22区并标更细覆盖不足。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/LBY/ADM1/",
+            "https://data.humdata.org/dataset/cod-ab-lby",
+            "https://dtm.iom.int/sites/g/files/tmzbdl1461/files/reports/Mobility%20Tracking%20Methodology%202017%20V.11%20-%20Mobility%20Tracking%20DTM%20Libya%20%28E....pdf"
+          ],
+          "existingDownloadURL": "/data/global/lby-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Public Domain",
+          "candidate": {
+            "code": "LBY",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/africa/libya.html",
+            "downloadURL": "https://download.geofabrik.de/africa/libya-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "7e54dcdde32f5dc1377da92b8beeee53a0fe9438586e4d4d0e1a33d951f1d59b",
+            "pbfBytes": 76711780,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "4942",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/africa/libya-updates"
+            },
+            "allAdminCounts": {
+              "6": 2,
+              "4": 23,
+              "9": 1,
+              "2": 1
+            },
+            "selectedOSMAdminLevel": "6",
+            "selectedCount": 1,
+            "selectedFile": "outputs/boundary-supplements/LBY-OSM-level6.geojson",
+            "countryRelations": [
+              "relation/192758"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": true,
+            "partialNote": "Completeness requires comparison to official unit lists; OSM precision/coverage is contributor-maintained. No missing polygons invented.",
+            "errors": [],
+            "retrievedAt": "2026-10-26"
+          }
+        },
+        {
+          "code": "LIE",
+          "name": "列支敦士登",
+          "existingLevel": "ADM1",
+          "existingCount": 11,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "市镇",
+          "recommendation": "11 municipalities正是基层市镇，已达到县市级语义；更新标签即可，不应因ADM1号而标不足。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/LIE/ADM1/",
+            "https://www.llv.li/en/national-administration/public-procurement-department/provisions-communities/who-are-customers-communities-"
+          ],
+          "existingDownloadURL": "/data/global/lie-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0"
+        },
+        {
+          "code": "MDA",
+          "name": "摩尔多瓦",
+          "existingLevel": "ADM1",
+          "existingCount": 37,
+          "existingYear": "2020",
+          "existingCanonical": "Districts",
+          "category": "finer_local_available",
+          "recommendedLabel": "市镇／乡",
+          "recommendation": "接入当前OSM level8的982面（67城+915乡），数量与官方2025一致；国家覆盖面合并后匹配当前OSM国界，几何无实质同级重叠。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/MDA/ADM1/",
+            "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+            "https://statistica.gov.md/files/files/publicatii_electronice/Statistica_teritoriala/Statistica_teritoriala_editia_2024.pdf"
+          ],
+          "existingDownloadURL": "/data/global/mda-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+          "candidate": {
+            "code": "MDA",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/europe/moldova.html",
+            "downloadURL": "https://download.geofabrik.de/europe/moldova-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "346cdc4ee07675890f3d3a1839c633a7ecadbd9fe4c3f1c85398389ff7fa461a",
+            "pbfBytes": 101409211,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "4947",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/europe/moldova-updates"
+            },
+            "allAdminCounts": {
+              "10": 1,
+              "8": 982,
+              "9": 1682,
+              "7": 7,
+              "4": 37,
+              "5": 10,
+              "3": 1,
+              "2": 1
+            },
+            "selectedOSMAdminLevel": "8",
+            "selectedCount": 982,
+            "selectedFile": "outputs/boundary-supplements/MDA-OSM-level8.geojson",
+            "countryRelations": [
+              "relation/58974"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": false,
+            "partialNote": "Current OSM local-area count equals official 2025 administrative towns+villages/communes count (982), union matches current country polygon, with negligible ring precision overlap. Names/list not individually matched to CUATM official codes; source remains community maintained.",
+            "errors": [],
+            "retrievedAt": "2026-10-26",
+            "officialCountEvidence": {
+              "url": "https://statistica.gov.md/index.php/en/statistic_indicator_details/29",
+              "referenceDate": "2025-01-01",
+              "townsAndMunicipalities": 67,
+              "villagesCommunes": 915,
+              "expectedCount": 982
+            }
+          }
+        },
+        {
+          "code": "MHL",
+          "name": "马绍尔群岛",
+          "existingLevel": "ADM1",
+          "existingCount": 24,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "finer_local_available_partial_source_omission",
+          "recommendedLabel": "岛屿／地方细分区",
+          "recommendation": "接入HDX本地下载的2021 ADM2原始SHP，实际152面。官方metadata宣称153且明示缺MH0609，必须按实际152披露。不使用缩放有误的geoservices。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/MHL/ADM1/",
+            "https://data.humdata.org/dataset/cod-ab-mhl"
+          ],
+          "existingDownloadURL": "/data/global/mhl-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "MHL",
+            "count": 152,
+            "year": "2021",
+            "source": "Secretariat of the Pacific Community, Statistics for Development Division; OCHA HDX",
+            "sourceURL": "https://data.humdata.org/dataset/cod-ab-mhl",
+            "catalogURL": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-mhl",
+            "downloadURL": "https://data.humdata.org/dataset/c215706c-9c22-43ca-8d36-9de4726eb9e0/resource/383a9368-998f-4657-a380-6323bb827296/download/mhl_admbnda_wgs84_ab_shp.zip",
+            "license": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+            "licenseURL": "https://creativecommons.org/licenses/by/3.0/igo/",
+            "sha256": "92ee6a69280c6ebd9cdca77cbfff0f828bcd1dec823a0d8edfd9ed41130f1e23",
+            "rawFeatureFields": [
+              "ADM0_EN",
+              "ADM0_PCODE",
+              "ADM1_EN",
+              "ADM1_PCODE",
+              "ADM2_EN",
+              "ADM2_PCODE",
+              "Shape_Leng",
+              "Shape_Area"
+            ],
+            "conversion": "shp/dbf/shx in EPSG:4326 per bundled PRJ; polygons converted with pyshp then invalid geometry repaired using Shapely make_valid",
+            "partial": true,
+            "notes": "Original HDX metadata advertises 153 ADM2; downloaded SHP contains 152. Source also states MH0609 omitted relative to COD-PS. Published count must use actual 152. Geoservices not scaled correctly so SHP used. Areas are local islet/subdivision polygons, not continuous land/sea coverage."
+          }
+        },
+        {
+          "code": "MLT",
+          "name": "马耳他",
+          "existingLevel": "ADM1",
+          "existingCount": 68,
+          "existingYear": "2022",
+          "existingCanonical": "Local Council",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "地方议会辖区",
+          "recommendation": "68 Local Councils就是基层市镇；当前2022边界已属当地地方级。官方LAU2也68，可核验，重新标注即可。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/MLT/ADM1/",
+            "https://nao.gov.mt/wp-content/uploads/2022/11/LC2022Nov.pdf",
+            "https://portal.data.gov.mt/mt/data-service/inspire-directive-annex-iii-nso?license_id=CC-BY-4.0&organization=national-statistics-office&res_format=wfs&tags=Statistical+Units+Vector"
+          ],
+          "existingDownloadURL": "/data/global/mlt-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Public Domain"
+        },
+        {
+          "code": "MNE",
+          "name": "黑山",
+          "existingLevel": "ADM1",
+          "existingCount": 23,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "local_tier_update_available",
+          "recommendedLabel": "市镇",
+          "recommendation": "原2017已有23市镇，本身并非省州但过时。当前OSM level6 25面包含Tuzi和Zeta，可更新到现行基层市镇。level8多为地籍/聚落，不应自动当新一级county。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/MNE/ADM1/",
+            "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+            "https://www.gov.me/en/article/delegation-of-congress-of-local-and-regional-authorities-of-council-of-europe-visits-ministry-of-finance"
+          ],
+          "existingDownloadURL": "/data/global/mne-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "MNE",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/europe/montenegro.html",
+            "downloadURL": "https://download.geofabrik.de/europe/montenegro-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "00e66178baa12367b2d4d5f5e87e34c64eb1343628789a79738c0b70eb817df1",
+            "pbfBytes": 34581519,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "4935",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/europe/montenegro-updates"
+            },
+            "allAdminCounts": {
+              "8": 241,
+              "6": 25,
+              "9": 84,
+              "2": 1
+            },
+            "selectedOSMAdminLevel": "6",
+            "selectedCount": 25,
+            "selectedFile": "outputs/boundary-supplements/MNE-OSM-level6.geojson",
+            "countryRelations": [
+              "relation/53296"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": false,
+            "partialNote": "Current OSM 25 municipalities matches 2025 official/UNECE local-government count, includes Tuzi and Zeta absent in old 2017 layer. Polygon area excludes coastal territorial water, as appropriate for land travel map.",
+            "errors": [],
+            "retrievedAt": "2026-10-26",
+            "officialCountEvidence": {
+              "url": "https://unece.org/sites/default/files/2025-09/ECE_HBP_2025_Inf.5_Draft-Country-Profile-Montenegro.pdf",
+              "expectedCount": 25
+            }
+          }
+        },
+        {
+          "code": "MUS",
+          "name": "毛里求斯",
+          "existingLevel": "ADM1",
+          "existingCount": 12,
+          "existingYear": "2017",
+          "existingCanonical": "Districts and Outer Islands of Mauritius",
+          "category": "finer_local_available_with_overlaps",
+          "recommendedLabel": "村委会区／市镇",
+          "recommendation": "当前OSM level8 164面提供大量VCA和市镇（含Rodrigues本地面）。官方130 Village Councils，OSM某些VCA拆方位部分且4组有重叠，不能写成官方164县市全覆盖。建议标源部分/重叠；不静默裁剪虚构边界。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/MUS/ADM1/",
+            "https://localgovernment.govmu.org/Pages/TheMinistry.aspx",
+            "https://housing.govmu.org/Pages/Services/The-Cartographic-Section---Sale-of-Maps.aspx"
+          ],
+          "existingDownloadURL": "/data/global/mus-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "MUS",
+            "source": "OpenStreetMap contributors, Geofabrik extract",
+            "sourceURL": "https://download.geofabrik.de/africa/mauritius.html",
+            "downloadURL": "https://download.geofabrik.de/africa/mauritius-latest.osm.pbf",
+            "license": "ODbL 1.0",
+            "licenseURL": "https://www.openstreetmap.org/copyright",
+            "pbfSHA256": "7636b3fef9872ea856914534f1440ebd254e5225b6b18eca8ab31b31e895840f",
+            "pbfBytes": 9426079,
+            "osmHeader": {
+              "generator": "osmium/1.16.0",
+              "osmosis_replication_timestamp": "2026-10-24T20:20:51Z",
+              "osmosis_replication_sequence_number": "3650",
+              "osmosis_replication_base_url": "https://download.geofabrik.de/africa/mauritius-updates"
+            },
+            "allAdminCounts": {
+              "3": 3,
+              "2": 5,
+              "10": 39,
+              "8": 164,
+              "9": 35,
+              "4": 9
+            },
+            "selectedOSMAdminLevel": "8",
+            "selectedCount": 164,
+            "selectedFile": "outputs/boundary-supplements/MUS-OSM-level8.geojson",
+            "countryRelations": [
+              "relation/535828"
+            ],
+            "filterMethod": "Current OSM admin_level=2 country relation geometry; representative point inside and >=90% area overlap",
+            "partial": true,
+            "partialNote": "164 source OSM admin_level8 local polygons; some village council areas split into geographic parts, and four same-level groups contain overlapping/duplicated geometries. Count is not official130 village council count; expose partial/source limitation.",
+            "errors": [],
+            "retrievedAt": "2026-10-26",
+            "overlapAudit": "outputs/boundary-supplements/MUS-overlap-audit.json"
+          }
+        },
+        {
+          "code": "NIU",
+          "name": "纽埃",
+          "existingLevel": "ADM1",
+          "existingCount": 14,
+          "existingYear": "2020",
+          "existingCanonical": "village",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "村",
+          "recommendation": "14村已是基层行政/选区，不应标省州。现有CC BY4来源可直接保留。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/NIU/ADM1/",
+            "https://www.gov.nu/government"
+          ],
+          "existingDownloadURL": "/data/global/niu-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Creative Commons Attribution 4.0 International (CC BY 4.0)"
+        },
+        {
+          "code": "NRU",
+          "name": "瑙鲁",
+          "existingLevel": "ADM1",
+          "existingCount": 14,
+          "existingYear": "2005",
+          "existingCanonical": "District",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "区",
+          "recommendation": "14districts属于小国地方单元，已达县市级可用语义。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/NRU/ADM1/",
+            "https://www.nauru.gov.nr/government-information-office/media-release/nauru-national-sustainable-development-strategy-public-consultation-covers-all-14-districts.aspx"
+          ],
+          "existingDownloadURL": "/data/global/nru-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Public Domain"
+        },
+        {
+          "code": "SMR",
+          "name": "圣马力诺",
+          "existingLevel": "ADM1",
+          "existingCount": 9,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "堡区／市镇",
+          "recommendation": "9 Castelli为地方自治单元，现有ADM1可标当地地方级。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/SMR/ADM1/",
+            "https://www.gov.sm/pub1/GovSM/dam/jcr%3A42a8bce9-6303-446b-ad8e-8dbc3e74ff37/PROFILO%2520SALUTE%25202022_ultima%2520versione_24_7_2023_DEFINITIVO.pdf"
+          ],
+          "existingDownloadURL": "/data/global/smr-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0"
+        },
+        {
+          "code": "TTO",
+          "name": "特立尼达和多巴哥",
+          "existingLevel": "ADM1",
+          "existingCount": 14,
+          "existingYear": "2017",
+          "existingCanonical": "Unknown",
+          "category": "local_tier_repair_available",
+          "recommendedLabel": "市／自治市／区域",
+          "recommendation": "可用Natural Earth v5.1.0 公有领域15单元修复缺Arima：原16面含多巴哥历史东西区，依法定地方自治岛口径合并为Tobago1，加Trinidad14地方区/市。原16完整保留。源2022、1:10m概化，应披露非实时精密边界；更细community暂无明确可再分发源。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/TTO/ADM1/",
+            "https://rdlg.gov.tt/our-ministry/",
+            "https://cso.gov.tt/subjects/population-and-vital-statistics/population/",
+            "https://hub.arcgis.com/maps/3717258e46c2443cbb000c351064c96d/about",
+            "https://www.arcgis.com/sharing/rest/content/items/122d5885924142e082effaf294e18a65/info/metadata/metadata.xml?format=default&output=html",
+            "https://www.naturalearthdata.com/about/terms-of-use/",
+            "https://dmbc.gov.tt/lga/"
+          ],
+          "existingDownloadURL": "/data/global/tto-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0",
+          "candidate": {
+            "code": "TTO",
+            "source": "Natural Earth v5.1.0 packaging (2022-05-05), 1:10 million generalized geometry",
+            "sourceURL": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+            "downloadURL": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/117488dc884bad03366ff727eca013e434615127/geojson/ne_10m_admin_1_states_provinces.geojson",
+            "sourceCommit": "117488dc884bad03366ff727eca013e434615127",
+            "sourceFileSHA256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+            "license": "Public Domain",
+            "licenseURL": "https://www.naturalearthdata.com/about/terms-of-use/",
+            "year": "2022",
+            "count": 15,
+            "rawCount": 16,
+            "localFile": "outputs/boundary-supplements/TTO-naturalearth-local15.geojson",
+            "rawFile": "outputs/boundary-supplements/TTO-naturalearth-ADM1.geojson",
+            "granularity": "14 city/borough/regional-corporation areas on Trinidad + Tobago local-government area",
+            "partial": false,
+            "limitations": "Generalized1:10m and historical2022 release; not current cadastre nor finer community/neighbourhood boundaries. Some municipality type labels changed after source release, so neutral地方区／市label recommended.",
+            "transformation": "Two NaturalEarth historical Eastern/WesternTobago polygons dissolved to singleTobago jurisdiction; original16 retained; no invented boundaries.",
+            "officialStructureEvidence": "https://dmbc.gov.tt/lga/",
+            "allGeometriesValid": true
+          }
+        },
+        {
+          "code": "VCT",
+          "name": "圣文森特和格林纳丁斯",
+          "existingLevel": "ADM1",
+          "existingCount": 6,
+          "existingYear": "2017",
+          "existingCanonical": "Parishes",
+          "category": "local_tier_already_available",
+          "recommendedLabel": "教区",
+          "recommendation": "6parishes是地方行政划分，已达小国县市级等价。暂无证实开放全国更细行政面。",
+          "evidenceURLs": [
+            "https://www.geoboundaries.org/api/current/gbOpen/VCT/ADM1/",
+            "https://nemo.gov.vc/nemo/images/PoliciesActsAndBills/Final-Country-Profile-SVG-DEC2014.pdf"
+          ],
+          "existingDownloadURL": "/data/global/vct-adm1.geojson",
+          "existingLicense": "geoBoundaries CC BY 4.0；原始来源：Open Data Commons Open Database License 1.0"
+        }
+      ]
+    }
+  }
+}

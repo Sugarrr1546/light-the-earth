@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "description": "Audited metadata corrections; source years stay specific to each source and historical geometry stays separate from current display geometry.",
+  "franceHistorical": {
+    "legacyPaintUrl": "/data/global/fra-adm3.geojson",
+    "sha256": "d64ccd0c705fa6bfafe648e7d82970b018e86b7153e1c4851eb3d99fb59ba73e",
+    "count": 320,
+    "fixtureId": "GB-44848369B63496737996980",
+    "fixtureName": "Lorient",
+    "year": "2022",
+    "source": "geoBoundaries gbOpen · Institut national de l'information géographique et forestière (IGN-F)",
+    "license": "geoBoundaries CC BY 4.0；原始来源：Etalab Open License 2.0",
+    "evidence": {"manifest": "/data/sources-global.json", "datasetCode": "FRA", "boundaryID": "FRA-ADM3-44848369", "sourceUrl": "https://geoservices.ign.fr/adminexpress"},
+    "derivedArchiveUrl": "/data/precision/fra-legacy-aligned.geojson"
+  },
+  "chinaMixedLicense": {
+    "license": "geoBoundaries CC BY 4.0；© OpenStreetMap contributors · Open Data Commons Open Database License 1.0 (ODbL 1.0)",
+    "visibleSuffix": "geoBoundaries CC BY 4.0；© OpenStreetMap contributors · ODbL 1.0",
+    "evidence": [{"manifest": "/data/sources.json", "path": "locals.CHN", "boundaryID": "CHN-ADM3-62558664", "sourceYear": "2017", "originalLicense": "Open Data Commons Open Database License 1.0", "providerLicenseUrl": "https://www.geoboundaries.org/index.html#data"}, {"manifest": "/data/current-central-china.json", "path": "alignment", "sourceYear": "2026-10-25 snapshot for five provinces; other underlying counties 2017", "sourceUrl": "https://download.geofabrik.de/asia/china/", "licenseUrl": "https://www.openstreetmap.org/copyright"}]
+  },
+  "hongKong": {
+    "coverageNote": "香港民政事务总署18区行政面与2026下载快照OSM物理海岸陆域相交；保留既有18区稳定ID。区界来源为DATA.GOV.HK政府资料，海岸来源为OpenStreetMap／Geofabrik，均保留署名；下载年份不等于每段边界的法定生效年份。",
+    "evidence": {"manifest": "/data/geometry-alignment.json", "path": "countries.HKG", "administrativeSourceUrl": "https://www.had.gov.hk/psi/hong-kong-administrative-boundaries/hksar_18_district_boundary.json", "administrativeLicenseUrl": "https://data.gov.hk/en/terms-and-conditions", "coastlineLicenseUrl": "https://www.openstreetmap.org/copyright"}
+  }
+}

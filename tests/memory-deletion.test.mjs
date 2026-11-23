@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {deleteMemory} from '../lib/memory-deletion.ts';
+const visit=id=>({id,region:{id:'legacy-xihu',name:'西湖区',countryCode:'CHN',level:'local',center:[120,30]},status:'visited',photos:[]});
+test('confirmed deletion completes immediately after DELETE succeeds and returns no undo action',async()=>{let records=[visit('one'),visit('two')],removed=[];const result=await deleteMemory(records[0],{remove:async id=>removed.push(id),onDeleted:id=>records=records.filter(r=>r.id!==id)});assert.equal(result,undefined);assert.deepEqual(removed,['one']);assert.deepEqual(records.map(r=>r.id),['two']);});
+test('failed DELETE leaves the record visible',async()=>{let deleted=false;await assert.rejects(deleteMemory(visit('one'),{remove:async()=>{throw Error('offline')},onDeleted:()=>deleted=true}),/offline/);assert.equal(deleted,false);});
+test('pending DELETE does not remove the record before server confirmation',async()=>{let finish,deleted=false;const pending=deleteMemory(visit('one'),{remove:()=>new Promise(resolve=>finish=resolve),onDeleted:()=>deleted=true});assert.equal(deleted,false);finish();await pending;assert.equal(deleted,true);});

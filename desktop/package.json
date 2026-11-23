@@ -1,0 +1,11 @@
+{
+  "name": "light-the-earth-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build tools for the offline desktop app. Kept apart from the site's dependencies.",
+  "type": "module",
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "45.3.0"
+  }
+}

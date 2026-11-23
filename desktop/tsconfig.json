@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "types": ["node"], "noEmit": true },
+  "include": ["main.ts", "file-store.ts", "../lib/local-api.ts"],
+  "exclude": []
+}
