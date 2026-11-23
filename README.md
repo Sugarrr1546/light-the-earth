@@ -166,6 +166,17 @@ npm run build
 
 本轮线上已验证真实当前GPT会话保存、刷新读回及测试记录清理，原10条记录所有字段保持一致；匿名请求及伪造GPT身份头均被拒绝。本地双身份SQLite测试覆盖跨账号读写、照片及ID冲突；真实第二个GPT账号的登录端到端仍需朋友配合，不能用本地模拟替代。
 
+## 发布公开版
+
+公开仓库 <https://github.com/Sugarrr1546/light-the-earth> 是这个仓库的独立副本：历史和作者信息与这里分开，每次同步在公开仓库里新增一次提交，作者用 GitHub 的 noreply 身份。
+
+```sh
+npm run publish:public              # 演练：导出、检查并列出将要公开的改动，不提交
+npm run publish:public -- --push    # 提交并推送到公开仓库
+```
+
+`scripts/publish-public.mjs` 导出某个提交（默认 `main`，工作区须干净）里受版本管理的文件，去掉开发过程记录（`docs/reviews`、`docs/superpowers`），把指向它们的链接改成纯文字。之后逐个检查文件名、文件内容和提交说明；发现任何不应公开的文字就停下，什么都不发布。设置项放在本仓库的 git 配置里，不会被导出：`publish.remote`（公开仓库地址）、`publish.mirror`（公开仓库的本地副本，默认 `~/Library/Caches/light-the-earth/public-repo`）、`publish.name` 和 `publish.email`（公开提交身份），以及可重复设置的 `publish.forbid`（不得公开的文字，用 `git config --add publish.forbid ...` 添加）。本仓库的 `user.name`、`user.email` 和全局 `user.email` 自动列入，任何 `/Users/` 路径也会被拦下。
+
 ## 许可
 
 - **代码**：MIT 许可，见 [LICENSE](LICENSE)。`public/data/` 和 `public/vendor/` 不在此列。

@@ -17,7 +17,8 @@
     "typecheck": "tsc --noEmit",
     "pretest": "node scripts/restore-precision-geometry.mjs && node scripts/build-region-index.mjs",
     "desktop:build": "node desktop/release.mjs",
-    "desktop:install": "node desktop/release.mjs --install --open"
+    "desktop:install": "node desktop/release.mjs --install --open",
+    "publish:public": "node scripts/publish-public.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
