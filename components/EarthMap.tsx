@@ -51,8 +51,9 @@ type FeatureRef = { source: string; id: string | number };
 const INITIAL_CENTER: [number, number] = [105, 30];
 const INITIAL_ZOOM = 1.45;
 // Vite's dependency optimizer relocates the main module without its sibling worker.
-// Serve the matching official worker directly, in both development and production.
-const MAPLIBRE_WORKER_URL = '/vendor/maplibre-gl-6.15.0/maplibre-gl-worker.mjs';
+// Serve the matching official worker directly, in both development and production. The wrapper adds a garbage
+// collection once the worker falls quiet (public/vendor/maplibre-worker.mjs).
+const MAPLIBRE_WORKER_URL = '/vendor/maplibre-worker.mjs';
 const LOCAL_MIN_ZOOM = 3.45;
 // How long the globe view stays still before exact country geometry is released.
 const RELEASE_IDLE_MS = 30_000;
@@ -978,7 +979,9 @@ export default function EarthMap(props: EarthMapProps) {
         map = new maplibre.Map({ container, style: baseStyle(world, propsRef.current.projection,propsRef.current.theme),
           center: INITIAL_CENTER, zoom: overviewZoom(), minZoom: 0.3, maxZoom: 16,
           pitch: 0, maxPitch: 45, renderWorldCopies: false, fadeDuration: duration(250),
-          canvasContextAttributes: { antialias: true }, localIdeographFontFamily: LABEL_FONT,
+          // Multisampling quadruples the drawing buffer: about 200 MB of GPU memory on a Retina screen, where a
+          // device pixel is already too small for its edges to show. It stays on for standard-density screens.
+          canvasContextAttributes: { antialias: window.devicePixelRatio < 2 }, localIdeographFontFamily: LABEL_FONT,
           attributionControl: { compact: true }, dragRotate: false, touchPitch: false,
         });
         mapRef.current = map;
@@ -1089,6 +1092,8 @@ export default function EarthMap(props: EarthMapProps) {
             zoomOut: () => map?.zoomOut({ duration: duration(350) }),
             zoomBy: levels => { if (map) map.easeTo({ zoom: map.getZoom() + levels, duration: duration(350) }); },
             stop: () => { map?.stop(); },
+            // MapLibre's own arrow-key step (pan, or with Shift rotate and tilt), for keys pressed outside the map.
+            keyboardMove: event => { if (map?.keyboard.isEnabled()) map.keyboard.keydown(event)?.cameraAnimation(map); },
           });
           scheduleVisibleCountries();
           map.on('click', (event) => {

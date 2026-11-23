@@ -74,6 +74,8 @@ export interface MapController {
   zoomBy: (levels: number) => void;
   /** Halt any camera flight or glide. */
   stop: () => void;
+  /** Move the map as an arrow key pressed on the map would. */
+  keyboardMove: (event: KeyboardEvent) => void;
 }
 
 export const STATUS_LABEL: Record<VisitStatus, string> = {

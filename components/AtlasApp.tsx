@@ -139,7 +139,7 @@ export default function AtlasApp({userId}:{userId:string}) {
     const action=shortcutFor(e,shortcutTarget(e.target));
     // A dialog over the map keeps the map still; only ? (which toggles the list) gets through.
     if(!action||(about&&action!=='help')||(shortcuts&&action!=='help'))return;
-    e.preventDefault();runShortcut(action);};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[showSearch,pendingDelete,operation,about,shortcuts,runShortcut]);
+    e.preventDefault();if(action==='move')map.current?.keyboardMove(e);else runShortcut(action);};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[showSearch,pendingDelete,operation,about,shortcuts,runShortcut]);
 
   function merge(v:Visit){setVisits(previous=>[v,...previous.filter(x=>x.id!==v.id)]);}
   const undoCreated=useCallback(async(v:Visit)=>{await api(`/api/visits/${v.id}`,{method:'DELETE'});setVisits(previous=>previous.filter(x=>x.id!==v.id));},[]);

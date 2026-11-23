@@ -29,3 +29,15 @@ test('holding a key repeats zoom but not toggles',()=>{
  assert.equal(shortcutFor(key('PageDown',{shiftKey:true,repeat:true}),map),'altitude-down');
  for(const k of ['o','r','?',' '])assert.equal(shortcutFor(key(k,{repeat:true,shiftKey:k==='?'}),map),k===' '?'stop':null,k);
 });
+test('arrow keys move the map wherever the focus is, unless something else uses them',()=>{
+ for(const k of ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown']){
+  assert.equal(shortcutFor(key(k),map),'move',k);
+  assert.equal(shortcutFor(key(k,{shiftKey:true}),map),'move','Shift rotates or tilts');
+  assert.equal(shortcutFor(key(k,{repeat:true}),map),'move','held keys keep moving');
+  assert.equal(shortcutFor(key(k),{editable:false,button:true}),'move','a focused button does not use arrows');
+  assert.equal(shortcutFor(key(k),{editable:true,button:false}),null,'typing moves the caret');
+  assert.equal(shortcutFor(key(k),{...map,map:true}),null,'the focused map handles its own keys');
+  assert.equal(shortcutFor(key(k),{...map,arrows:true}),null,'lists, radio groups and scrolling panels keep their keys');
+  assert.equal(shortcutFor(key(k,{metaKey:true}),map),null,'⌘ arrows belong to the system');
+ }
+});
