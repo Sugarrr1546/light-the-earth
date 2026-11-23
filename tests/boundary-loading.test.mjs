@@ -97,6 +97,12 @@ test('complete country sources respect a byte-weight budget as well as the count
  for(const code of ['A','B','C']){h.loader.setTargets([code]);h.requests.at(-1).resolve({bytes:3});await flush();}
  assert.deepEqual(h.unmounted,['A']);const n=h.requests.length;assert.equal(await h.loader.request('B'),true);assert.equal(h.requests.length,n);h.loader.dispose();
 });
+test('countries on screen together all show even when they exceed the byte budget',async()=>{
+ const h=harness({capacity:12,maxWeight:7,weight:data=>data.bytes});
+ h.loader.setTargets(['A','B']);await flush();
+ for(const request of h.requests.splice(0))request.resolve({bytes:5});await flush();
+ assert.deepEqual(h.mounted.map(([code])=>code).sort(),['A','B']);assert.deepEqual(h.unmounted,[]);h.loader.dispose();
+});
 test('releasing at the globe unmounts every resident country except current targets, then reloads on return', async () => {
   const { loader, requests, mounted, unmounted } = harness();
   loader.setTargets(['A', 'B']); await flush();

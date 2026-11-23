@@ -643,11 +643,13 @@ export default function EarthMap(props: EarthMapProps) {
         throw error;
       }
     }
+    const VIEWPORT_COUNTRY_WEIGHT=32*1024*1024;
     const boundaryLoader = createBoundaryLoader<CountryPayload>({
       capacity: desktop?12:6,
       concurrency: 4,
       maxWeight:(desktop?160:128)*1024*1024,
-      weight:payload=>payload.bytes??0,
+      // A viewport country (China, India…) installs only the counties in view; its exact shapes live in the partition cache.
+      weight:payload=>payload.coarse?Math.min(payload.bytes??0,VIEWPORT_COUNTRY_WEIGHT):payload.bytes??0,
       load: async (code, signal) => {
         const item = coverage.get(code);
         if (!item) throw new Error('未找到地区目录');

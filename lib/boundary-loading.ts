@@ -80,7 +80,8 @@ export function createBoundaryLoader<T>(options: LoaderOptions<T>): BoundaryLoad
           const weight=Math.max(0,options.weight?.(data)??0);
           while (resident.size >= capacity || resident.size>0&&[...resident.values()].reduce((a,b)=>a+b,0)+weight>(options.maxWeight??Infinity)) {
             const oldest = [...resident.keys()].find(candidate => !targets.has(candidate));
-            if (!oldest) { job.settle(false); return; }
+            // Every resident country is on screen too: show them all rather than silently drop this one.
+            if (!oldest) break;
             options.unmount(oldest);
             resident.delete(oldest);
           }

@@ -3,7 +3,7 @@ import {resolve} from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
-import {readPackedBoundary} from './boundary-transport.mjs';
+import {readPackedBoundary,MAX_BOUNDARY_BYTES} from './boundary-transport.mjs';
 const SHA=bytes=>createHash('sha256').update(bytes).digest('hex');
 const MAX_SHARD=2*1024*1024,MAX_MANIFEST=8*1024*1024;
 const collection=features=>JSON.stringify({type:'FeatureCollection',features});
@@ -38,7 +38,7 @@ export async function buildGeometryPartitions(clientDirectory,{targetShardBytes=
   const sha256=SHA(raw),url=`/data/geometry-partitions/${sha256}.json.gz`;let ref=written.get(url);if(!ref){const packed=gzipSync(raw,{level:9});ref={url,bytes:packed.length,decodedBytes:raw.length,sha256};await writeFile(safePath(root,url),packed);written.set(url,ref);totalDecoded+=raw.length;}return ref;
  }
  for(const url of urls){
-  let raw;try{raw=await readFile(safePath(root,url));}catch(error){const asset=transport.assets[url];if(!asset){if([...Object.values(catalog.countries)].some(c=>c.primary===url)||error.code!=='ENOENT')throw error;catalog.omittedLegacySources.push({url,reason:'Source is absent from both raw files and transport catalog'});continue;}raw=gunzipSync(await readPackedBoundary(root,asset),{maxOutputLength:64*1024*1024});if(asset.sha256&&SHA(raw)!==asset.sha256)throw Error(`Source geometry integrity failed: ${url}`);}
+  let raw;try{raw=await readFile(safePath(root,url));}catch(error){const asset=transport.assets[url];if(!asset){if([...Object.values(catalog.countries)].some(c=>c.primary===url)||error.code!=='ENOENT')throw error;catalog.omittedLegacySources.push({url,reason:'Source is absent from both raw files and transport catalog'});continue;}raw=gunzipSync(await readPackedBoundary(root,asset),{maxOutputLength:MAX_BOUNDARY_BYTES});if(asset.sha256&&SHA(raw)!==asset.sha256)throw Error(`Source geometry integrity failed: ${url}`);}
   const data=JSON.parse(raw),rows=[],shards=[],shardIndices=new Map();let batch=[],size=Buffer.byteLength(collection([]));
   const addRef=ref=>{let i=shardIndices.get(ref.url);if(i===undefined){i=shards.length;shards.push(ref);shardIndices.set(ref.url,i);}return i;};
   async function flush(){if(!batch.length)return;const ref=await writeObject({type:'FeatureCollection',features:batch.map(x=>x.feature)},maxShardBytes);const index=addRef(ref);

@@ -7,11 +7,14 @@ export function isUsableRegionName(value:unknown):value is string{
  const text=value.trim();if(/^(?:undefined|null|n\/a)$/i.test(text)||/^(?:unknown|unnamed)(?:\b|$)/i.test(text)||/^(?:NaN|nan)$/.test(text))return false;
  return /[\p{L}\p{N}]/u.test(text)&&!/[?�\u0000-\u001f\u007f-\u009f]/u.test(text)&&!/(?:ï¿½|[ÃÂ][\u00a0-\u00bf])/.test(text)&&!/^(?:未命名区域|名称待核实|待核实地区|unknown(?:\s|$)|undefined$|null$|NaN$)/.test(text);
 }
+const HAN=/[\u3400-\u9fff]/;
 export function presentRegion(region:Region,catalog:NameQualityCatalog):Region{
  const repair=Object.prototype.hasOwnProperty.call(catalog.regions,region.id)?catalog.regions[region.id]:undefined;
- const name=isUsableRegionName(repair?.name)?repair.name:isUsableRegionName(region.name)?region.name:isUsableRegionName(region.originalName)?region.originalName:`待核实地区 · ${region.id.slice(-10)}`;
+ // A Chinese name from the region index (Wikidata, scripts/audit-foreign-names.py) outranks a repaired Latin source name.
+ const chineseIndexName=isUsableRegionName(repair?.name)&&!HAN.test(repair.name)&&isUsableRegionName(region.name)&&HAN.test(region.name);
+ const name=chineseIndexName?region.name:isUsableRegionName(repair?.name)?repair.name:isUsableRegionName(region.name)?region.name:isUsableRegionName(region.originalName)?region.originalName:`待核实地区 · ${region.id.slice(-10)}`;
  const unresolved=!isUsableRegionName(name)||name.startsWith('待核实地区');
  const originalName=isUsableRegionName(region.originalName)?region.originalName:'';
- return countryPresentation({...region,boundaryStatus:repair?.boundaryStatus??region.boundaryStatus,name,originalName,aliases:[...new Set([...(region.aliases??[]),...(repair?.aliases??[]),originalName].filter(isUsableRegionName))],parentName:repair?.parentName??region.parentName,center:repair?.center??region.center,nameStatus:unresolved?'unresolved':repair?.status??'source',nameNote:repair?.note??(unresolved?'来源名称缺失或损坏，暂未核实；保留原始地区标识。':undefined),nameSourceUrl:repair?.evidenceURLs?.find(url=>/^https:\/\//.test(url))});
+ return countryPresentation({...region,boundaryStatus:repair?.boundaryStatus??region.boundaryStatus,name,originalName,aliases:[...new Set([...(region.aliases??[]),...(repair?.aliases??[]),originalName,...(chineseIndexName?[repair?.name]:[])].filter(isUsableRegionName))],parentName:repair?.parentName??region.parentName,center:repair?.center??region.center,nameStatus:unresolved?'unresolved':repair?.status??'source',nameNote:repair?.note??(unresolved?'来源名称缺失或损坏，暂未核实；保留原始地区标识。':undefined),nameSourceUrl:repair?.evidenceURLs?.find(url=>/^https:\/\//.test(url))});
 }
 export function canLabelRegion(region:Region){return region.nameStatus!=='unresolved'&&isUsableRegionName(region.name);}

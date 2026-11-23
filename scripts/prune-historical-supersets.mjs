@@ -1,17 +1,19 @@
 import{readFile,writeFile,unlink,access}from'node:fs/promises';
 import{resolve}from'node:path';import{pathToFileURL}from'node:url';
 import{gunzipSync}from'node:zlib';import{isDeepStrictEqual}from'node:util';
-import{readPackedBoundary}from'./boundary-transport.mjs';
+import{readPackedBoundary,MAX_BOUNDARY_BYTES}from'./boundary-transport.mjs';
 /** Keep source archives in Git. A production snapshot may be omitted only after
  * every feature is proved identical in the current cumulative historical mesh.
  * All runtime geometry dependencies remain independently protected.
  */
 export async function pruneHistoricalSupersets(clientDirectory){
  const dir=resolve(clientDirectory);const read=p=>readFile(resolve(dir,'data',p),'utf8').then(JSON.parse);
- try{await access(resolve(dir,'data/current-central-china.json'));}catch{return{omitted:[]};}
- const catalog=await read('geometry-assets.json'),alignment=await read('geometry-alignment.json'),coverage=await read('coverage.json'),central=await read('current-central-china.json'),meshes=await read('display-meshes.json');
+ const manifests=['current-zhejiang.json','current-east-china.json','current-central-china.json','current-china.json'];let latest;
+ for(const name of manifests){try{await access(resolve(dir,'data',name));latest=name;}catch{/* not produced yet */}}
+ if(!latest||latest==='current-zhejiang.json'||latest==='current-east-china.json')return{omitted:[]};
+ const catalog=await read('geometry-assets.json'),alignment=await read('geometry-alignment.json'),coverage=await read('coverage.json'),central=await read(latest),meshes=await read('display-meshes.json');
  const currentUrl=alignment.countries.CHN.localUrl;if(currentUrl!==central.alignment.localUrl)throw Error('Latest cumulative China mesh is not selected');
- const load=async url=>{if(!catalog.assets[url])throw Error('Missing packed historical mesh: '+url);return JSON.parse(gunzipSync(await readPackedBoundary(dir,catalog.assets[url]),{maxOutputLength:64*1024*1024}));};
+ const load=async url=>{if(!catalog.assets[url])throw Error('Missing packed historical mesh: '+url);return JSON.parse(gunzipSync(await readPackedBoundary(dir,catalog.assets[url]),{maxOutputLength:MAX_BOUNDARY_BYTES}));};
  const current=await load(currentUrl),byId=new Map(current.features.map(f=>[String(f.id),f]));if(byId.size!==current.features.length)throw Error('Duplicate current feature IDs');
  const protectedUrls=new Set();
  for(const a of Object.values(alignment.countries))for(const key of ['localUrl','landUrl','fallbackUrl','countryUrl','legacyPaintUrl'])if(a[key])protectedUrls.add(a[key]);
@@ -19,7 +21,7 @@ export async function pruneHistoricalSupersets(clientDirectory){
  for(const mesh of Object.values(meshes.countries))if(mesh.url)protectedUrls.add(mesh.url);
  for(const [url,a]of Object.entries(catalog.assets))if(url.startsWith('/data/region-index/')&&url.endsWith('.json')){const index=await load(url);if(index.geometry)protectedUrls.add(index.geometry);}
  const omitted=[];
- for(const name of ['current-zhejiang.json','current-east-china.json']){
+ for(const name of manifests.slice(0,manifests.indexOf(latest))){
   let previous;try{previous=await read(name);}catch(error){if(error.code==='ENOENT')continue;throw error;}
   const url=previous.alignment.localUrl;if(url===currentUrl||!catalog.assets[url])continue;
   if(protectedUrls.has(url))throw Error('Cannot omit runtime geometry dependency: '+url);

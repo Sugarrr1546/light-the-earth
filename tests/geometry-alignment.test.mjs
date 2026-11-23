@@ -15,7 +15,7 @@ test('all covered countries have versioned same-source land and local assets wit
   assert.ok(c[kind+'Url'].startsWith('/data/'));
   const bytes=readFileSync(new URL('.'+c[kind+'Url'],root+'/'));
   assert.equal(bytes.length,c[kind+'Bytes'],code+' '+kind);
-  assert.ok(bytes.length<64*1024*1024,code+' decoded limit');
+  assert.ok(bytes.length<256*1024*1024,code+' decoded limit');
   if(c[kind+'GzipParts']){const parts=c[kind+'GzipParts'];for(const p of parts){assert.ok(p.bytes<10_000_000,code);assert.equal(readFileSync(new URL('.'+p.url,root+'/')).length,p.bytes);}const packed=await readPackedBoundary(fileURLToPath(root),{url:c[kind+'GzipUrl'],parts,bytes:c[kind+'GzipBytes']});assert.deepEqual(gunzipSync(packed),bytes,code+' multipart exactness');}
   else if(c[kind+'GzipUrl']){const packed=readFileSync(new URL('.'+c[kind+'GzipUrl'],root+'/'));assert.ok(packed.length<10_000_000,code+' hosting limit');assert.equal(packed.length,c[kind+'GzipBytes']);}else assert.ok(bytes.length<10_000_000,code+' hosting limit');
   assert.equal(createHash('sha256').update(bytes).digest('hex'),c.sha256[kind],code+' '+kind);
@@ -29,7 +29,7 @@ test('enhanced assets retain every existing region ID and suppress only aliased 
   assert.equal(data.features.length,c.count);assert.equal(c.count-c.suppressedIds.length,c.renderCount);
   for(const id of c.suppressedIds){assert.ok(ids.has(id));assert.ok(c.legacyAliases[id]);}
  }
- assert.equal(manifest.countries.CHN.suppressedIds.length,read('/data/current-central-china.json').alignment.suppressedIds.length);
+ assert.equal(manifest.countries.CHN.suppressedIds.length,read('/data/current-china.json').alignment.suppressedIds.length);
 });
 test('Hong Kong retains 18 official districts and searchable simplified Chinese aliases',()=>{
  const hk=read(manifest.countries.HKG.localUrl);

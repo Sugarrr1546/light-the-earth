@@ -10,7 +10,7 @@ async function decode(buffer: ArrayBuffer): Promise<FeatureCollection> {
     const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
     bytes = new Uint8Array(await new Response(stream).arrayBuffer());
   }
-  if (bytes.byteLength > 64 * 1024 * 1024) throw new Error('边界文件超过解压大小限制');
+  if (bytes.byteLength > 256 * 1024 * 1024) throw new Error('边界文件超过解压大小限制');
   const parsed = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)) as FeatureCollection;
   if (parsed?.type !== 'FeatureCollection' || !Array.isArray(parsed.features)) throw new Error('边界数据格式无效');
   return parsed;

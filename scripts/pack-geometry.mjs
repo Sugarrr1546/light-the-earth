@@ -3,14 +3,14 @@ import {resolve,relative,sep} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
-import {writeBoundaryTransport} from './boundary-transport.mjs';
-const MAX_RAW=64*1024*1024,MAX_PACKED=10_000_000;
+import {writeBoundaryTransport,MAX_BOUNDARY_BYTES} from './boundary-transport.mjs';
+const MAX_RAW=MAX_BOUNDARY_BYTES,MAX_PACKED=10_000_000;
 async function files(directory){const result=[];for(const entry of await readdir(directory,{withFileTypes:true})){const path=resolve(directory,entry.name);if(entry.isDirectory())result.push(...await files(path));else if(entry.isFile()&&(entry.name.endsWith('.geojson')||(entry.name.endsWith('.json')&&path.split(sep).includes('region-index'))))result.push(path);}return result;}
 export async function packGeometry(clientDirectory,options={}){
  const directory=resolve(clientDirectory),assets={};let originalBytes=0,packedBytes=0,existing={};
  try{existing=JSON.parse(await readFile(resolve(directory,'data/geometry-assets.json'),'utf8')).assets??{};}catch{}
  for(const path of (await files(resolve(directory,'data'))).sort()){
-  const bytes=await readFile(path);if(bytes.length>MAX_RAW)throw Error(`Decoded geometry exceeds64MiB: ${path}`);
+  const bytes=await readFile(path);if(bytes.length>MAX_RAW)throw Error(`Decoded geometry exceeds the size cap: ${path}`);
   const url='/'+relative(directory,path).split(sep).join('/');
   const a=await writeBoundaryTransport(directory,url,bytes,{...options,existing:existing[url]});assets[url]=a;
   originalBytes+=bytes.length;packedBytes+=a.bytes;await unlink(path);

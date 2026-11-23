@@ -55,7 +55,7 @@ def apply(data):
 
     china_license(countries['CHN'])
     # Preserve each archived batch's own source years and source provenance.
-    for name in ['current-zhejiang.json', 'current-east-china.json', 'current-central-china.json']:
+    for name in ['current-zhejiang.json', 'current-east-china.json', 'current-central-china.json', 'current-china.json']:
         if not (data / name).exists():
             continue
         manifest = read(name)

@@ -18,7 +18,7 @@ test('every advertised country has a bounded local file and regions accepted by 
     assert.match(item.localUrl,/^\/data\/[a-z0-9/.-]+\.geojson$/);
     assert.ok(!item.localUrl.includes('..'));
     const file=path.join(root,'public',item.localUrl);
-    assert.ok(fs.statSync(file).size<=64*1024*1024,`${item.code} decoded file too large`);
+    assert.ok(fs.statSync(file).size<=256*1024*1024,`${item.code} decoded file too large`);
     if(item.gzipParts){for(const p of item.gzipParts)assert.ok(fs.statSync(path.join(root,'public',p.url)).size<10_000_000,`${item.code} part too large`);}
     else if(item.gzipUrl)assert.ok(fs.statSync(path.join(root,'public',item.gzipUrl)).size<10_000_000,`${item.code} packed file too large`);else assert.ok(fs.statSync(file).size<=10*1024*1024,`${item.code} file too large`);
     const data=JSON.parse(fs.readFileSync(file,'utf8'));

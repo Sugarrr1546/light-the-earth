@@ -163,15 +163,30 @@ def main():
   for bucket in ('byName', 'locationOnly'):
     report[bucket] = [row for row in report[bucket] if any(r['evidence']['sourceName'] == row['source'] and r['name'] == row['name'] for r in repairs.values())]
   fetched = (CACHE / 'fetched-at.txt').read_text().strip() if (CACHE / 'fetched-at.txt').exists() else None
+  # Areas that have since become historical (a current boundary replaced them) keep their earlier repair:
+  # old visits still show that name. They are no longer audited here and are not merged again below.
+  path = DATA / 'china-county-name-repairs.json'
+  earlier = read(path)['repairs'] if path.exists() else {}
+  fresh = dict(repairs)
+  repairs = {**{fid: r for fid, r in earlier.items() if fid in hidden and fid not in fresh}, **fresh}
   write(DATA / 'china-county-name-repairs.json', {'metadata': {'schemaVersion': 1, 'purpose': 'Chinese names for county-level areas left with English or placeholder names; no geometry or ID replacement',
         'source': 'Wikidata (CC0), query in outputs/china-county-sources/query.rq', 'fetchedAt': fetched, 'script': 'scripts/audit-china-county-names.py'}, 'repairs': repairs})
   (CACHE / 'audit.json').write_text(json.dumps(report, ensure_ascii=False, indent=1) + '\n')
-  for fid, repair in repairs.items():
+  for fid, repair in fresh.items():
     previous = names.get(fid, {})
     names[fid] = {**({'boundaryStatus': previous['boundaryStatus']} if previous.get('boundaryStatus') else {}),
                   'name': repair['name'], 'aliases': repair['aliases'], 'parentName': repair['parentName'], 'status': 'verified',
                   'note': repair['note'], 'evidenceURLs': repair['nameSourceURLs'], 'evidence': repair['evidence']}
+  # Historical ones: the identity review that runs before this restores its placeholder; put the repaired
+  # name back with the historical marking boundary-history.json gives it.
+  history = read(DATA / 'boundary-history.json')['regions'] if (DATA / 'boundary-history.json').exists() else {}
+  for fid, repair in repairs.items():
+    if fid in fresh: continue
+    past = history.get(fid, {})
+    name = past['name'] if past.get('status') == 'verified' and repair['name'] in past.get('name', '') else repair['name'] + '（2017年旧界）'
+    names[fid] = {**names.get(fid, {}), **past, 'name': name, 'aliases': list(dict.fromkeys([repair['name'], *repair['aliases']])), 'parentName': repair['parentName'],
+                  'status': 'verified', 'evidenceURLs': repair['nameSourceURLs'], 'evidence': repair['evidence'], 'boundaryStatus': 'historical'}
   write(DATA / 'name-quality.json', quality)
-  print(f"targets {len(targets)}; named {len(repairs)} ({len(report['byName'])} with agreeing English name, {len(report['locationOnly'])} by location only, {len(report['reviewed'])} reviewed by hand); left as they were {len(report['unresolved'])}")
+  print(f"targets {len(targets)}; named {len(fresh)}, kept {len(repairs) - len(fresh)} now historical ({len(report['byName'])} with agreeing English name, {len(report['locationOnly'])} by location only, {len(report['reviewed'])} reviewed by hand); left as they were {len(report['unresolved'])}")
 
 if __name__ == '__main__': main()

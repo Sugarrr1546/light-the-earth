@@ -2,6 +2,7 @@
 """Merge audited current assets last; keep geometry history and transport metadata explicit."""
 import json,pathlib,gzip,hashlib,datetime,io,subprocess,sys
 ROOT=pathlib.Path(__file__).resolve().parents[1];D=ROOT/'public/data'
+MAX_RAW=256*1024*1024  # decoded size cap for one boundary source (scripts/boundary-transport.mjs)
 def read(p):return json.loads(p.read_text())
 def write(p,v):p.write_text(json.dumps(v,ensure_ascii=False,separators=(',',':'))+'\n')
 def packed_asset(url,parts=None,expected=None):
@@ -12,7 +13,7 @@ def packed_asset(url,parts=None,expected=None):
   value=(ROOT/('public'+path)).read_bytes();assert len(value)==part['bytes']<10_000_000
   if part.get('sha256'):assert hashlib.sha256(value).hexdigest()==part['sha256']
   chunks.append(value)
- result=b''.join(chunks);assert len(result)<=64*1024*1024
+ result=b''.join(chunks);assert len(result)<=MAX_RAW
  if expected is not None:assert len(result)==expected
  return result
 
@@ -20,17 +21,17 @@ def geo(url):
  p=ROOT/('public'+url)
  if not p.exists():
   asset=catalog['assets'].get(url,{'url':url+'.gz'})
-  with gzip.GzipFile(fileobj=io.BytesIO(packed_asset(asset['url'],asset.get('parts'),asset.get('bytes'))))as f:raw=f.read(64*1024*1024+1)
-  assert len(raw)<=64*1024*1024;p.write_bytes(raw)
+  with gzip.GzipFile(fileobj=io.BytesIO(packed_asset(asset['url'],asset.get('parts'),asset.get('bytes'))))as f:raw=f.read(MAX_RAW+1)
+  assert len(raw)<=MAX_RAW;p.write_bytes(raw)
  return read(p)
 a=read(D/'geometry-alignment.json');coverage=read(D/'coverage.json');catalog=read(D/'geometry-assets.json');names=read(D/'name-quality.json');history=read(D/'boundary-history.json').get('regions',{}) if(D/'boundary-history.json').exists() else {};updates={}
-china_manifest=next(name for name in ['current-central-china.json','current-east-china.json','current-zhejiang.json'] if (D/name).exists())
+china_manifest=next(name for name in ['current-china.json','current-central-china.json','current-east-china.json','current-zhejiang.json'] if (D/name).exists())
 z=read(D/china_manifest);international=read(D/'current-international.json')
 for name in ['current-pacific.json','current-nordic.json']:
  if(D/name).exists():international['countries'].update(read(D/name)['countries'])
 updates['CHN']={'alignment':z['alignment'],'coverage':{**z['coveragePatch'],'license':'geoBoundaries CC BY 4.0；OpenStreetMap ODbL 1.0'}}
 for admin in [z.get('currentAdministrative'),z.get('currentSourceAdministrative'),*z.get('sourceArchives',[])]:
- if admin:
+ if admin and admin.get('url'):  # unpublished provenance (kept in the build cache) has no url
   catalog['assets'][admin['url']]={'url':admin['gzipUrl'],'bytes':admin['gzipBytes'],'decodedBytes':admin['bytes'],'sha256':admin['sha256'],**({'parts':admin['gzipParts']}if admin.get('gzipParts')else{})}
 seamsByLegacy={r['legacyId']:r for r in z.get('seamRegions',[])}
 for fid,r in z['retiredRegions'].items():

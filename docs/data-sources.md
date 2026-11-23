@@ -247,3 +247,50 @@ npm run typecheck
 安徽104与江西100县市区逐项匹配2026-06-30官方名录，几何使用与江浙沪相同的2026-10-25 OSM快照，累计405个现行单位。芬兰按2026全国308市镇名录分为FIN本土292和独立ALA16，几何取自NLS现行WFS，物理海岸仍明确为2017。瑞典、挪威、俄罗斯仅在芬兰一侧生成23个有来源证据的接边副本，原始对象与历史身份不变；其他区域没有宣称最新。来源、跨国交叠及发布包去重证明见验收记录。
 
 `legacyAliases` 为来源审计映射，运行时不据此迁移旅行记录或推断行政继承；实际保存区界按稳定ID在主来源和历史来源中读取。
+
+
+## 2026-11-23 全国现行区县
+
+`scripts/prepare-china-current.py` 把其余26个省区市（含京津、内蒙古、新疆、西藏、海南等）换成现行县级边界，结果写入 `public/data/current-china.json` 与 `precision/chn-current*.geojson`，取代 `current-central-china.json` 成为最新中国入口；后者的全部对象原样保留在新文件中。
+
+- **来源**：Geofabrik 中国各省 OSM 抽取包，统一取 2026-11-21 快照（`osm-china/download.sh` 下载并校验 MD5，缓存放在 `~/Library/Caches/light-the-earth`，不进 iCloud）。少数省界和沿海、沿边区县的边界线不在任何抽取包里，脚本从 OSM API 补取，并回溯到快照时刻的版本。交叉或平行的边界环按奇偶规则判定内外，组装情况写进审计。
+- **单位**：省内 admin_level 6 关系，加上不设区县的地级市（东莞、中山、儋州、嘉峪关）。名称与六位区划代码用 OSM 的 wikidata 标签或省内唯一同名项与 Wikidata（P442）核对；名称与代码对应的正式名称不一致时显示正式名称（如武汉经济技术开发区→汉南区、恭城县→恭城瑶族自治县），OSM 写法留作别名。重复绘制的同一地块（平潭综合实验区与平潭县）只保留县；OSM 单列的兵团垦区并入可克达拉市。深汕特别合作区、草湖市按 OSM 保留，并注明不是对上代码的县级区划。
+- **几何**：不简化。沿海省份按同一快照的海岸线裁到陆地，内陆省份按省界裁切；新区县止于此前已更新五省的边界。来源区县互相重叠的部分不归任何一方；省内未被区县覆盖的陆地为中性陆地。
+- **历史**：2017年区县和此前的接边副本全部转为历史身份。越出现行省界、面积不小于约100平方公里的残片保留为接边副本（藏南、札达等8处），省界内空洞里的小残片转为中性陆地，其余国境细条去掉，面积记入审计。
+- **规模**：中国主文件约179 MiB（全分辨率），因此单个边界源的解压上限从64 MiB调到256 MiB（`scripts/boundary-transport.mjs`）。运行时仍按视口读取分片；地图的国家图层预算对这类视口国家只按实际装入的视野记账。
+
+重建顺序：
+
+```sh
+(cd ~/Library/Caches/light-the-earth/osm-china && ./download.sh)
+outputs/geodata-venv/bin/python scripts/prepare-china-current.py
+node scripts/prepare-boundary-transports.mjs public/data/current-china.json
+python3 scripts/apply-current-boundaries.py
+outputs/geodata-venv/bin/python scripts/audit-china-county-names.py
+outputs/geodata-venv/bin/python scripts/prepare-display-meshes.py --codes CHN
+python3 scripts/translate-unit-labels.py
+node scripts/build-region-index.mjs
+outputs/geodata-venv/bin/python scripts/build-overview-borders.py
+```
+
+审计（各省单位数、组装方式、重叠、海岸面、残片处理）写在 `current-china.json` 的 `audit` 与构建缓存的 `china-work/china-current-audit.json`。
+
+各国地方单位类型的英文标签（如 Raion、Gminas）由 `scripts/translate-unit-labels.py` 改成中文写进 `coverage.json`，原文留在 `canonical`；任何重写 `coverage.json` 的步骤之后都要重跑。
+
+
+## 2026-11-23 外国地名中文化
+
+`scripts/audit-foreign-names.py` 为中国以外各国的地方区域补中文名和中文上级，结果写入 `data/foreign-names.json`（CC0，构建时由 `scripts/build-region-index.mjs` 叠进各国地区索引，不改边界和地区 ID）。
+
+- **来源**：Wikidata，经 QLever 端点逐国查询（Wikidata 官方查询服务处理不了法国、美国这样的大国）。每国查询三次：行政单位的坐标、P131 上级和撤销状态，单位标签（中文各变体、英文及该国官方语言），以及官方语言代码。结果缓存在 `~/Library/Caches/light-the-earth/wikidata-names/`。
+- **匹配**：区域内（或 0.03 度内）坐标落点、且标签与来源名称一致的条目。同名候选依次取有中文标签的、层级最高的（县优先于同名县城）、未撤销的、最接近该国常见层级的；县级条目缺坐标时，从同名的下级城市向上找到它。
+- **中文名**：优先 zh-cn / zh-hans，其次其他中文变体；繁体用 macOS 自带的 ICU Hant-Hans 转换成简体。去掉末尾的消歧括注。没有中文标签的不音译，保留原文名。
+- **上级**：匹配到的条目沿 P131 取该国最常见上级层级中有中文名的一个；没匹配到条目的区域，按落在其中的其他行政单位的上级投票。
+- **显示**：索引里的中文名优先于此前只修复了编码的拉丁原名（`lib/region-presentation.ts`），原名留作搜索别名。
+
+覆盖情况：140,389 个区域，88,820 个有中文名，129,760 个有中文上级；逐国统计在 `data/foreign-names.json` 的 `stats`。
+
+```sh
+outputs/geodata-venv/bin/python scripts/audit-foreign-names.py        # 全部国家；可附国家代码只重算部分
+node scripts/build-region-index.mjs
+```

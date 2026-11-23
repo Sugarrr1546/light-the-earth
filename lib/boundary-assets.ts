@@ -4,7 +4,7 @@ import type {FeatureCollection,Polygon,MultiPolygon} from 'geojson';
 export interface BoundaryAsset {url:string;bytes?:number;decodedBytes?:number;sha256?:string;parts?:{url:string;bytes:number;sha256?:string}[];}
 export type BoundaryAssetCatalog=Record<string,BoundaryAsset>;
 interface DecodeOptions {signal?:AbortSignal;maxBytes?:number;}
-const MAX_BYTES=64*1024*1024;
+const MAX_BYTES=256*1024*1024; // matches scripts/boundary-transport.mjs
 function checkAbort(signal?:AbortSignal){if(signal?.aborted)throw signal.reason??new DOMException('Aborted','AbortError');}
 async function boundedBytes(stream:ReadableStream<Uint8Array>,limit:number,signal?:AbortSignal){
  const reader=stream.getReader();const chunks:Uint8Array[]=[];let size=0;

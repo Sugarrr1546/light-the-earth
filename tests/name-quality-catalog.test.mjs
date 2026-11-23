@@ -37,16 +37,18 @@ test('Taiwan townships show their Chinese names and counties, matched by locatio
  assert.equal(read('/data/coverage.json').find(c=>c.code==='TWN').label,'乡镇市区');
 });
 test('China county areas left in English or as placeholders get Chinese names from Wikidata',()=>{
+ // The 2017 areas these repairs name are historical now (current OSM counties replaced them); old visits keep the names.
  const chn=aligned.countries.CHN,hidden=new Set(chn.suppressedIds??[]);
- const shown=read(chn.localUrl).features.filter(f=>!hidden.has(f.properties.id)).map(f=>presentRegion(f.properties,names));
- const byId=id=>shown.find(r=>r.id===id);
+ const all=read(chn.localUrl).features.map(f=>presentRegion(f.properties,names));
+ const byId=id=>all.find(r=>r.id===id);
  // 沙湾县 became 沙湾市 in 2021: same place, current name, the 2017 English name kept for search.
- const shawan=byId('GB-62558664B21461190508374');assert.equal(shawan.name,'沙湾市');assert.equal(shawan.parentName,'塔城地区');assert.ok(shawan.aliases.includes('Shawan County'));
- assert.equal(shown.find(r=>r.aliases.includes('Usu City')).name,'乌苏市');
+ const shawan=byId('GB-62558664B21461190508374');assert.match(shawan.name,/^沙湾市/);assert.equal(shawan.parentName,'塔城地区');assert.ok(shawan.aliases.includes('Shawan County'));
+ assert.match(all.find(r=>r.aliases.includes('Usu City')).name,/^乌苏市/);
  // Merged after 2017: the name it had then.
- assert.equal(byId('GB-62558664B59240387459246').name,'带岭区');
- // Only two areas remain without a verifiable Chinese name.
- const left=shown.filter(r=>r.nameStatus==='unresolved'||!/[一-鿿]/.test(r.name)).map(r=>r.id).sort();
- assert.deepEqual(left,['GB-62558664B28924499867484','GB-62558664B66684701290083']);
+ assert.match(byId('GB-62558664B59240387459246').name,/^带岭区/);
+ // Every current area has a verified Chinese name; the two unverifiable 2017 names are historical only.
+ const left=all.filter(r=>!hidden.has(r.id)).filter(r=>r.nameStatus==='unresolved'||!/[一-鿿]/.test(r.name)).map(r=>r.id);
+ assert.deepEqual(left,[]);
+ for(const id of ['GB-62558664B28924499867484','GB-62558664B66684701290083'])assert.ok(hidden.has(id),id);
  assert.equal(Object.keys(read('/data/china-county-name-repairs.json').repairs).length,153);
 });

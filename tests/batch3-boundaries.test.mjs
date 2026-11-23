@@ -2,14 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=url=>JSON.parse(readFileSync(new URL('../public'+url,import.meta.url)));
-test('active China entry selects the cumulative central provinces update',()=>{
+test('the central provinces update is carried whole into the national China update',()=>{
  const current=read('/data/geometry-alignment.json').countries.CHN;
- assert.equal(current.localUrl,'/data/precision/chn-central-current.geojson');
+ const national=read('/data/current-china.json');
+ assert.equal(current.localUrl,national.alignment.localUrl);
  const m=read('/data/current-central-china.json');
- assert.equal(current.sha256.local,m.alignment.sha256.local);
- const c=read('/data/coverage.json').find(x=>x.code==='CHN');
- assert.equal(c.localUrl,current.localUrl);
- assert.equal(c.count,current.count);
+ const byId=new Map(read(current.localUrl).features.map(f=>[f.id,f]));
+ for(const f of read(m.alignment.localUrl).features)assert.deepEqual(byId.get(f.id),f,f.id);
+ for(const id of m.alignment.suppressedIds)assert.ok(current.suppressedIds.includes(id),id);
 });
 function ringContains(point,ring){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const[x,y]=point,[ax,ay]=ring[i],[bx,by]=ring[j];if((ay>y)!==(by>y)&&x<(bx-ax)*(y-ay)/(by-ay)+ax)inside=!inside;}return inside;}
 function contains(g,p){return(g.type==='Polygon'?[g.coordinates]:g.coordinates).some(r=>ringContains(p,r[0])&&!r.slice(1).some(h=>ringContains(p,h)));}

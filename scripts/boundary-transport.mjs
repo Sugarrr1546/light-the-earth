@@ -2,7 +2,8 @@ import {readFile,writeFile,unlink,mkdir} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
-export const MAX_BOUNDARY_BYTES=64*1024*1024;
+// Decoded size cap for one boundary source. The national China mesh (~180 MiB at full OSM detail) is the largest.
+export const MAX_BOUNDARY_BYTES=256*1024*1024;
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 function pathFor(root,url){if(!/^\/data\/[a-zA-Z0-9_./-]+$/.test(url)||url.includes('..'))throw Error('Invalid boundary path');return resolve(root,'.'+url);}
 export async function readPackedBoundary(root,asset){
@@ -19,7 +20,7 @@ export async function readPackedBoundary(root,asset){
 }
 /** A logical gzip can be transported in immutable bounded files. Its decoded bytes never change. */
 export async function writeBoundaryTransport(root,url,raw,{singleFileLimit=10_000_000,partBytes=9_000_000,existing}={}){
- if(raw.length>MAX_BOUNDARY_BYTES)throw Error('Decoded boundary exceeds64MiB');
+ if(raw.length>MAX_BOUNDARY_BYTES)throw Error('Decoded boundary exceeds the size cap');
  if(partBytes<1||partBytes>=singleFileLimit)throw Error('Invalid boundary part budget');
  const dest=pathFor(root,url+'.gz');let packed;
  try{const prior=await readPackedBoundary(root,existing??{url:url+'.gz'});if(gunzipSync(prior,{maxOutputLength:MAX_BOUNDARY_BYTES}).equals(raw))packed=prior;}catch{/* A fresh lossless gzip is safe. */}
