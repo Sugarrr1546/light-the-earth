@@ -38,15 +38,17 @@ console.log(`Interface and map data ready in ${path.join(out, 'web')}`);
 if (process.argv.includes('--skip-package')) process.exit(0);
 
 const { packager } = await import('@electron/packager');
-const icon = path.join(desktop, 'icon.icns');
+const icon = path.join(desktop, { darwin: 'icon.icns', win32: 'icon.ico' }[platform] ?? 'none');
 await mkdir(path.join(out, 'release'), { recursive: true });
 const [bundle] = await packager({
   dir: path.join(out, 'app'), out: path.join(out, 'release'), name: PRODUCT, platform, arch, overwrite: true, asar: true,
   electronVersion: manifest.devDependencies.electron.replace(/^[^\d]*/, ''), extraResource: [path.join(out, 'web')],
   appBundleId: 'site.light-the-earth.atlas', appCategoryType: 'public.app-category.travel',
-  ...(platform === 'darwin' && await stat(icon).catch(() => null) ? { icon } : {}),
+  ...(await stat(icon).catch(() => null) ? { icon } : {}),
   // Not notarised: on another Mac the first launch needs right-click → Open.
   ...(platform === 'darwin' ? { osxSign: false } : {}),
+  // Not code-signed either: on Windows the first launch needs SmartScreen's "More info → Run anyway".
+  ...(platform === 'win32' ? { win32metadata: { ProductName: PRODUCT, FileDescription: PRODUCT, InternalName: 'light-the-earth' } } : {}),
 });
 if (platform === 'darwin' && process.platform === 'darwin') {
   // Apple silicon refuses unsigned code; an ad-hoc signature is enough to run locally.
